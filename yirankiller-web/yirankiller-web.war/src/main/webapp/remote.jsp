@@ -18,11 +18,9 @@ this is page.
     InitialContext ctx;
     try {
         ctx = new InitialContext(props);
-        if(ctx != null){
-            out.println("ctx obj");
-        }
-        FormatUtil formatUtil = (FormatUtil) ctx.lookup("FormatUtilBean/remote");
+        FormatUtil formatUtil = (FormatUtil) ctx.lookup(JndiBindingRemote.IKILLER_FORMATUTILBEAN_REMOTE);
         out.println(formatUtil.formatDate(""));
+
     }catch(NamingException e) {
         e.printStackTrace();
         out.println(e.getMessage());

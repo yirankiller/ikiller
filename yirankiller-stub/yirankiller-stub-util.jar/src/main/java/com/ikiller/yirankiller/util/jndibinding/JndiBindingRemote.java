@@ -6,7 +6,6 @@ package com.ikiller.yirankiller.util.jndibinding;
  * Version: 1.0
  */
 public class JndiBindingRemote {
-    public static final String IKILLER_FORMATUTILBEAN_REMOTE = "FormatUtilBean/Remote";
-
+    public static final String IKILLER_FORMATUTILBEAN_REMOTE = "FormatUtilBean/remote";
 
 }

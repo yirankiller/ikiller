@@ -14,6 +14,7 @@ import javax.ejb.Stateless;
  */
 @Stateless
 @Remote({FormatUtil.class})
+@RemoteBinding(jndiBinding = JndiBindingRemote.IKILLER_FORMATUTILBEAN_REMOTE)
 public class FormatUtilBean implements FormatUtil {
     @Override
     public String formatDate(String date) {
