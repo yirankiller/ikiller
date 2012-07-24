@@ -10,8 +10,18 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
     <orderEntry type="library" scope="PROVIDED" name="Maven: jboss:jboss-annotations-ejb3:4.2.3.GA" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: jboss:jboss-ejb3x:4.2.3.GA" level="project" />
+    <orderEntry type="library" name="Maven: junit:junit:4.8.2" level="project" />
   </component>
 </module>
 

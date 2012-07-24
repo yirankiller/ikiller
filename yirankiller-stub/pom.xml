@@ -9,13 +9,13 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>yirankiller-util</artifactId>
+    <artifactId>yirankiller-stub</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0-SNAPSHOT</version>
-    <name>yirankiller-util</name>
+    <name>yirankiller-stub</name>
 
     <modules>
-        <module>yirankiller-util.jar</module>
+        <module>yirankiller-stub-util.jar</module>
     </modules>
 
 </project>

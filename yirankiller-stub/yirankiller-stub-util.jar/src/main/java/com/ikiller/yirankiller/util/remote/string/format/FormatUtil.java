@@ -1,4 +1,4 @@
-package com.ikiller.yirankiller.util.string;
+package com.ikiller.yirankiller.util.remote.string.format;
 
 /**
  * User: easliu

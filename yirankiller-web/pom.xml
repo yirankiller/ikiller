@@ -8,14 +8,12 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
-    <artifactId>yirankiller-util</artifactId>
     <packaging>pom</packaging>
+    <artifactId>yirankiller-web</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <name>yirankiller-util</name>
-
+    <name>yirankiller-web</name>
     <modules>
-        <module>yirankiller-util.jar</module>
+        <module>yirankiller-web.war</module>
     </modules>
 
 </project>
