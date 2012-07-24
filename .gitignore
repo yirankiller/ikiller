@@ -1,0 +1,6 @@
+# 要忽略的文件
+.idea/
+target/
+*/*.class
+*/**.iml
+*.iml
