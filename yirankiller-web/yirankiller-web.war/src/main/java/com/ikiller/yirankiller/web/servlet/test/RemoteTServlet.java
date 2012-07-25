@@ -29,20 +29,18 @@ public class RemoteTServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String providerUrl = request.getParameter("url");
         Properties props = new Properties();
-        logger.info(providerUrl);
-        logger.error("error msg");
+        logger.info("providerUrl :" +(providerUrl == null ? "10.10.99.9:1099" : providerUrl));
         props.setProperty("java.naming.factory.initial","org.jnp.interfaces.NamingContextFactory");
         props.setProperty("java.naming.provider.url", providerUrl == null ? "10.10.99.9:1099" : providerUrl);
         props.setProperty("java.naming.factory.url.pkgs", "org.jboss.naming");
         InitialContext ctx;
         try {
             ctx = new InitialContext(props);
-            logger.info("ctx obj");
             FormatUtil formatUtil = (FormatUtil) ctx.lookup(JndiBindingRemote.IKILLER_FORMATUTILBEAN_REMOTE);
             logger.info(formatUtil.formatDate(""));
-            System.out.println(formatUtil.formatDate(""));
         }catch(NamingException e) {
             e.printStackTrace();
+            logger.info(e.getMessage());
         }
     }
 }

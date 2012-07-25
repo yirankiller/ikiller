@@ -6,6 +6,19 @@
         <servlet-name>RemoteTServlet</servlet-name>
         <servlet-class>com.ikiller.yirankiller.web.servlet.test.RemoteTServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>LogInit</servlet-name>
+        <servlet-class>com.ikiller.yirankiller.web.servlet.log.initProperty.LogInit</servlet-class>
+        <init-param>
+            <param-name>log4j-init-file</param-name>
+            <param-value>WEB-INF/classes/com/ikiller/log/apache/log4j/log4j.properties</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogInit</servlet-name>
+        <url-pattern>/LogInit.ik</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>RemoteTServlet</servlet-name>
         <url-pattern>/T/Remote</url-pattern>
@@ -13,4 +26,5 @@
     <welcome-file-list>
         <welcome-file>remote.jsp</welcome-file>
     </welcome-file-list>
+
 </web-app>
