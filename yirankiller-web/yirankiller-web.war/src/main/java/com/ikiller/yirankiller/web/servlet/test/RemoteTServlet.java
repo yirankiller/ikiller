@@ -39,7 +39,7 @@ public class RemoteTServlet extends HttpServlet {
             FormatUtil formatUtil = (FormatUtil) ctx.lookup(JndiBindingRemote.IKILLER_FORMATUTILBEAN_REMOTE);
             logger.info(formatUtil.formatDate(""));
         }catch(NamingException e) {
-            e.printStackTrace();
+            //e.printStackTrace();
             logger.info(e.getMessage());
         }
     }

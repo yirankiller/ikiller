@@ -14,6 +14,21 @@
     <name>yirankiller-stub-util.jar</name>
     <build>
         <finalName>yirankiller-stub-util</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-ear-plugin</artifactId>
+                <configuration>
+                    <modules>
+                        <JarModule>
+                            <groupId>com.ikiller</groupId>
+                            <artifactId>yirankiller-util.jar</artifactId>
+                            <bundleFileName>yirankiller-util.jar</bundleFileName>
+                        </JarModule>
+                    </modules>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 
 </project>
