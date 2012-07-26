@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<webscripts>
+
+    <!-- General Parameters for Private Loan-->
+    <general_loanprivate>
+        <min_amount>10000</min_amount>
+        <max_amount>300000</max_amount>
+        <min_years>1</min_years>
+        <max_years>12</max_years>
+        <min_interestrate>0.0425</min_interestrate>
+        <max_interestrate>0.1695</max_interestrate>
+        <statement_fee>15</statement_fee>
+        <startup_fee>495</startup_fee>
+    </general_loanprivate>
+
+    <!-- General Parameters for Private Deposit – Regular and Fixed Interest-->
+    <general_depositprivate>
+        <max_depositinterestrate>0.0390</max_depositinterestrate>
+        <min_amount>10000</min_amount>
+        <max_amount>1000000</max_amount>
+        <min_years>1</min_years>
+        <max_years>10</max_years>
+        <default_amount>100000</default_amount>
+        <default_years>3</default_years>
+    </general_depositprivate>
+
+    <!-- Display Parameters for Main Promotion-->
+    <displayobject_main>
+        <displayobject>
+            <displayType>1</displayType>
+            <displayText>Privatlån - vår bästa ränta är</displayText>
+            <largeText1></largeText1>
+            <largeText2></largeText2>
+            <displayNode>1</displayNode>
+        </displayobject>
+        <displayobject>
+            <displayType>2</displayType>
+            <displayText>Sparkonto med sparränta upp till</displayText>
+            <largeText1></largeText1>
+            <largeText2></largeText2>
+            <displayNode>2</displayNode>
+        </displayobject>
+        <displayobject>
+            <displayType>3</displayType>
+            <displayText>Samla dina lån och krediter hos oss</displayText>
+            <largeText1></largeText1>
+            <largeText2></largeText2>
+            <displayNode>3</displayNode>
+        </displayobject>
+    </displayobject_main>
+
+    <!-- Display Settings for Main Promotion-->
+    <displayobject_mainsettings>
+        <transitionTime>5000</transitionTime>
+        <displayTime>10</displayTime>
+        <startIndex>1</startIndex>
+        <!--  Search path to theme: -->
+        <theme></theme>
+    </displayobject_mainsettings>
+
+    <!-- Parameters for Private Loan-->
+    <displayobject_loanprivate>
+        <default_amount>100000</default_amount>
+        <default_years>8</default_years>
+        <default_rate>0.0795</default_rate>
+        <interval_loanamount>5000</interval_loanamount>
+        <interval_tenor>1</interval_tenor>
+        <interval_interest>0.0005</interval_interest>
+    </displayobject_loanprivate>
+
+    <!-- Parameters for Private Loan Calculate Effective Interest-->
+    <displayobject_loanprivate_calceffectiveinterest>
+    </displayobject_loanprivate_calceffectiveinterest>
+
+    <!-- Parameters for Private Deposit – Up to 4 Deposit Products being Displayed-->
+    <displayobject_depositprivate>
+        <depositproduct1>
+            <productdescription>SevenDay Sparkonto</productdescription>
+            <productinterestrate>0.0390</productinterestrate>
+            <default_amount>100000</default_amount>
+            <default_years>3</default_years>
+            <default_conc_rate>0.0050</default_conc_rate>
+            <min_conc_rate>0</min_conc_rate>
+            <max_conc_rate>0.0300</max_conc_rate>
+            <description1 generate="true">Här kan du räkna ut hur mycket du sparar på att ha ditt sparande hos oss.</description1>
+            <description2 generate="false"></description2>
+            <display>true</display>
+        </depositproduct1>
+        <depositproduct2>
+            <productdescription>SevenDay12</productdescription>
+            <productinterestrate>0.0335</productinterestrate>
+            <default_amount>100000</default_amount>
+            <default_years>1</default_years>
+            <default_conc_rate>0.0150</default_conc_rate>
+            <min_conc_rate>0</min_conc_rate>
+            <max_conc_rate>0.0325</max_conc_rate>
+            <description1 generate="true">Här kan du räkna ut hur mycket du sparar på att ha ditt sparande hos oss.</description1>
+            <description2 generate="false"></description2>
+            <display>true</display>
+        </depositproduct2>
+        <depositproduct3>
+            <productdescription>SevenDay24</productdescription>
+            <productinterestrate>0.0340</productinterestrate>
+            <default_amount>100000</default_amount>
+            <default_years>2</default_years>
+            <default_conc_rate>0.0200</default_conc_rate>
+            <min_conc_rate>0</min_conc_rate>
+            <max_conc_rate>0.0325</max_conc_rate>
+            <description1 generate="true">Här kan du räkna ut hur mycket du sparar på att ha ditt sparande hos oss.</description1>
+            <description2 generate="false"></description2>
+            <display>true</display>
+        </depositproduct3>
+        <depositproduct4>
+            <productdescription>SevenDay36</productdescription>
+            <productinterestrate>0.0340</productinterestrate>
+            <default_amount>100000</default_amount>
+            <default_years>3</default_years>
+            <default_conc_rate>0.0225</default_conc_rate>
+            <min_conc_rate>0</min_conc_rate>
+            <max_conc_rate>0.0325</max_conc_rate>
+            <description1 generate="true">Här kan du räkna ut hur mycket du sparar på att ha ditt sparande hos oss.</description1>
+            <description2 generate="false"></description2>
+            <display>true</display>
+        </depositproduct4>
+	<depositproduct5>
+            <productdescription>SevenDay36</productdescription>
+            <productinterestrate>0.0340</productinterestrate>
+            <default_amount>100000</default_amount>
+            <default_years>3</default_years>
+            <default_conc_rate>0.0225</default_conc_rate>
+            <min_conc_rate>0</min_conc_rate>
+            <max_conc_rate>0.0325</max_conc_rate>
+            <description1 generate="true">Här kan du räkna ut hur mycket du sparar på att ha ditt sparande hos oss.</description1>
+            <description2 generate="false"></description2>
+            <display>true</display>
+        </depositproduct5>
+	<depositproduct6>
+            <productdescription>SevenDay36</productdescription>
+            <productinterestrate>0.0340</productinterestrate>
+            <default_amount>100000</default_amount>
+            <default_years>3</default_years>
+            <default_conc_rate>0.0225</default_conc_rate>
+            <min_conc_rate>0</min_conc_rate>
+            <max_conc_rate>0.0325</max_conc_rate>
+            <description1 generate="true">Här kan du räkna ut hur mycket du sparar på att ha ditt sparande hos oss.</description1>
+            <description2 generate="false"></description2>
+            <display>true</display>
+        </depositproduct6>
+	<depositproduct7>
+            <productdescription>SevenDay36</productdescription>
+            <productinterestrate>0.0340</productinterestrate>
+            <default_amount>100000</default_amount>
+            <default_years>3</default_years>
+            <default_conc_rate>0.0225</default_conc_rate>
+            <min_conc_rate>0</min_conc_rate>
+            <max_conc_rate>0.0325</max_conc_rate>
+            <description1 generate="true">Här kan du räkna ut hur mycket du sparar på att ha ditt sparande hos oss.</description1>
+            <description2 generate="false"></description2>
+            <display>true</display>
+        </depositproduct7>
+	<depositproduct8>
+            <productdescription>SevenDay36</productdescription>
+            <productinterestrate>0.0340</productinterestrate>
+            <default_amount>100000</default_amount>
+            <default_years>3</default_years>
+            <default_conc_rate>0.0225</default_conc_rate>
+            <min_conc_rate>0</min_conc_rate>
+            <max_conc_rate>0.0325</max_conc_rate>
+            <description1 generate="true">Här kan du räkna ut hur mycket du sparar på att ha ditt sparande hos oss.</description1>
+            <description2 generate="false"></description2>
+            <display>true</display>
+        </depositproduct8>
+    </displayobject_depositprivate>
+
+    <!-- Parameters for Private Loan Balance Consolidation-->
+    <displayobject_balanceconsolidationprivate>
+        <interval_interest>0.0005</interval_interest>
+        <sample_interestrate>0.0795</sample_interestrate>
+        <sample_effectiveinterestrate>0.0856</sample_effectiveinterestrate>
+        <sample_monthlycost>1950</sample_monthlycost>
+        <sample_loanamount>125000</sample_loanamount>
+        <sample_tenor>12</sample_tenor>
+    </displayobject_balanceconsolidationprivate>
+
+    <!-- Parameters for Private Loan Monthly Cost-->
+    <displayobject_loanprivatemonthlycost>
+        <!--  Parameter values, same as already used today for flash, to be retrieved dynamically from database. -->
+    </displayobject_loanprivatemonthlycost>
+</webscripts>

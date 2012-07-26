@@ -1,0 +1,111 @@
+<html>
+	<head><title>some title<span></span></title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">  
+	<style type="text/css">  
+        .title *  
+        {  
+            vertical-align: middle;  
+        }  
+    </style> 
+</head>
+	<script src="../jqeury/core/jquery-1.7.1.js" type="text/javascript"></script>
+	
+	<script type="text/javascript" language="javascript">  
+		var xmlhttp;   // 创建XMLHTTPRequest对象
+		$(function () {
+			//alert(formatCurrency("1 000 000"));
+	//alert(isNaN(fasd));
+			var link = "fds.htm?fd=1";
+			//alert(link.substr(0,link.indexOf('?')));
+//			$('#aa').trigger('click')
+//alert(accMul(0.0705,100));
+//alert(0.0705*100);
+/*
+$.post('/usr/local/backend/WEBSCRIPTS.xml', function(data) {
+  var $child = $(data).find('general_loanprivate');
+	alert($child);
+
+
+})
+*/
+document.title = 'this title';
+alert($("title").html()); 
+		});  
+
+		function OnlyInPutNumber() {  
+			$("div[id^='div']").each(function(i){
+				alert(i);
+
+			}); 
+		}  
+		
+		function getHTML()
+    {
+        var url = '/data/home/easliu/webscripts.xml';
+        var pars = 'someParameter=ABC';
+        var myAjax = new Ajax.Updater(
+                    {success: 'placeholder'},
+                    url,
+                    {method: 'get', parameters: pars, onFailure: reportError});
+
+    }
+function keyup(obj){
+	if(!obj.value.match(/^[\+\-]?\d*?\.?\d*?$/))obj.value=obj.t_value;else obj.t_value=obj.value;if(obj.value.match(/^(?:[\+\-]?\d+(?:\.\d+)?)?$/))obj.o_value=obj.value
+}
+function kep(obj){
+	if(!obj.value.match(/^[\+\-]?\d*?\.?\d*?$/))obj.value=obj.t_value;else obj.t_value=obj.value;if(obj.value.match(/^(?:[\+\-]?\d+(?:\.\d+)?)?$/))obj.o_value=obj.value
+}
+function blur(obj){
+	if(!obj.value.match(/^(?:[\+\-]?\d+(?:\.\d+)?|\.\d*?)?$/))obj.value=obj.o_value;else{if(obj.value.match(/^\.\d+$/))obj.value=0+obj.value;if(obj.value.match(/^\.$/))obj.value=0;obj.o_value=obj.value}
+}
+function myc(obj){alert(obj.checked);
+	alert('d');
+}
+    function reportError(request)
+    {
+        alert('Sorry. There was an error.');
+    }
+
+	function formatCurrency(num) {
+	    num = num.toString().replace(/\$|\/\s,/g,'');
+		alert(num);
+num = num.toString().replace(/\s/g,'');
+		alert(num);
+	    if(isNaN(num))
+	    num = "0";
+	    mycents = "";
+	    if(num.indexOf(".") > 0){
+		mycents = num.substr(num.indexOf("."));
+	    }
+	    sign = (num == (num = Math.abs(num)));
+	    num = Math.floor(num*100+0.50000000001);
+	    num = Math.floor(num/100).toString();
+	    for (var i = 0; i < Math.floor((num.length-(1+i))/3); i++)
+	    num = num.substring(0,num.length-(4*i+3))+' '+
+	    num.substring(num.length-(4*i+3));
+	    return (((sign)?'':'-') + num + mycents);
+	}
+    function accMul(arg1,arg2)  
+{  
+    var m=0,s1=arg1.toString(),s2=arg2.toString();  
+    try{m+=s1.split(".")[1].length}catch(e){}  
+    try{m+=s2.split(".")[1].length}catch(e){}  
+    return Number(s1.replace(".",""))*Number(s2.replace(".",""))/Math.pow(10,m);  
+}  
+function TF(value, decNr){
+	value = Number(value).toFixed(decNr);
+	str = value.toString().replace('.', ',');
+	return str;
+}
+	</script> 
+<body><a>
+	<div class="title">  
+        <img src="http://www.baidu.com/img/baidu_sylogo1.gif">  
+	<span id="spmyc" >测试文字与图像垂直居中</span>
+	<input type="checkbox" name="df" id="aa" onclick="myc(this)"/>
+    </div>  
+</a>
+
+<input type=text t_value="" o_value="" onkeypress="kep(this)" onkeyup="keyup(this)" onblur="blur(this)">
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content=""> 
+<meta http-equiv="content-type" content="text/html;charset=utf-8">  
+  <script type="text/javascript">
+  <!--
+  function lookProperty(obj){
+	ob=eval(obj);
+	var Property="";
+	for(var i in ob){
+		Property+='属性：'+i+'<br >';
+		document.getElementById("myp").innerHTML=Property;
+	}
+  }
+  //-->
+  </script>
+ </head>
+ <body>
+  <div id="myp"></div>
+  <button onclick="lookProperty(this)">查看属性</button>
+ </body>
+</html>

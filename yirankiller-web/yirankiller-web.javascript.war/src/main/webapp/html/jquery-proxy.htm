@@ -1,0 +1,164 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html>
+<head>
+  <script src="../jqeury/core/jquery-1.7.1.js"></script>
+</head>
+<style type="text/css">
+.divCls{
+	border : 1px solid red;
+	height : 50px;
+}
+.spanCls{
+	border : 1px solid blue;
+}
+.inlineCls{
+	display : inline;
+}
+.paddingCls{
+	padding : 0px 0px 0 0px;
+	border : 1px solid blue;
+	background : url(../resources/images/os-bee.jpg) -400px -25px;
+	width : 130px;
+	height : 250px;
+	position : relative;
+}
+.marginCls{
+	margin : 10px 0 0 10px;
+}
+hr
+{
+visibility:hidden;
+}
+.position
+{
+position:relative;
+top:100px;
+}
+<!--
+
+	background :url(../resources/images/os-bee.jpg) no-repeat;
+	background-attachment : fixed;
+-->
+body{
+	
+	filter:alpha(
+		opacity=20,
+		finishopacity=100,
+		style=1,
+		startx=0, 
+		starty=0,
+		finishx=140,
+		finishy=270
+	)
+}
+</style>
+<body>
+  
+<p><button type="button" id="test">Test</button></p>
+<div id="log"></div>
+<hr />
+<br />
+<div class="divCls"><div id="offset" class="paddingCls marginCls">this is div.</div></div>
+
+
+<div class="divCls position">this is div.this is div.this is div.this is div.this is div.this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<div class="divCls">this is div.</div>
+<!--
+<div class="divCls">this is div.</div>
+<span class="spanCls">this is span.</span>
+<span class="spanCls">this is span.</span>
+<span class="spanCls">this is span.</span>
+-->
+<script>
+var me = {
+  type: "zombie",
+  test: function(event) {
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $(element).css("background-color", "red");
+
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $("#log").append( "Hello " + this.type + "<br>" );
+    $("#test").unbind("click", this.test);
+  }
+};
+
+var you = {
+  type: "person",
+  test: function(event) {
+    $("#log").append( this.type + " " );
+  }
+};
+
+// execute you.test() in the context of the `you` object
+// no matter where it is called
+// i.e. the `this` keyword will refer to `you`
+var youClick = $.proxy( you.test, you );
+
+
+// attach click handlers to #test
+$("#test")
+  // this === "zombie"; handler unbound after first click
+  .click( $.proxy( me.test, me ) )
+  // this === "person"
+  .click( youClick )
+  // this === "zombie"
+  .click( $.proxy( you.test, me ) )
+  // this === "<button> element"
+  .click( you.test );
+$(document).scroll(function(){$("div#offset").offset({ top: ($("body").scrollTop() +10), left: 30 });});
+$("div#offset").offset({ top: ($("body").scrollTop() +10), left: 30 });
+</script>
+
+</body>
+</html>
