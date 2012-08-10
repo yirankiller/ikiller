@@ -131,12 +131,88 @@ $(function(){
     alert(({}).toString());
     alert(([3]).toString());
     alert(([32,4]).valueOf());
-    */
+
     logger.evalLog("/\d+/g.toString()");
 
     logger.evalLog("new Date(2010,0,1).toString()");
+    logger.evalLog("/\d+/g.valueOf()");
+    logger.evalLog("typeof [1].valueOf()");
+    logger.evalLog("typeof ['s'].toString()");
+
+    logger.evalLog("var now = new Date();now == now.toString()");
+     */
+    //-------------------------------------------------------------javascript function scope
+    /*
+    function scopeBig(){
+        var scope = "local";
+        function scopeSmall(){
+            var d = "localSmall";
+        }
+        return d;
+    }
+    alert(scopeBig());
+    */
+    //3.10.3
+    //Invocation
+    /*
+    var undfArrya = [1,,,,3,];
+    logger.evalLog("var undfArrya = [1,,,,3];undfArrya.length");
+    var obj = {x:1};
+    alert(obj["x"]);
+    */
+    //Object creation exp
+    /*
+    logger.evalLog("d = new Date;d.getTime()");
+    */
+    /*
+    function costr(){
+
+    }
+    var cobj = new costr();
+    alert(cobj instanceof costr);
+    alert(~11);
+    */
+    /*
+    var f = 12;
+    var s = ~-f;
+    alert(s);
+    */
+    /*
+    var o = { x : 1 };
+    var p = null;
+    alert(true && o.x);
+    alert(p && p.x);
+    */
+    // eval
+    /*
+    var d="def";
+    alert(eval("d"));
+    */
+    //此代码要放到$.ready外边才能正常
+    /*
+    var x = "global";
+    var y = "global";                    // Two global variables
+    function f() {                       // This function does a local eval
+        var x = "local";                 // Define a local variable
+        eval("x += 'changed';");         // Direct eval sets local variable
+        return x;                        // Return changed local variable
+    }
+    var geval = eval;                    // Using another name does a global eval
+    function g() {                       // This function does a global eval
+        var y = "local";                 // A local variable
+        geval("var y;y += 'changed';");        // Indirect eval sets global variable
+        return y;                        // Return unchanged local variable
+    }
+    console.log(f(), x);                 // Local variable changed: prints "localchanged global":
+    console.log(g(), y);
+    */
 });
 
+
+/*
+ side effects
+
+ */
 
 
 
