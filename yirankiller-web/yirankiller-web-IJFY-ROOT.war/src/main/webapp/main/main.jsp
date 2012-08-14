@@ -10,7 +10,7 @@
 <script src="/javascript/jsLoader/seaJs/sea.js"></script>
 <script src="/javascript/jsLoader/seaJs/seaJsConfig.js"></script>
 <script type="text/javascript">
-    seajs.use('jquery',function($){
+    seajs.use('jQuery',function($){
         $(function(){
             alert("main.jsp");
         });

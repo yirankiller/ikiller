@@ -5,6 +5,7 @@
  */
 seajs.config({
     alias: {
-        "jquery" : "./javascript/seaJsJQuery/1.7.2/jquery.js"
+        "jQuery" : "/javascript/seaJsJQuery/1.7.2/jquery.js" ,
+        "jQueryUI.tabs" : "/javascript/seaJsJQuery/UI/1.8.21/jquery.ui.tabs.js"
     }
 });
