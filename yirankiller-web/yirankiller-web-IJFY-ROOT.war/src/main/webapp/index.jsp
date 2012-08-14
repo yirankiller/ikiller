@@ -7,8 +7,8 @@
 <head>
     <title>I Just for you </title>
 </head>
-<script src="./javascript/jsLoader/seaJs/sea.js" ></script>
-<script src="./javascript/jsLoader/seaJs/seaJsConfig.js" ></script>
+<script src="/javascript/jsLoader/seaJs/sea.js" ></script>
+<script src="/javascript/jsLoader/seaJs/seaJsConfig.js" ></script>
 
 <body>
 
