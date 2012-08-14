@@ -42,12 +42,6 @@
                 <version>${pom.version}</version>
                 <scope>compile</scope>
             </dependency>
-            <dependency>
-                <groupId>apache-log4j</groupId>
-                <artifactId>log4j</artifactId>
-                <version>1.2.14</version>
-                <scope>provided</scope>
-            </dependency>
         </dependencies>
     </dependencyManagement>
 
