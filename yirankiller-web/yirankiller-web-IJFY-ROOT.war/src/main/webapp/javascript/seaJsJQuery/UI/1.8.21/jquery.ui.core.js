@@ -322,5 +322,5 @@ define([], function() { return function($) {
             }
         });
 
-    })( jQuery );
+    })( $ );
 }});

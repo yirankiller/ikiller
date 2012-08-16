@@ -3,9 +3,11 @@
  * Date: 8/14/12
  * Version: 1.0
  */
-define([], function() { return function($) {
+define([], function(require,exp,module) {
+    var $ = require("jQuery");
     require('/javascript/seaJsJQuery/UI/1.8.21/jquery.ui.core')($);
     require('/javascript/seaJsJQuery/UI/1.8.21/jquery.ui.widget')($);
+    return function($) {
 
 
     /*!
@@ -764,5 +766,5 @@ define([], function() { return function($) {
             }
         });
 
-    })( jQuery );
+    })( $ );
 }});
