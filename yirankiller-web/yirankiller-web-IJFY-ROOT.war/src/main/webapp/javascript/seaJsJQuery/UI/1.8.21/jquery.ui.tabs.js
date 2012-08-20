@@ -7,8 +7,8 @@ define(function(require) { return function($) {
     //依赖jquery.ui.core.js 和 jquery.ui.widget.js and css.
     require('/javascript/seaJsJQuery/UI/1.8.21/jquery.ui.core')($);
     require('/javascript/seaJsJQuery/UI/1.8.21/jquery.ui.widget')($);
-    require('/css/jQueryUI/jquery.ui.tabs.common.css');
-    require('/css/jQueryUI/jquery.ui.all.css');
+    require('/css/jQueryUI/base/jquery.ui.tabs.common.css');
+    require('/css/jQueryUI/purple-1.8.23/jquery.ui.all.css');
 
     /*!
      * jQuery UI Tabs 1.8.21
