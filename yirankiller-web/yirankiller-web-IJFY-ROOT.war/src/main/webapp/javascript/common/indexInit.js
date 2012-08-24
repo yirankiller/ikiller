@@ -6,5 +6,16 @@
 define(function(require,exports,module){
     var $ = require("jQuery");
     require('jQueryUI.tabs')($);
-    exports
+    require("/css/common/tabCommon.css");
+    module.exports = {
+        init : function(){
+            $(function(){
+                $( "#index-tabs" ).tabs({
+                    fx : {
+                        opacity : 'toggle' ,
+                        duration : 100    }
+                });
+            });
+        }
+    }
 });
