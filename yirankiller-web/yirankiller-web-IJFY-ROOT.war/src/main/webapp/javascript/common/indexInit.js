@@ -5,16 +5,11 @@
  */
 define(function(require,exports,module){
     var $ = require("jQuery");
-    require('jQueryUI.tabs')($);
-    require("/css/common/tabCommon.css");
+    require("../../css/common/indexTest.css");
     module.exports = {
         init : function(){
             $(function(){
-                $( "#index-tabs" ).tabs({
-                    fx : {
-                        opacity : 'toggle' ,
-                        duration : 100    }
-                });
+
             });
         }
     }
