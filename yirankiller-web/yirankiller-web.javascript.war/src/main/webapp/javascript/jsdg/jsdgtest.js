@@ -351,7 +351,8 @@ return x + y + z;
 }
 f(1)
 */
-    //Higher order function 
+    //Higher order function  8.8.2
+    /*
     function not(f) {
         return function() {// Return a new function
 		var result = f.apply(this, arguments); // that calls f
@@ -367,17 +368,52 @@ f(1)
         return function() {
             // We use call for f because we're passing a single value and
             // apply for g because we're passing an array of values.
+            alert(Array.prototype.join.call(arguments,","));
             return f.call(this, g.apply(this, arguments));
         };
     }
-    var square = function(x) { return x*x; };
+    var square = function(x) {
+        return x*x;
+    };
     var sum = function(x,y) { 
 	var tmp = arguments[0]
 	return x + y;
     };
     var squareofsum = compose(square, sum);
     alert(squareofsum(2,3,5));
+    */
+    /**************/  // 8.8.4
+    // Return a memoized version of f.
+// It only works if arguments to f all have distinct string representations.
 
+/**
+* memory 
+*/
+/*
+    function memoize(f) {
+        var cache = {}; // Value cache stored in the closure.
+        return function() {
+            // Create a string version of the arguments to use as a cache key.
+            var key = arguments.length + Array.prototype.join.call(arguments,",");
+            if (key in cache) return cache[key];
+            else {
+                alert("compute");
+                return cache[key] = f.apply(this, arguments);
+            }
+        }
+    }
+    function plus(one ,two){
+        return one+two;
+    }
+    var p = memoize(plus);
+    alert(p(3,2));
+    alert(p(3,2));
+*/
+
+function Range(){
+	this.x = 3;
+}
+var r = new Range();
 });
 
 /*

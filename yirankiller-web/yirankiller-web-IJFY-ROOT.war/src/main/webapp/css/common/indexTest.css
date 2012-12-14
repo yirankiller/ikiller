@@ -29,3 +29,11 @@ body{
     font-weight:400;
     color:#454545;
 }
+.logo{
+    background: url("../../images/logo.png") no-repeat 0px 0px;
+    height: 60px;
+}
+.inner{
+    max-width: 1234px;
+    margin:0px auto;
+}
