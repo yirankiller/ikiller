@@ -409,11 +409,174 @@ f(1)
     alert(p(3,2));
     alert(p(3,2));
 */
+    /*
+	// range.js: A class representing a range of values.
+	// This is a factory function that returns a new range object.
+	function range(from, to) {
+		// Use the inherit() function to create an object that inherits from the
+		// prototype object defined below. The prototype object is stored as
+		// a property of this function, and defines the shared methods (behavior)
+		// for all range objects.
+		var r = inherit(range.methods);
+		// Store the start and end points (state) of this new range object.
+		// These are noninherited properties that are unique to this object.
+		r.from = from;
+		r.to = to;
+		// Finally return the new object
+		return r;
+	}
+	
+	// This prototype object defines methods inherited by all range objects.
+	range.methods = {
+		// Return true if x is in the range, false otherwise
+		// This method works for textual and Date ranges as well as numeric.
+		includes: function(x) { return this.from <= x && x <= this.to; },
+		// Invoke f once for each integer in the range.
+		// This method works only for numeric ranges.
+		foreach: function(f) {
+			for(var x = Math.ceil(this.from); x <= this.to; x++){ 
+				console.log(x);
+			}
+		},
+		// Return a string representation of the range
+		toString: function() { return "(" + this.from + "..." + this.to + ")"; }
 
-function Range(){
-	this.x = 3;
-}
-var r = new Range();
+	};
+	// Here are example uses
+	var r = range(1,3);
+	r.includes(2);
+	r.foreach(console.log);
+	//console.log(r);
+
+
+
+    // range2.js: Another class representing a range of values.
+    // This is a constructor function that initializes new Range objects.
+    // Note that it does not create or return the object. It just initializes this.
+
+    function Range(from, to) {
+    // Store the start and end points (state) of this new range object.
+    // These are noninherited properties that are unique to this object.
+        this.from = from;
+        this.to = to;
+    }
+    // All Range objects inherit from this object.
+    // Note that the property name must be "prototype" for this to work.
+    Range.prototype = {
+    // Return true if x is in the range, false otherwise
+    // This method works for textual and Date ranges as well as numeric.
+        includes: function(x) { return this.from <= x && x <= this.to; },
+    // Invoke f once for each integer in the range.
+    // This method works only for numeric ranges.
+        foreach: function(f) {
+            for(var x = Math.ceil(this.from); x <= this.to; x++) console.log(x);
+        },
+    // Return a string representation of the range
+        toString: function() { return "(" + this.from + "..." + this.to + ")"; }
+    };
+    // Here are example uses of a range object
+    var r = new Range(1,3);
+    // Create a range object
+    r.includes(2);
+    // => true: 2 is in the range
+    r.foreach(console.log);
+    // Prints 1 2 3
+    console.log(r);
+    // Prints (1...3)
+    */
+
+
+
+
+
+
+
+
+    /*
+    var extend = (function() { // Assign the return value of this function
+// First check for the presence of the bug before patching it.
+        for(var p in {toString:null}) {
+// If we get here, then the for/in loop works correctly and we return
+// a simple version of the extend() function
+            return function extend(o) {
+                for(var i = 1; i < arguments.length; i++) {
+                    var source = arguments[i];
+                    for(var prop in source) o[prop] = source[prop];
+                }
+                return o;
+            };
+        }
+    });
+    */
+
+    /*
+    function extend(o, p) {
+        for(prop in p) {
+// For all props in p.
+            o[prop] = p[prop];
+// Add the property to o.
+        }
+        return o;
+    }
+
+
+
+
+
+
+    // A simple function for defining simple classes
+    function defineClass(constructor, // A function that sets instance properties
+                         methods,
+                         statics)
+    {
+        // Instance methods: copied to prototype
+        // Class properties: copied to constructor
+        if (methods) extend(constructor.prototype, methods);
+        if (statics) extend(constructor, statics);
+        return constructor;
+    }
+
+
+// This is a simple variant of our Range class
+    var SimpleRange =
+        defineClass(function(f,t) { this.f = f; this.t = t; capto = function(){return "some"}},
+            {
+                includes: function(x) { return this.f <= x && x <= this.t;},
+                toString: function() { return this.f + "..." + this.t; }
+            },
+            { upto: function(t) { return new SimpleRange(0, t); } });
+
+    SimpleRange.lowerto = function(){
+        return 1;
+    }
+
+    var sr = new SimpleRange();
+
+    */
+
+
+    function People(){
+        this.name = "vow";
+        People.prototype.eat = function(){
+            return "Im eating.";
+        }
+
+        var walk = function (){
+            return "Im walking";
+        }
+    }
+    People.run = function(){
+        return "Im runing";
+    }
+
+    var people = new People();
+
+
+    // This constructor has no name
+    var Complex = function(x,y) { this.r = x; this.i = y; }
+// This constructor does have a name
+    var Range = function Range3(f,t) { this.from = f; this.to = t; }
+
 });
 
 /*
