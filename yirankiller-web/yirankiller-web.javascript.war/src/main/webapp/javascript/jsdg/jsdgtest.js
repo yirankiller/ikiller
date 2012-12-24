@@ -554,7 +554,7 @@ f(1)
 
     */
 
-
+    /*
     function People(){
         this.name = "vow";
         People.prototype.eat = function(){
@@ -576,6 +576,63 @@ f(1)
     var Complex = function(x,y) { this.r = x; this.i = y; }
 // This constructor does have a name
     var Range = function Range3(f,t) { this.from = f; this.to = t; }
+
+    */
+    function A(){
+        this.a = 2;
+    }
+    function B(){
+        this.b=1;
+    }
+    B.prototype = inherit(A.prototype);
+
+	/*
+ * This function returns a subclass of specified Set class and overrides 
+ * the add() method of that class to apply the specified filter.
+ */
+function filteredSetSubclass(superclass, filter) {
+    var constructor = function() {          // The subclass constructor
+        superclass.apply(this, arguments);  // Chains to the superclass
+    };
+    var proto = constructor.prototype = inherit(superclass.prototype);
+    proto.constructor = constructor;
+    proto.add = function() {
+        // Apply the filter to all arguments before adding any
+        for(var i = 0; i < arguments.length; i++) {
+            var v = arguments[i];
+            if (!filter(v)) throw("value " + v + " rejected by filter");
+        }
+        // Chain to our superclass add implementation
+        superclass.prototype.add.apply(this, arguments);
+    };
+    return constructor;
+}
+
+function Set() {          // This is the constructor
+    this.values = {};     // The properties of this object hold the set
+    this.n = 0;           // How many values are in the set
+    this.add.apply(this, arguments);  // All arguments are values to add
+}
+
+// Add each of the arguments to the set.
+Set.prototype.add = function() {
+    for(var i = 0; i < arguments.length; i++) {  // For each argument
+        var val = arguments[i];                  // The value to add to the set
+        var str = Set._v2s(val);                 // Transform it to a string
+        if (!this.values.hasOwnProperty(str)) {  // If not already in the set
+            this.values[str] = val;              // Map string to value
+            this.n++;                            // Increase set size
+        }
+    }
+    return this;                                 // Support chained method calls
+};
+
+
+// Define a set class that holds strings only
+var StringSet = filteredSetSubclass(Set,function(x) {return typeof x==="string";});
+
+
+
 
 });
 
