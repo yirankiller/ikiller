@@ -6,10 +6,181 @@
 </head>
 <link href="../css/logTheme.css" rel="stylesheet" type="text/css" />
 <script src="../jquery/core/jquery-1.7.1.js"></script>
-<script src="../javascript/Log.js"></script>
-<script src="../javascript/jsdg/jsdgtest.js"></script>
+<script src="../javascript/Log.js" ></script>
+<script src="../javascript/jsdg/jsdgtest.js" ></script>
 
-<script language="javascript">
+<script language="javascript" type="application/javascript; version=1.7">
+/*
+let [x,y] = [1,2];
+[x,y] = [x+1,y+1];
+[x,y] = [y,x];
+console.log([x,y]);
+
+// A nested data structure: an object that contains an array of objects
+let data = {
+name: "destructuring assignment",
+type: "extension",
+impl: [{engine: "spidermonkey", version: 1.7},
+{engine: "rhino", version: 1.7}]
+};
+// Use destructuring assignment to extract four values from the data structure
+let ({name:feature, impl: [{engine:impl1, version:v1},{engine:impl2}]} = data) {
+console.log(feature); // Prints "destructuring assignment"
+console.log(impl1);
+// Prints "spidermonkey"
+console.log(v1);
+// Prints 1.7
+console.log(impl2);
+// Prints "rhino"
+}
+*/
+/*
+// Return an iterable object that represents an inclusive range of numbers
+function range(min,max) {
+return {
+// Return an object representing a range.
+get min() { return min; },
+// The range's bounds are immutable.
+get max() { return max; },
+// and stored in the closure.
+includes: function(x) {
+// Ranges can test for membership.
+return min <= x && x <= max;
+},
+toString: function() {
+// Ranges have a string representation.
+return "[" + min + "," + max + "]";
+},
+__iterator__: function() {
+// The integers in a range are iterable.
+let val = Math.ceil(min); // Store current position in closure.
+return {
+// Return an iterator object.
+next: function() {
+// Return next integer in the range.
+if (val > max)
+// If we're past the end then stop.
+throw StopIteration;
+return val++;
+// Otherwise return next and increment.
+}
+};
+}
+};
+}
+// Here's how we can iterate over a range:
+for(let i in range(1,10)) console.log(i); // Prints numbers from 1 to 10
+
+
+
+
+
+o = {x:1, y:2}
+Object.prototype.z = 3;
+for(p in o) console.log(p);
+for(p in Iterator(o, true)) console.log(p);
+
+// A generator function that yields the Fibonacci sequence
+function fibonacci() {
+let x = 0, y = 1;
+while(true) {
+yield y;
+[x,y] = [y,x+y];
+}
+}
+// Invoke the generator function to obtain a generator.
+f = fibonacci();
+// Use the generator as an iterator, printing the first 10 Fibonacci numbers.
+for(let i = 0; i < 10; i++) console.log(f.next());
+*/
+
+//-------------------------
+/*
+// A generator to yield the lines of the string s one at a time.
+// Note that we don't use s.split(), because that would process the entire
+// string at once, allocating an array, and we want to be lazy instead.
+function eachline(s) {
+    let p;
+    while((p = s.indexOf('\n')) != -1) {
+        yield s.substring(0,p);
+        s = s.substring(p+1);
+    }
+    if (s.length > 0) yield s;
+}
+
+// A generator function that yields f(x) for each element x of the iterable i
+function map(i, f) {
+    for(let x in i) yield f(x);
+}
+
+// A generator function that yields the elements of i for which f(x) is true
+function select(i, f) {
+    for(let x in i) {
+        if (f(x)) yield x;
+    }
+}
+
+// Start with a string of text to process
+let text = " #comment \n  \n  hello \nworld\n quit \n unreached \n";
+
+// Now build up a pipeline of generators to process it.
+// First, break the text into lines
+let lines = eachline(text);
+// Next, trim whitespace from the start and end of each line
+let trimmed = map(lines, function(line) { return line.trim(); });
+// Finally, ignore blank lines and comments
+let nonblank = select(trimmed, function(line) {
+    return line.length > 0 && line[0] != "#"
+});
+
+// Now pull trimmed and filtered lines from the pipeline and process them,
+// stopping when we see the line "quit".
+for (let line in nonblank) {
+    if (line === "quit") break;
+    console.log(line);
+}
+
+*/
+
+//------------------------------------
+
+// A generator function that counts from an initial value.
+// Use send() on the generator to specify an increment.
+// Use throw("reset") on the generator to reset to the initial value.
+// This is for example only; this use of throw() is bad style.
+function counter(initial) {
+let nextValue = initial;
+// Start with the initial value
+while(true) {
+try {
+let increment = yield nextValue; // Yield a value and get increment
+console.log(increment);
+if (increment)
+// If we were sent an increment...
+nextValue += increment;
+// ...then use it.
+else nextValue++;
+// Otherwise increment by 1
+}
+catch (e) {
+// We get here if someone calls
+if (e==="reset")
+// throw() on the generator
+nextValue = initial;
+else throw e;
+}
+}
+}
+let c = counter(10);
+console.log(c.next());
+console.log("new line");
+console.log(c.next());
+console.log("new line");
+console.log(c.next());
+console.log("new line");
+console.log(c.send(2));
+console.log("new line");
+console.log(c.throw("reset"));
 
 </script>
 <body>
