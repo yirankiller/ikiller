@@ -26,7 +26,7 @@ impl: [{engine: "spidermonkey", version: 1.7},
 // Use destructuring assignment to extract four values from the data structure
 let ({name:feature, impl: [{engine:impl1, version:v1},{engine:impl2}]} = data) {
 console.log(feature); // Prints "destructuring assignment"
-console.log(impl1);
+console.log(impl1);	
 // Prints "spidermonkey"
 console.log(v1);
 // Prints 1.7
