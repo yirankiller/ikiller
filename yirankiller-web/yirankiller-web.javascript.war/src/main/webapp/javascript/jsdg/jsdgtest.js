@@ -773,8 +773,7 @@ while((result = pattern.exec(text)) != null) {
 }
 
 */
-const pi = 3.14;
-alert(pi);
+
 
 
 
