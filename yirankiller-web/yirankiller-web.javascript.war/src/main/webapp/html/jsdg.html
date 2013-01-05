@@ -182,11 +182,33 @@ console.log(c.send(2));
 console.log("new line");
 console.log(c.throw("reset"));
 
+
+
+
+</script>
+<script>
+	//  14.2Test----------------------------------------
+function f142Test(){
+	//document.location.assign("canvas.html");
+	//document.location.replace("canvas.html");
+	//document.location = "http://www.baidu.com";
+	//document.location.reload();
+	//document.location.search = "?page=3";
+	// -------------------
+/*
+	var w = window.open();
+	w.alert("About to visit http://www.baidu.com");
+	w.location = "http://www.baidu.com";
+	alert(w.opener === window);
+*/
+}
 </script>
 <body>
 <div id="log"></div>
 
 <a href="javascript: window.open('about:blank');">Open Window</a>
+<button onclick="f142Test()">14.2Test</button>
+<iframe id="f1" border="0"></iframe>
 
 </body>
 </html>
