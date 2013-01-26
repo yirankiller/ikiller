@@ -7,14 +7,6 @@ define(function(require,exp,module){
     var $ = require("jQuery");
     require('jQueryUI.tabs')($);
     require('/css/jquery.ui.tabs.common.css');
-    exp.tabs(
-        $(function(){
-        $( "#tabs" ).tabs({
 
-            fx : {
-                opacity : 'toggle' ,
-                duration : 100    }
-        });
-    }));
 });
 
