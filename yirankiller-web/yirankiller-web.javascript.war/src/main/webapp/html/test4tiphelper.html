@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>I Just for you </title>
+</head>
+<script src="../jquery/core/jquery-1.7.1.js" type="text/javascript"></script>
+<script src="../javascript/tip4helper.js" type="text/javascript"></script>
+<script>
+	function clickbutton(){
+		$("button").hide();
+	}
+
+</script>
+<style>
+
+    div.tip{
+        position: absolute;
+        border: 1;
+        background-color: yellow;
+        display: none;
+        border-radius: 12px;
+    }
+    div.tip ul{
+        padding-left: 12px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        list-style: none;
+        line-height: 18px;
+    }
+    div.tip ul li{
+        padding-left: 10px;
+        margin-left: -13px;
+    }
+
+</style>
+<body>
+    <div id="body">
+        <header class="c-header">
+            <div class="inner">
+                <div class="logo">ff</div>
+            </div>
+        </header>
+        <div>
+		<button onclick="clickbutton()">OOOk</button>
+		<input type="text" />
+	</div>
+        <footer></footer>
+    </div>
+</body>
+</html>
