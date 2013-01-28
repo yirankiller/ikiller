@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+</head>
+<style title="my">
+
+</style>
+<script src="../jquery/core/jquery-1.7.1.js"></script>
+<script>
+$(function(){
+
+	$(".first").bind({
+		mouseover: function() { $(this).stop().fadeTo(300, 1.0); },
+		mouseout: function() { $(this).stop().fadeTo(300, 0.5); }
+	});
+
+	$(".second").bind({
+		mouseover: function() { $(this).stop(true).delay(100).fadeTo(300, 1.0); },
+		mouseout: function() { $(this).stop(true).fadeTo(300, 0.5); }
+	});
+
+});
+
+
+</script>
+<body>
+<img src="http://www.baidu.com/img/baidu_sylogo1.gif" class="first"/>
+<img src="http://www.baidu.com/img/baidu_sylogo1.gif" class="second"/>
+</body>
+
+</html>
