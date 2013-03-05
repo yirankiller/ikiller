@@ -8,23 +8,39 @@ $(function(){
 });
 var tips = [
     "B401",
+    ["ZhongGuo",[
+        "C"
+    ]],
     "Chang Cheng",
     "Beijing"
 ];
 
 function iKillerTip() {
-    var divTip = $("<div class='tip'></div>");
-    divTip.append("<ul />");
-    $("body").append(divTip);
+
+
     $("input:text").dblclick(function(eved){
+        showTip(this,tips);
+    });
+
+    function showTip(srcEle,dataArr){
+        var divTip = $("<div class='tip'></div>");
+        divTip.append("<ul />");
         divTip.find("ul").empty();
-        $.each(tips,function(ind,ele){
-            divTip.find("ul").append($("<li />").append(ele));
+        $.each(dataArr,function(ind,ele){
+            var liData = ele;
+            if(jQuery.isArray(ele)){
+                liData = ele[0];
+            }
+            divTip.find("ul").append($("<li />").append(liData));
         });
         initLi();
-        adapterSize(this);
-        divTip.toggle();
-    });
+        adapterSizeToDownLeft(srcEle,divTip);
+        $("body").append(divTip);
+        $(srcEle).blur(function(){
+            divTip.hide();
+        });
+        divTip.show();
+    }
     function initLi(){
         $("div.tip ul li").each(function(){
             $(this).mouseover(function(){
@@ -34,9 +50,14 @@ function iKillerTip() {
             });
         })
     }
-    function adapterSize(ele){
+    function adapterSizeToDownLeft(ele,divTip){
         divTip.css("top",$(ele).offset().top+$(ele).outerHeight());
         divTip.css("left",$(ele).offset().left);
+        divTip.width($(ele).outerWidth());
+    }
+    function adapterSizeToTopRight(ele){
+        divTip.css("top",$(ele).offset().top);
+        divTip.css("left",$(ele).offset().left + $(ele).outerWidth());
         divTip.width($(ele).outerWidth());
     }
 }
