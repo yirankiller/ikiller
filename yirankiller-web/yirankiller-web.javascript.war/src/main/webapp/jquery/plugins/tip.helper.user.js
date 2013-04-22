@@ -69,6 +69,10 @@ function iKillerTip() {
         });
 }
 
+function reload(){
+    "http://bj.jiehun.com.cn"
+}
+
 unsafeInvoke(iKillerTip);
 
 

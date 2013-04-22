@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>img{ height: 100px; float: left; }</style>
+	<script src="../jquery/core/jquery-1.7.1.js"></script>
+</head>
+<script>
+	$(function(){
+        $("#msg div").hide();
+        $("#trigger").click(function(){
+            $("#msg div").show();
+        });
+        $("#hide").click(function(){
+            $("#trigger").trigger("click");
+        });
+    });
+	
+</script>
+<body>
+	<div id="msg">
+
+        <div >show me</div>
+	</div>
+    <button id="trigger">Trigger</button>
+    <button id="hide">Hide</button>
+
+</body>
+</html>
