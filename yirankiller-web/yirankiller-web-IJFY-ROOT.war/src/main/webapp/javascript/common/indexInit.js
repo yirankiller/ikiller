@@ -4,13 +4,10 @@
  * Version: 1.0
  */
 define(function(require,exports,module){
-    var $ = require("jQuery");
+    var $ = require('jQuery');
     require("../../css/common/indexTest.css");
-    module.exports = {
-        init : function(){
-            $(function(){
 
-            });
-        }
-    }
+    $(function(){
+        $(".logo").html('I just for you');
+    });
 });

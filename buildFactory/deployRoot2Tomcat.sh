@@ -12,4 +12,4 @@ echo "copy ..."
 cp -vf ./yirankiller-web/yirankiller-web-IJFY-ROOT.war/target/ROOT.war ${TomcatHome}/webapps
 echo "start tomcat"
 cd ${TomcatHome}/bin
-catalina.sh run
+sh catalina.sh run

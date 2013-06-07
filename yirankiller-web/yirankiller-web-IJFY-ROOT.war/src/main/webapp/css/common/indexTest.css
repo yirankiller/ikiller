@@ -23,15 +23,15 @@ footer,header,hgroup,menu,nav,section {
     display:block;
 }
 body{
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: 'Gloria Hallelujah', Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 24px;
     font-weight:400;
     color:#454545;
 }
 .logo{
-    background: url("../../images/logo.png") no-repeat 0px 0px;
     height: 60px;
+    font-family: 'Gloria Hallelujah', Arial, Helvetica, sans-serif;
 }
 .inner{
     max-width: 1234px;
