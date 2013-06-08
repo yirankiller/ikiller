@@ -1,3 +1,4 @@
+define(function(require){
 /*!
  * jQuery JavaScript Library v2.0.2
  * http://jquery.com/
@@ -8840,3 +8841,5 @@
     }
 
 })( window );
+    return $.noConflict(true)
+});

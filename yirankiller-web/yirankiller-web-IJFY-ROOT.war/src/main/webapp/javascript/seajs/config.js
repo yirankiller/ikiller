@@ -4,18 +4,13 @@
  * Version: 1.0
  */
 seajs.config({
-    plugins: ['shim' , 'text'],
+    plugins: ['text'],
     debug : true,
     vars : {
         'jqueryV' : '2.0.2'
     },
     alias: {
-        'jQuery' : {
-            src : '/javascript/jquery/{jqueryV}/jquery' ,
-            exports : function (){
-                return jQuery.noConflict(true);
-            }
-        }
-
+        'jQuery' : '/javascript/jquery/{jqueryV}/jquery',
+        'bootstrap' : '/bootstrap/2.3.2/js/bootstrap'
     }
 });

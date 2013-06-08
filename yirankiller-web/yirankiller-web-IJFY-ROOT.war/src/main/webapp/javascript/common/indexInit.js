@@ -5,9 +5,5 @@
  */
 define(function(require,exports,module){
     var $ = require('jQuery');
-    require("../../css/common/indexTest.css");
-
-    $(function(){
-        $(".logo").html('I just for you');
-    });
+    require('bootstrap');
 });
