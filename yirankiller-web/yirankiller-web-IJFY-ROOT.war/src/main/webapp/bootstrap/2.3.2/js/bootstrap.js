@@ -18,7 +18,7 @@ define(function(require){
  * limitations under the License.
  * ========================================================== */
     require('../css/bootstrap.css');
-    $ = require('jQuery');
+    var $ = require('jQuery');
 
 !function ($) {
 
