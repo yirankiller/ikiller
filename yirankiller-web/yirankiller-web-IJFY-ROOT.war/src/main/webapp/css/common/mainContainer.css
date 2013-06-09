@@ -1,0 +1,17 @@
+.work-container{
+    top: 168px;
+    position: relative;
+    left: 300px;
+    width: 1000px;
+}
+.main-container{
+    position: relative;
+    margin-left: 100px;
+}
+.main-container .container .thead tr td{
+    text-align: center;
+}
+.main-container .container .theader td{
+    font-weight: bold;
+    text-align: center;
+}

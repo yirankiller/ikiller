@@ -7,6 +7,8 @@ define(function(require,exports,module){
     var $ = require('jQuery');
     require('bootstrap');
     require('/css/common/indexNav.css');
+    require('/css/common/mainContainer.css');
+    require('/css/font/gloria-hallelujah/gloria-hallelujah.css');
 
     function initIndexNav(){
         var $indexNavLabel = $("#index-nav-label");
@@ -17,7 +19,7 @@ define(function(require,exports,module){
         }).click(function(){
                 $(".index-nav .index-nav-menulist li").removeClass('current-cat');
                 $(this).addClass('current-cat');
-            });
+        });
         $('.index-nav-menulist').mouseleave(function(){
             if($('.current-cat',this).length){
                 $indexNavLabel.animate({
@@ -30,6 +32,8 @@ define(function(require,exports,module){
             }
         });
     }
+
+
     $(function(){
         initIndexNav();
     });

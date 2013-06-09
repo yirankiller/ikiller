@@ -50,12 +50,7 @@ a:active {color: #000000}   /* 被选择的链接 */
 
 
 /*    top navigate  , customize*/
-
-.container .nav-collapse .nav li {
-    font-family: 'Gloria Hallelujah', Arial, Helvetica, sans-serif;
-}
-
-.container .brand {
+.navbar .container {
     font-family: 'Gloria Hallelujah', Arial, Helvetica, sans-serif;
 }
 
