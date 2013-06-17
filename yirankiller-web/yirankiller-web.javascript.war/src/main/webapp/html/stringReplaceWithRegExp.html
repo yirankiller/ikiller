@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">  
+	</head>
+	<style type="text/css">  
+	</style>
+	<script src="../jquery/core/jquery-1.7.1.js" type="text/javascript"></script>
+	<script type="text/javascript" language="javascript">
+		$(function(){
+// link --  http://blog.csdn.net/cui55/article/details/7519740   http://www.jb51.net/article/20299.htm
+
+/*
+var vhtml = "<td class='{1}'>{s}</td>";
+var regx = new RegExp("\\{s\\}", 'g');
+var context = "$&amp;test:$&amp;test:";
+context = context.replace(new RegExp("\\$","g"),"$$$$");
+alert(context);
+//			s = vhtml.replace(regx,"$&amp;test:");
+//alert(s)
+*/
+var strM = "javascript is a good script language";
+ alert(strM.replace(/(javascript)\s*(is)/g,"$1 $2 fun. it $2"));
+/*
+document.write("姓名：{NAME}__".replace(/\{NAME}/g,"张剑光$&")); document.write("<br>");
+document.write("姓名：{NAME}__".replace(/\{NAME}/g,"张剑光$$")); document.write("<br>");
+document.write("姓名：{NAME}__".replace(/\{NAME}/g,"张剑光$`")); document.write("<br>");
+document.write("姓名：{NAME}__".replace(/\{NAME}/g,"张剑光$'")); document.write("<br>");
+
+var str="中华人民共和国，中华人民共和国";  
+var newstr=str.replace(/(人)/g,"<font color=red>$&</font>");  
+document.write(newstr);  
+*/
+/*
+var str="他今年22岁，她今年20岁，他的爸爸今年45岁，她的爸爸今年44岁，一共有4人"  
+function test($1){   
+  var gyear=(new Date()).getYear()-parseInt($1)+1;   
+  return $1+"("+gyear+"年出生)";   
+}   
+var reg=new RegExp("(\\d+)岁","g");   
+var newstr=str.replace(reg,test);   
+alert(str);   
+alert(newstr); 
+*/
+var str="他今年22岁，她今年20岁，他的爸爸今年45岁，她的爸爸今年44岁，一共有4人"  
+function test($1){   
+  var gyear=(new Date()).getYear()-parseInt($1)+1;   
+  return $1+"("+gyear+"年出生)";   
+}   
+var reg=new RegExp("(\\d+)岁","g");   
+var newstr=str.replace(reg,"$1 fun");   
+alert(str);   
+alert(newstr);
+		});
+	</script>  
+	<body>
+		<div id="test"></div>
+	</body>
+</html>

@@ -14,6 +14,6 @@ public class LogTest {
 
     @Test
     public void testLog(){
-        logger.info("dd");
+        System.out.println("ss");
     }
 }

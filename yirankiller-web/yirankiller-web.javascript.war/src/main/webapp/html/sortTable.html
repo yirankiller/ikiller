@@ -1,0 +1,297 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+</head>
+
+<body>
+
+<input type=text placeholder="yyyy-mm-dd" />
+<select size=1 type="select-multiple">
+	<option>a</option>
+	<option>b</option>
+	<option>c</option>
+	<option>d</option>
+	<option>e</option>
+	<option>f</option>
+	<option>g</option>
+</select>
+<a href="jsdg.html">jsdg</a>
+<div id="editor" contenteditable spellcheck style="position:fixed">
+Click to edit
+</div>
+<button onclick="link()">link</button>
+
+<div style="position: absolute; right: 0px; bottom: 0px;">absolute
+</div>
+
+
+<div style="position: absolute; top: 10px; right: 10px;
+width: 10px; height: 10px; background-color: blue">
+</div>
+
+<div style="position: absolute; left: 25%; top: 25%; width: 50%; height: 50%;
+border: 2px solid black">
+</div>
+
+
+<h1>aaaaaaaaaa</h1>
+<h2>bbbbbbbbbb</h2>
+<h3>cccccccccc</h3>
+<h3>cccccccccc</h3>
+<h4>dddddddddd</h4>
+<h5>eeeeeeeeee</h5>
+<h6>ffffffffff</h6>
+<h1>aaaaaaaaaa</h1>
+
+
+<h1>aaaaaaaaaa</h1>
+<h2>bbbbbbbbbb</h2>
+<h3>cccccccccc</h3>
+<h3>cccccccccc</h3>
+<h4>dddddddddd</h4>
+<h5>eeeeeeeeee</h5>
+<h6>ffffffffff</h6>
+<h1>aaaaaaaaaa</h1>
+<h1>aaaaaaaaaa</h1>
+<h2>bbbbbbbbbb</h2>
+<h3>cccccccccc</h3>
+<h3>cccccccccc</h3>
+<h4>dddddddddd</h4>
+<h5>eeeeeeeeee</h5>
+<h6>ffffffffff</h6>
+<h1>aaaaaaaaaa</h1>
+<h1>aaaaaaaaaa</h1>
+<h2>bbbbbbbbbb</h2>
+<h3>cccccccccc</h3>
+<h3>cccccccccc</h3>
+<h4>dddddddddd</h4>
+<h5>eeeeeeeeee</h5>
+<h6>ffffffffff</h6>
+<h1>aaaaaaaaaa</h1>
+<div id="TOC"></div>
+
+
+<br />
+<br />
+
+<div id="divdemo"> div demo</div>
+
+<br />
+<i>spandemospandemospandemospandemospandemospandemospandemospandemospandemospandemospandemosspandemospandemospandemospandemospandemopandemospandemospan<br />demospandemospandemospandemospandemospandemospandemospandemospandemodemospandemospandemospandemospandemospandemospandemospandemospandemosss sssssssssssss</i>
+<br />
+<br />
+	<table id="table1" border="1">
+<thead>
+			<th>aa</th>	<th>bb</th><th>cc</th>
+</thead>
+<tbody>
+		<tr>
+			<td>3</td>	<td>1</td><td>6</td>
+		</tr>
+		<tr>
+			<td>6</td>	<td>7</td><td>5</td>
+		</tr>
+		<tr>
+			<td>1</td>	<td>4</td><td>7</td>
+		</tr>
+</tbody>
+	</table>
+<span id="span2">ccc</span>
+<input type=checkbox />
+<iframe id="editorframe" src="about:blank"></iframe>
+<script>
+function onLoad(f) {
+	if (onLoad.loaded)
+	// If document is already loaded
+	window.setTimeout(f, 0);
+	// Queue f to be run as soon as possible
+	else if (window.addEventListener)
+	// Standard event registration method
+	window.addEventListener("load", f, false);
+	else if (window.attachEvent)
+	// IE8 and earlier use this instead
+	window.attachEvent("onload", f);
+}
+onLoad(function() {
+var editor = document.getElementById("editorframe");
+editor.contentDocument.designMode = "on";
+});
+
+function bold() { document.execCommand("bold", false, null); }
+function link() {
+var url = prompt("Enter link destination");
+if (url) document.execCommand("createlink", false, url);
+}
+
+</script>
+
+</body>
+<script >
+	// Sort the rows in first <tbody> of the specified table according to
+// the value of nth cell within each row. Use the comparator function
+// if one is specified. Otherwise, compare the values alphabetically.
+function sortrows(table, n, comparator) {
+    var tbody = table.tBodies[0]; // First <tbody>; may be implicitly created
+    var rows = tbody.getElementsByTagName("tr"); // All rows in the tbody
+    rows = Array.prototype.slice.call(rows,0);   // Snapshot in a true array
+
+    // Now sort the rows based on the text in the nth <td> element
+    rows.sort(function(row1,row2) {
+        var cell1 = row1.getElementsByTagName("td")[n];  // Get nth cell
+        var cell2 = row2.getElementsByTagName("td")[n];  // of both rows
+        var val1 = cell1.textContent || cell1.innerText; // Get text content
+        var val2 = cell2.textContent || cell2.innerText; // of the two cells
+        if (comparator) return comparator(val1, val2);   // Compare them!
+        if (val1 < val2) return -1;
+        else if (val1 > val2) return 1;
+        else return 0;
+    });
+
+    // Now append the rows into the tbody in their sorted order.
+    // This automatically moves them from their current location, so there
+    // is no need to remove them first. If the <tbody> contains any
+    // nodes other than <tr> elements, those nodes will float to the top.
+    for(var i = 0; i < rows.length; i++) tbody.appendChild(rows[i]);
+}
+
+// Find the <th> elements of the table (assuming there is only one row of them)
+// and make them clickable so that clicking on a column header sorts
+// by that column.
+function makeSortable(table) {
+    var headers = table.getElementsByTagName("th");
+    for(var i = 0; i < headers.length; i++) {
+        (function(n) {  // Nested funtion to create a local scope
+            headers[i].onclick = function() {sortrows(table, n); };
+        }(i));          // Assign value of i to the local variable n
+    }
+}
+
+makeSortable(document.getElementById("table1"));
+
+
+
+
+/**
+ * TOC.js: create a table of contents for a document.
+ * 
+ * This module registers an anonymous function that runs automatically
+ * when the document finishes loading. When it runs, the function first
+ * looks for a document element with an id of "TOC". If there is no
+ * such element it creates one at the start of the document.
+ * 
+ * Next, the function finds all <h1> through <h6> tags, treats them as
+ * section titles, and creates a table of contents within the TOC
+ * element. The function adds section numbers to each section heading
+ * and wraps the headings in named anchors so that the TOC can link to
+ * them. The generated anchors have names that begin with "TOC", so
+ * you should avoid this prefix in your own HTML.
+ * 
+ * The entries in the generated TOC can be styled with CSS. All entries have
+ * a class "TOCEntry". Entries also have a class that corresponds to the level
+ * of the section heading. <h1> tags generate entries of class "TOCLevel1", 
+ * <h2> tags generate entries of class "TOCLevel2", and so on. Section numbers
+ * inserted into headings have class "TOCSectNum".
+ *
+ * You might use this module with a stylesheet like this:
+ *
+ *   #TOC { border: solid black 1px; margin: 10px; padding: 10px; }
+ *   .TOCEntry { font-family: sans-serif; }
+ *   .TOCEntry a { text-decoration: none; }
+ *   .TOCLevel1 { font-size: 16pt; font-weight: bold; }
+ *   .TOCLevel2 { font-size: 12pt; margin-left: .5in; }
+ *   .TOCSectNum:after { content: ": "; }
+ * 
+ * That final line generates a colon and space after section numbers. To hide
+ * the section numbers, use this:
+ *   
+ *   .TOCSectNum { display: none }
+ *
+ * This module requires the onLoad() utility function.
+ **/
+onLoad(function() { // Anonymous function defines a local scope
+    // Find the TOC container element.
+    // If there isn't one, create one at the start of the document.
+    var toc = document.getElementById("TOC");
+    if (!toc) {
+        toc = document.createElement("div");
+        toc.id = "TOC";
+        document.body.insertBefore(toc, document.body.firstChild);
+    }
+
+    // Find all section heading elements
+    var headings;
+    if (document.querySelectorAll) // Can we do it the easy way?
+        headings = document.querySelectorAll("h1,h2,h3,h4,h5,h6");
+    else   // Otherwise, find the headings the hard way
+        headings = findHeadings(document.body, []);
+
+    // Recursively traverse the document body looking for headings
+    function findHeadings(root, sects) {
+        for(var c = root.firstChild; c != null; c = c.nextSibling) {
+            if (c.nodeType !== 1) continue;
+            if (c.tagName.length == 2 && c.tagName.charAt(0) == "H")
+                sects.push(c);
+            else 
+                findHeadings(c, sects);
+        }
+        return sects;
+    }
+
+    // Initialize an array that keeps track of section numbers.
+    var sectionNumbers = [0,0,0,0,0,0];
+
+    // Now loop through the section header elements we found.
+    for(var h = 0; h < headings.length; h++) {
+        var heading = headings[h];
+
+        // Skip the section heading if it is inside the TOC container.
+        if (heading.parentNode == toc) continue;
+
+        // Figure out what level heading it is.
+        var level = parseInt(heading.tagName.charAt(1));
+        if (isNaN(level) || level < 1 || level > 6) continue;
+
+        // Increment the section number for this heading level
+        // and reset all lower heading level numbers to zero.
+        sectionNumbers[level-1]++;
+        for(var i = level; i < 6; i++) sectionNumbers[i] = 0;
+
+        // Now combine section numbers for all heading levels
+        // to produce a section number like 2.3.1.
+        var sectionNumber = sectionNumbers.slice(0,level).join(".")
+
+        // Add the section number to the section header title.
+        // We place the number in a <span> to make it styleable.
+        var span = document.createElement("span");
+        span.className = "TOCSectNum";            
+        span.innerHTML = sectionNumber;                
+        heading.insertBefore(span, heading.firstChild);
+
+        // Wrap the heading in a named anchor so we can link to it.
+        var anchor = document.createElement("a");
+        anchor.name = "TOC"+sectionNumber; 
+        heading.parentNode.insertBefore(anchor, heading);
+        anchor.appendChild(heading);
+
+        // Now create a link to this section.
+        var link = document.createElement("a");
+        link.href = "#TOC" + sectionNumber; // Link destination
+        link.innerHTML = heading.innerHTML; // Link text is same as heading
+
+        // Place the link in a div that is styleable based on the level.
+        var entry = document.createElement("div");
+        entry.className = "TOCEntry TOCLevel" + level; 
+        entry.appendChild(link);
+
+        // And add the div to the TOC container.
+        toc.appendChild(entry);
+    }
+	
+});
+//document.getElementById("span2").scrollIntoView(true);
+//setInterval(function() {scrollBy(0,1)}, 20);
+
+</script>
+</html>

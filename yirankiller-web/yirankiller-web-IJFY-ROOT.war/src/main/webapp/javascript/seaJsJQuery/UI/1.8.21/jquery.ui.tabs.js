@@ -3,6 +3,7 @@
  * Date: 8/14/12
  * Version: 1.0
  */
+<<<<<<< HEAD
 define([], function() { return function($) {
     /*
     var $ = require("jQuery");
@@ -11,6 +12,14 @@ define([], function() { return function($) {
     */
     return function($) {
 
+=======
+define(function(require) { return function($) {
+    //依赖jquery.ui.core.js 和 jquery.ui.widget.js and css.
+    require('/javascript/seaJsJQuery/UI/1.8.21/jquery.ui.core')($);
+    require('/javascript/seaJsJQuery/UI/1.8.21/jquery.ui.widget')($);
+    require('/css/jQueryUI/base/jquery.ui.tabs.common.css');
+    require('/css/jQueryUI/purple-1.8.23/jquery.ui.all.css');
+>>>>>>> 95719fb4016ef3fedbe4b84eeb61fd212db68bd0
 
     /*!
      * jQuery UI Tabs 1.8.21
