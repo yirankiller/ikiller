@@ -8,9 +8,10 @@ define(function(require,exports,module){
     require('bootstrap');
     require('/css/common/indexNav.css');
     require('/css/common/mainContainer.css');
+    // gloria-hallelujah font.
     require('/css/font/gloria-hallelujah/gloria-hallelujah.css');
 
-    function initIndexNav(){
+    function initIndexNavLeft(){
         var $indexNavLabel = $("#index-nav-label");
         $(".index-nav .index-nav-menulist li").mouseenter(function(){
             $indexNavLabel.animate({
@@ -33,8 +34,17 @@ define(function(require,exports,module){
         });
     }
 
+    function initIndexNavTop(){
+        $("#nav-topTabs a:first").tab('show');
+        $('#nav-topTabs a').click(function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+        })
+    }
+
 
     $(function(){
-        initIndexNav();
+        initIndexNavTop();
+        initIndexNavLeft();
     });
 });
