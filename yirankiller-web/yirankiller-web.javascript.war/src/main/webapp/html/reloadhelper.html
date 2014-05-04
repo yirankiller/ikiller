@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>I Just for you </title>
+</head>
+<script src="../jquery/core/jquery-1.7.1.js" type="text/javascript"></script>
+<script>
+    var DEFAULT_RELOAD_TIME = "defaultReloadTime";
+    var DEFAULT_RELOAD_TIME_VAL = 5;
+    var RELOAD = "reload";
+    var RELOAD_CURRENTPAGE = "reloadCurrentPage";
+    window.reloadInterval = null;
+    var TIMES = "times";
+    $(function(){
+        var divTip = $("<div class='tip' style='left:-130px;width:150px;height:95px;position:fixed;padding:10px 0 0 5px;background-color: #ffc0cb;border-radius: 12px'></div>");
+        divTip.append("<div class='reloadTimeDiv' style='width:60px;height:20px;border-radius: 12px'/>");
+        divTip.append("<div class='reloadButtonDiv' style='width:60px;height:20px;border-radius: 12px;margin-top: 10px;'/>");
+        divTip.append("<div class='reloadTimesDiv' style='width:150px;height:20px;border-radius: 12px;margin-top: 10px;font-size: 13px'/>");
+        divTip.find(".reloadTimeDiv").append("<input type='text' defaultValue='5' style='width:55px;border-radius: 5px'/>");
+        divTip.find(".reloadButtonDiv").append("<input type='button' value='Start' style='width: 60px;border-radius: 5px;background-color: #add8e6;border-color: #add8e6'/>");
+        divTip.find(".reloadTimesDiv").append("<label>Reload Times : </label><label class='reloadTimes'>0</label>");
+        divTip.mouseenter(function(){
+            $(this).animate({'left':'5px'});
+        }).mouseleave(function(){
+                    $(this).animate({'left':'-130px'},{duration:300});
+                });
+        $("body").prepend(divTip);
+
+
+        if(window.localStorage.getItem(DEFAULT_RELOAD_TIME) === null){
+            $("div.tip .reloadTimeDiv input").val(DEFAULT_RELOAD_TIME_VAL);
+        }else{
+            $("div.tip .reloadTimeDiv input").val(window.localStorage.getItem(DEFAULT_RELOAD_TIME));
+        }
+
+        $(divTip).find(".reloadButtonDiv input").click(function(){
+            var textVal = $(this).val();
+            if(textVal === "Start"){
+                if((window.localStorage.getItem(RELOAD_CURRENTPAGE) === null || window.localStorage.getItem(RELOAD_CURRENTPAGE) === window.location.href)){
+                    window.localStorage.setItem(RELOAD,"yes");
+                    var dafaultReloadTime = $("div.tip .reloadTimeDiv input").val();
+                    setTimeout(function(){
+                        window.location.reload(true);
+                    }, dafaultReloadTime * 1000);
+                    window.localStorage.setItem(RELOAD_CURRENTPAGE,window.location.href);
+                    if(window.localStorage.getItem(TIMES) === null){
+                        window.localStorage.setItem(TIMES,0);
+                    } else{
+                        $(divTip).find(".reloadTimesDiv .reloadTimes").text(window.localStorage.getItem(TIMES));
+                        window.localStorage.setItem(TIMES,(Number(window.localStorage.getItem(TIMES)) +1));
+                    }
+                    $(this).val('Stop');
+                    window.localStorage.setItem(DEFAULT_RELOAD_TIME, dafaultReloadTime);
+                }else{
+                    alert("Another is reloading.");
+                }
+
+            }else if(textVal === 'Stop'){
+                window.localStorage.removeItem(RELOAD);
+                window.localStorage.removeItem(RELOAD_CURRENTPAGE);
+                window.localStorage.removeItem(TIMES);
+                $(this).val('Start');
+            }
+        });
+
+        function init(){
+            if(window.localStorage.getItem(RELOAD) === "yes" && (window.localStorage.getItem(RELOAD_CURRENTPAGE) === null || window.localStorage.getItem(RELOAD_CURRENTPAGE) === window.location.href)){
+                var dafaultReloadTime = $("div.tip .reloadTimeDiv input").val();
+                setTimeout(function(){
+                    window.location.reload(true);
+                }, dafaultReloadTime * 1000);
+                if(window.localStorage.getItem(TIMES) === null){
+                    window.localStorage.setItem(TIMES,0);
+                } else{
+                    $(divTip).find(".reloadTimesDiv .reloadTimes").text(window.localStorage.getItem(TIMES));
+                    window.localStorage.setItem(TIMES,(Number(window.localStorage.getItem(TIMES)) +1));
+                }
+                $("div.tip .reloadButtonDiv input").val("Stop");
+            }
+        }
+
+        init();
+    });
+
+</script>
+<style>
+
+    
+
+</style>
+<body>
+    
+</body>
+</html>

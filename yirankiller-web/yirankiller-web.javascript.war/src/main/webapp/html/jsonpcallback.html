@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>img{ height: 100px; float: left; }</style>
+<script src="../jquery/core/jquery-1.7.1.js"></script>
+</head>
+<body>
+<div id="images">
+
+
+</div>
+<script>
+$(function(){
+	$.ajax({
+		url:"http://api.flickr.com/services/feeds/photos_public.gne",
+		jsonp:"jsoncallback",
+		//jsonpCallback:"cb",
+		data:{
+	     		tags: "cat",
+	    		tagmode: "any",
+	      		format: "json"
+	   	},
+		dataType:"jsonp",
+		success:function(data){
+			$.each(data.items, function(i,item){
+				$("<img/>").attr("src", item.media.m).appendTo("#images");
+				if ( i == 3 ) return false;
+			});
+		}
+	});
+});
+ function cb(){alert(2)};
+
+</script>
+
+
+</body>
+</html>

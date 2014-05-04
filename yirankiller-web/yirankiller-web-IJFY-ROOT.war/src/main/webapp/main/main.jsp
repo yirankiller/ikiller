@@ -7,7 +7,7 @@
 <head>
     <title>I Just for you </title>
 </head>
-<script src="/javascript/jsLoader/seaJs/sea.js"></script>
+<script src="/javascript/jsLoader/seaJs/1.2.0/sea.js"></script>
 <script src="/javascript/jsLoader/seaJs/seaJsConfig.js"></script>
 <script type="text/javascript">
     seajs.use('jQuery',function($){

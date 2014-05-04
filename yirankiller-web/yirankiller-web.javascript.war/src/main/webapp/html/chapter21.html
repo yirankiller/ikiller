@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<script src="../jquery/core/jquery-1.7.1.js"></script>
+</head>
+<script>
+	function polygon(c,n,x,y,r,angle,counterclockwise) {
+    angle = angle || 0;
+    counterclockwise = counterclockwise || false;
+    c.moveTo(x + r*Math.sin(angle),  // Begin a new subpath at the first vertex
+             y - r*Math.cos(angle)); // Use trigonometry to compute position
+    var delta = 2*Math.PI/n;         // Angular distance between vertices
+    for(var i = 1; i < n; i++) {     // For each of the remaining vertices
+        angle += counterclockwise?-delta:delta; // Adjust angle
+        c.lineTo(x + r*Math.sin(angle),         // Add line to next vertex
+                 y - r*Math.cos(angle));
+    }
+    c.closePath();                   // Connect last vertex back to the first
+}
+
+
+
+	function load(){
+
+		var canvas = document.getElementById("myCanvas");
+		var c = canvas.getContext('2d');
+/*
+		c.fillStyle = "#ccc";
+		c.strokeStyle = "#008"; //
+		c.lineWidth = 5;
+
+		c.beginPath();
+		c.moveTo(100, 100);
+		c.lineTo(200, 200);
+		c.lineTo(100, 200);
+		//c.lineTo(100,100);
+c.closePath();
+		c.fill();
+		c.stroke();
+		c.moveTo(300,100);
+		c.lineTo(300,200);
+		c.stroke();
+*/
+// Start a new path and add polygon subpaths
+c.beginPath();
+polygon(c, 3, 50, 70, 50);                   // Triangle
+polygon(c, 4, 150, 60, 50, Math.PI/4);       // Square
+polygon(c, 5, 255, 55, 50);                  // Pentagon
+polygon(c, 6, 365, 53, 50, Math.PI/6);       // Hexagon
+polygon(c, 4, 365, 53, 20, Math.PI/4, true); // Small square inside the hexagon
+
+// Set some properties that control how the graphics will look
+c.fillStyle = "#ccc";    // Light gray interiors
+c.strokeStyle = "#008";  // outlined with dark blue lines
+c.lineWidth = 5;         // five pixels wide.
+
+// Now draw all the polygons (each in its own subpath) with these calls
+c.fill();                // Fill the shapes
+c.stroke();              // And stroke their outlines
+	}
+</script>
+<body onload="load()">
+<!--
+	<div>
+		<img src="http://www.baidu.com/img/shouye_b5486898c692066bd2cbaeda86d74448.gif" 
+			onmouseover="this.src='http://p1.qhimg.com/d/_onebox/search.png'"
+			onmouseout="this.src='http://www.baidu.com/img/shouye_b5486898c692066bd2cbaeda86d74448.gif'" />
+	</div>
+	<div>
+		<audio src="../resources/audio/fukua-eason.mp3" width="200" height="100" />
+	</div>
+	<div>
+		This is a red square: <svg width="10" height="10">
+<rect x="0" y="0" width="10" height="10" fill="red"/>
+</svg>
+This is a blue circle: <svg width="10" height="10">
+<circle cx="5" cy="5" r="5" fill="blue"/>
+</svg>
+
+	</div>
+-->
+	<div>
+		<canvas id="myCanvas" width="1000" height="1000"></canvas>
+	</div>
+</body>
+</html>

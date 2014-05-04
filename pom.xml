@@ -13,6 +13,7 @@
         <module>yirankiller-util</module>
         <module>yirankiller-stub</module>
         <module>yirankiller-web</module>
+        <module>yirankiller-flower</module>
     </modules>
     <build>
         <plugins>
@@ -44,7 +45,9 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+    <!--
     <profiles>
+
         <profile>
             <id>beijing</id>
             <activation>
@@ -98,4 +101,5 @@
             </properties>
         </profile>
     </profiles>
+    -->
 </project>

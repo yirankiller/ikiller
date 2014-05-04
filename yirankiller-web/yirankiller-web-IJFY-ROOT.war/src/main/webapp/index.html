@@ -1,25 +1,121 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-        "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I Just for you </title>
 </head>
-<script src="/javascript/jsLoader/seaJs/sea.js" id="seajsnode"></script>
-<script src="/javascript/jsLoader/seaJs/seaJsConfig.js" ></script>
+<script src="/javascript/seajs/2.1.0/sea-debug.js" id="seajsnode"></script>
+<script src="/javascript/seajs/config.js" type="text/javascript"></script>
 <script type="text/javascript">
-    seajs.use('/javascript/common/indexInit', function(I) {
-        I.init();
-    });
+    seajs.use('/javascript/common/indexInit');
 </script>
+
 <body>
-    <div id="body">
-        <header class="c-header">
-            <div class="inner">
-                <div class="logo"></div>
+
+<div class="navbar navbar-inverse navbar-fixed-top" style="position: fixed">
+    <div class="navbar-inner self-navbar-inner">
+        <div class="container">
+            <a class="brand" href="#">I Just For You</a>
+            <div class="nav-collapse collapse">
+                <ul class="nav" id="nav-topTabs">
+                    <li class="active"><a href="#language">Language</a></li>
+                    <li><a href="#basic">Basic</a></li>
+                    <li><a href="#rw">Read and Write</a></li>
+                    <li><a href="#com">Composition</a></li>
+                </ul>
             </div>
-        </header>
-        <div></div>
-        <footer></footer>
+        </div>
     </div>
+</div>
+
+
+
+<div id="index-nav" class="index-nav">
+    <div id="index-nav-label" class="index-nav-label"><span></span></div>
+    <ul class="index-nav-menulist">
+        <li class="home">Name</li>
+        <li><a href="#">Lebron James</a></li>
+        <li><a href="#">Dwyane Wade</a></li>
+        <li><a href="#">Chris Bosh</a></li>
+        <li><a href="#">Ray Allen</a></li>
+        <li><a href="#">Shane Battier</a></li>
+    </ul>
+</div>
+<div class="work-container">
+<div class="main-container">
+    <div class="container" >
+        <div class="nav-tabs-content tab-content">
+            <div class="nav-language tab-pane active" id="language">
+                language
+            </div>
+            <div class="basic tab-pane" id="basic">
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th  colspan=5>ABC table</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="theader">
+                        <td colspan=5>There is something big 3 in the NBA. Inc</td>
+                    </tr>
+                    <tr  class="theader">
+                        <td>Team</td>
+                        <td>Player</td>
+                        <td>Age</td>
+                        <td>Height</td>
+                        <td>Position</td>
+                    </tr>
+                    <tr>
+                        <td>Miami</td>
+                        <td>Chris Paul</td>
+                        <td>28</td>
+                        <td>2.10m</td>
+                        <td>C</td>
+                    </tr>
+                    <tr  class="theader">
+                        <td>Team</td>
+                        <td>Player</td>
+                        <td>Age</td>
+                        <td>Height</td>
+                        <td>Position</td>
+                    </tr>
+                    <tr>
+                        <td>Miami</td>
+                        <td>Chris Paul</td>
+                        <td>28</td>
+                        <td>2.10m</td>
+                        <td>C</td>
+                    </tr>
+                    <tr class="theader">
+                        <td colspan=5>Experience</td>
+                    </tr>
+                    <tr  class="theader">
+                        <td>Team</td>
+                        <td>Player</td>
+                        <td>Age</td>
+                        <td colspan="2">Position</td>
+                    </tr>
+                    <tr>
+                        <td>Miami</td>
+                        <td>Chris Paul</td>
+                        <td>28</td>
+                        <td>yeah yeah , you got it.</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="rw tab-pane" id="rw">rw</div>
+            <div class="com tab-pane" id="com">com</div>
+        </div>
+    </div>
+</div>
+
+</div>
+
 </body>
+<style>
+
+</style>
 </html>

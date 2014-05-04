@@ -1,0 +1,57 @@
+a:link {color: #000000}     /* 未访问的链接 */
+a:visited {color: #000000}  /* 已访问的链接 */
+a:active {color: #000000}   /* 被选择的链接 */
+
+#index-nav ul {
+    list-style: none;
+}
+#index-nav .index-nav-menulist{
+    padding: 0 6px;
+}
+#index-nav .index-nav-menulist .home{
+    border: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+#index-nav .index-nav-menulist li{
+    line-height: 20px;
+    padding: 10px 20px;
+    border-top: 2px solid #f8f8f8;
+}
+#index-nav .index-nav-menulist li a:hover{
+    color: #7aba7b;
+    text-decoration: none;
+}
+.index-nav-label {
+    width: 110%;
+    height: 45px;
+    position: absolute;
+    z-index: -1;
+    left: -7px;
+    background-color: #f8f8f8;
+    overflow: visible;
+}
+.index-nav-label span {
+    width: 7px;
+    height: 100%;
+    float: left;
+    background-color: #7aba7b;
+}
+.current-cat a{
+    color : #7aba7b;
+}
+.index-nav{
+    background-color: #FFFFFF;
+    padding-top: 27px;
+    position: fixed;
+    top:200px;
+    left:30px;
+}
+
+
+/*    top navigate  , customize*/
+.navbar .container {
+    font-family: 'Gloria Hallelujah', Arial, Helvetica, sans-serif;
+}
+
+
