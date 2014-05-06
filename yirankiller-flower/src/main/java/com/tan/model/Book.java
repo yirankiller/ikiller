@@ -1,6 +1,15 @@
 package com.tan.model;
 
+import org.hibernate.annotations.GenericGenerator;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Book {
+
     private int id;
     private String name;
     private String author;
@@ -11,6 +20,8 @@ public class Book {
         this.name = name;
         this.author = author;
     }
+    @Id
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     public int getId() {
         return id;
     }

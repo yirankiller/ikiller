@@ -55,13 +55,6 @@
             </activation>
             <repositories>
                 <repository>
-                    <id>leandev</id>
-                    <url>http://10.10.10.20:8081/artifactory/repo</url>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                </repository>
-                <repository>
                     <id>people.apache.snapshots</id>
                     <url>
                         http://repository.apache.org/content/groups/snapshots-group/
@@ -73,7 +66,21 @@
                         <enabled>true</enabled>
                     </snapshots>
                 </repository>
+
             </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>nexus</id>
+                    <name>local private nexus</name>
+                    <url>http://maven.oschina.net/content/groups/public/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </pluginRepository>
+            </pluginRepositories>
 
         </profile>
     </profiles>
