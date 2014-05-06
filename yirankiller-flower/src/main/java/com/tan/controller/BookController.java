@@ -13,7 +13,7 @@ import com.tan.service.BookService;
 public class BookController {
 
     private BookService bookService;
-    @RequestMapping(params = "method=add")
+    @RequestMapping(params = "addbook")
     public String add(Book book){
         System.out.println("bookname:"+book.getName());
         System.out.println("author:"+book.getAuthor());

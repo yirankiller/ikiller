@@ -45,7 +45,7 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-    <!--
+
     <profiles>
 
         <profile>
@@ -57,49 +57,25 @@
                 <repository>
                     <id>leandev</id>
                     <url>http://10.10.10.20:8081/artifactory/repo</url>
-
                     <snapshots>
                         <enabled>false</enabled>
                     </snapshots>
                 </repository>
-
+                <repository>
+                    <id>people.apache.snapshots</id>
+                    <url>
+                        http://repository.apache.org/content/groups/snapshots-group/
+                    </url>
+                    <releases>
+                        <enabled>false</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
             </repositories>
-            <pluginRepositories>
-                <pluginRepository>
-                    <id>plugin</id>
-                    <name>TLC Repository</name>
-                    <url>http://10.10.10.20:8081/artifactory/plugins-releases</url>
-                </pluginRepository>
-            </pluginRepositories>
-            <properties>
-                <svn.repo>scm:svn:https://svn-beijing.leandev.se/repo/greenback/trunk/greenback</svn.repo>
 
-                <backend.server.ip>18.0.0.15</backend.server.ip>
-                <backend.server.username>test</backend.server.username>
-                <backend.server.password>test</backend.server.password>
-                <backend.server.path>/usr/local/jboss</backend.server.path>
-
-                <security.server.ip>18.0.0.15</security.server.ip>
-                <security.server.username>test</security.server.username>
-                <security.server.password>test</security.server.password>
-                <security.server.path>/usr/local/jboss</security.server.path>
-
-                <iha.server.ip>18.0.0.29</iha.server.ip>
-                <iha.server.username>root</iha.server.username>
-                <iha.server.password>111111</iha.server.password>
-                <iha.server.path>/usr/local/jboss</iha.server.path>
-
-                <mcl.server.ip>18.0.0.15</mcl.server.ip>
-                <mcl.server.username>test</mcl.server.username>
-                <mcl.server.password>test</mcl.server.password>
-                <mcl.server.path>/usr/local/jboss</mcl.server.path>
-
-                <web.server.ip>18.0.0.16</web.server.ip>
-                <web.server.username>test</web.server.username>
-                <web.server.password>test</web.server.password>
-                <web.server.path>/usr/local/jboss</web.server.path>
-            </properties>
         </profile>
     </profiles>
-    -->
+
 </project>
