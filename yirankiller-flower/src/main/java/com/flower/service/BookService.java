@@ -1,15 +1,14 @@
-package com.tan.service;
-
-import javax.annotation.Resource;
+package com.flower.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.tan.dao.BookDao;
-import com.tan.model.Book;
+import com.flower.dao.BookDao;
+import com.flower.model.Book;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-@Component
+@Service
 public class BookService {
     @Autowired
     private BookDao bookDao;

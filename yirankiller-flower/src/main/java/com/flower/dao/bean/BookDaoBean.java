@@ -1,7 +1,7 @@
-package com.tan.dao.bean;
+package com.flower.dao.bean;
 
-import com.tan.dao.BookDao;
-import com.tan.model.Book;
+import com.flower.dao.BookDao;
+import com.flower.model.Book;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
@@ -16,7 +16,7 @@ public class BookDaoBean implements BookDao{
     private EntityManager em;
     @Override
     public void add(Book book) {
-        em.merge(book);
+        em.persist(book);
     }
 
     @Override

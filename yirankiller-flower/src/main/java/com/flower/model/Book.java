@@ -1,6 +1,4 @@
-package com.tan.model;
-
-import org.hibernate.annotations.GenericGenerator;
+package com.flower.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

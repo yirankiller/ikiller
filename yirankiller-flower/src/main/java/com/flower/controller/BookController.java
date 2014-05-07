@@ -1,13 +1,11 @@
-package com.tan.controller;
-
-import javax.annotation.Resource;
+package com.flower.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.tan.model.Book;
-import com.tan.service.BookService;
+import com.flower.model.Book;
+import com.flower.service.BookService;
 
 @Controller
 @RequestMapping("/book.do")

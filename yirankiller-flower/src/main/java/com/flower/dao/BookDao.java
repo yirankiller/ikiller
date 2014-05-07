@@ -1,7 +1,7 @@
-package com.tan.dao;
+package com.flower.dao;
 
 
-import com.tan.model.Book;
+import com.flower.model.Book;
 
 public interface BookDao {
 
