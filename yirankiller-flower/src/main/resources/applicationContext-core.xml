@@ -13,7 +13,7 @@
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd
 		http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa.xsd"
        default-lazy-init="true">
-
+    <context:property-placeholder ignore-unresolvable="true" location="classpath*:/jdbc.properties" />
     <context:component-scan base-package="com.flower">
         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller" />
     </context:component-scan>
@@ -37,23 +37,20 @@
         <property name="databasePlatform" value="org.hibernate.dialect.MySQLDialect" />
     </bean>
 
-    <!-- Jpa 事务配置 -->
+    <!-- Jpa 事务配置-->
     <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
         <property name="entityManagerFactory" ref="entityManagerFactory"/>
     </bean>
 
     <!-- Spring Data Jpa配置 -->
-    <!--
-    <jpa:repositories base-package="cn.ibeans"  transaction-manager-ref="transactionManager" entity-manager-factory-ref="entityManagerFactory"/>
-    -->
-    <!-- 使用annotation定义事务 -->
+
+    <jpa:repositories base-package="com.flower.dao"  transaction-manager-ref="transactionManager" entity-manager-factory-ref="entityManagerFactory"/>
+
+    <!-- 使用annotation定义事务-->
     <tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true" />
 
     <!-- JSR303 Validator定义 -->
     <bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean" />
-
-
-    <context:property-placeholder ignore-unresolvable="true" location="classpath*:/jdbc.properties" />
 
     <!-- 数据源配置, 使用DBCP数据库连接池 -->
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
