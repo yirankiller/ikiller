@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.flower.model.Book;
+import com.flower.entity.Book;
 import com.flower.service.BookService;
 
 @Controller
@@ -21,7 +21,6 @@ public class BookController {
     }
     @RequestMapping(params = "method=update")
     public String update(Book book) {
-        bookService.update(book);
         return "success";
     }
 }

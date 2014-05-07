@@ -1,11 +1,10 @@
 package com.flower.dao;
 
 
-import com.flower.model.Book;
+import com.flower.entity.Book;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface BookDao {
+public interface BookDao extends JpaRepository<Book,Integer>{
 
-
-    public void add(Book book);
-    public void update(Book book);
+    public Book save(Book book);
 }

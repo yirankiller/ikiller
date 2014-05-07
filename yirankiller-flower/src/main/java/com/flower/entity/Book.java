@@ -1,4 +1,4 @@
-package com.flower.model;
+package com.flower.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
