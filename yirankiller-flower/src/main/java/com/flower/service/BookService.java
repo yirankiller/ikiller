@@ -7,6 +7,8 @@ import com.flower.entity.Book;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 @Service
 @Transactional
 public class BookService {
@@ -15,6 +17,10 @@ public class BookService {
 
     public void add(Book book){
         bookDao.save(book);
+    }
+
+    public List<Book> findAllBook(){
+        return bookDao.findAll();
     }
 
 }

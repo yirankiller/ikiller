@@ -44,7 +44,7 @@
 
     <!-- Spring Data Jpa配置 -->
 
-    <jpa:repositories base-package="com.flower.dao"  transaction-manager-ref="transactionManager" entity-manager-factory-ref="entityManagerFactory"/>
+    <jpa:repositories base-package="com.flower"  transaction-manager-ref="transactionManager" entity-manager-factory-ref="entityManagerFactory"/>
 
     <!-- 使用annotation定义事务-->
     <tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true" />
@@ -63,7 +63,7 @@
         <!-- Connection Pooling Info -->
         <property name="maxActive" value="${dbcp.maxActive}" />
         <property name="maxIdle" value="${dbcp.maxIdle}" />
-        <property name="defaultAutoCommit" value="false" />
+        <property name="defaultAutoCommit" value="true" />
         <!-- 连接Idle一个小时后超时 -->
         <property name="timeBetweenEvictionRunsMillis" value="3600000" />
         <property name="minEvictableIdleTimeMillis" value="3600000" />
