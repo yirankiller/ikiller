@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.flower.entity.Book;
 import com.flower.service.BookService;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @RequestMapping("/book.do")
@@ -17,12 +18,12 @@ public class BookController {
     @Autowired
     private BookService bookService;
     @RequestMapping(params = "addbook")
-    public String add(Book book,Model model){
+    public ModelAndView add(Book book,Model model){
         logger.info("bookname:" + book.getName());
         logger.info("author:" + book.getAuthor());
         bookService.add(book);
         model.addAttribute("bookList",bookService.findAllBook());
-        return "success";
+        return new ModelAndView("redirect:success");
     }
     @RequestMapping(params = "method=update")
     public String update(Book book) {
