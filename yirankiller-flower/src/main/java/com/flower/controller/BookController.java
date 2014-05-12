@@ -18,12 +18,12 @@ public class BookController {
     @Autowired
     private BookService bookService;
     @RequestMapping(params = "addbook")
-    public ModelAndView add(Book book,Model model){
+    public String add(Book book,Model model){
         logger.info("bookname:" + book.getName());
         logger.info("author:" + book.getAuthor());
         bookService.add(book);
         model.addAttribute("bookList",bookService.findAllBook());
-        return new ModelAndView("redirect:success");
+        return "index";
     }
     @RequestMapping(params = "method=update")
     public String update(Book book) {
