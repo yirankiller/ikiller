@@ -16,5 +16,6 @@
         <property name="prefix" value="/" />
         <property name="suffix" value=".jsp" />
     </bean>
-
+    <mvc:resources mapping="/bootstrap/**" location="/bootstrap/" />
+    <mvc:resources mapping="/js/**" location="/js/" />
 </beans>
