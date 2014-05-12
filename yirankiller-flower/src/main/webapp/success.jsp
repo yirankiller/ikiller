@@ -1,13 +1,19 @@
 <%--
   User: easliu
-  Date: 5/8/14
-  Time: 3:33 PM
+  Date: 5/12/14
+  Time: 2:05 PM
 --%>
 <%@ page contentType="text/html;charset=utf-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<html>
+<!DOCTYPE html>
+<html lang="zh-cn">
 <head>
-    <title></title>
+    <title>ftitle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap-theme.css">
+    <script src="/js/jquery/jQuery.js"></script>
+    <script src="/bootstrap/js/bootstrap.js"></script>
 </head>
 <body>
 <c:forEach items="${bookList}" var="book">
