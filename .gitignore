@@ -4,3 +4,5 @@ target/
 */*.class
 */**.iml
 *.iml
+rebel.xml
+jdbc.properties
