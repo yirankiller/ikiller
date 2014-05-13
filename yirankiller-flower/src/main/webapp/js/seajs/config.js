@@ -7,7 +7,7 @@ seajs.config({
     plugins: ['text'],
     debug : true,
     vars : {
-        'jqueryV' : '2.1.1'
+        'jqueryV' : '2.0.2'
     },
     alias: {
         'jQuery' : '/js/jquery/{jqueryV}/jquery',
