@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="/bootstrap/css/bootstrap-theme.css">
-    <script src="/js/jquery/jQuery.js"></script>
+    <script src="/js/jquery/2.1.1/jquery.js"></script>
     <script src="/bootstrap/js/bootstrap.js"></script>
 </head>
 <body>

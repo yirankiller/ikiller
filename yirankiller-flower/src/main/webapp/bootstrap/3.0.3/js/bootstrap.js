@@ -3,6 +3,7 @@
  * Copyright 2013 Twitter, Inc.
  * Licensed under http://www.apache.org/licenses/LICENSE-2.0
  */
+define(function(require){
 
 if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery") }
 
@@ -24,7 +25,8 @@ if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery"
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * ======================================================================== */
-
+    require('../css/bootstrap.css');
+    var jQuery = require('jQuery');
 
 +function ($) { "use strict";
 
@@ -2003,4 +2005,5 @@ if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery"
     })
   })
 
-}(jQuery);
+}(jQuery)
+});
