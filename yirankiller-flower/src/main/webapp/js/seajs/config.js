@@ -12,6 +12,5 @@ seajs.config({
     alias: {
         'jQuery' : '/js/jquery/{jqueryV}/jquery',
         'bootstrap' : '/bootstrap/3.0.3/js/bootstrap'
-    },
-    preload: ["jQuery"]
+    }
 });
