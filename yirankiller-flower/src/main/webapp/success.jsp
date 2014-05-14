@@ -1,7 +1,7 @@
 <%--
-  User: easliu
-  Date: 5/12/14
-  Time: 2:05 PM
+  User: yiran
+  Date: 5/5/2014
+  Time: 12:18 AM
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page language="java" pageEncoding="UTF-8"%>
@@ -11,10 +11,11 @@
 <head>
     <title>ftitle</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap-theme.css">
-    <script src="/js/jquery/2.1.1/jquery.js"></script>
-    <script src="/bootstrap/js/bootstrap.js"></script>
+    <script src="/js/seajs/latest/sea.js" id="seajsnode"></script>
+    <script src="/js/seajs/config.js" type="text/javascript"></script>
+    <script language="JavaScript">
+        seajs.use("bootstrap");
+    </script>
 </head>
 <body>
 <c:forEach items="${bookList}" var="book">

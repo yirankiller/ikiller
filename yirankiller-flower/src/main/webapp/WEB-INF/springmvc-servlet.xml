@@ -7,6 +7,7 @@
            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
            http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
        ">
+    <context:property-placeholder ignore-unresolvable="true" location="classpath*:/common.properties" />
     <!-- 默认的注解映射的支持 -->
     <mvc:annotation-driven />
     <context:component-scan base-package="com.flower.controller">
@@ -16,6 +17,10 @@
         <property name="prefix" value="/" />
         <property name="suffix" value=".jsp" />
     </bean>
+    <!-- 配置seajs 版本-->
+    <mvc:resources mapping="/js/seajs/latest/**" location="/js/seajs/${seajs.version}/${seajs.debug}"/>
+
     <mvc:resources mapping="/bootstrap/**" location="/bootstrap/" />
     <mvc:resources mapping="/js/**" location="/js/" />
+
 </beans>

@@ -11,7 +11,7 @@
 <head>
     <title>ftitle</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/js/seajs/2.2.1/sea-debug.js" id="seajsnode"></script>
+    <script src="/js/seajs/latest/sea.js" id="seajsnode"></script>
     <script src="/js/seajs/config.js" type="text/javascript"></script>
     <script language="JavaScript">
         seajs.use("bootstrap");
