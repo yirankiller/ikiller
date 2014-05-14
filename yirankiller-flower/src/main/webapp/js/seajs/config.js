@@ -10,9 +10,13 @@ seajs.config({
         'jqueryV' : '1.11.1',
         'bootstrapV' : '3.0.3'
     },
-    alias: {
+    alias : {
         'jQuery' : '/js/jquery/{jqueryV}/jquery',
         'bootstrap' : '/bootstrap/{bootstrapV}/js/bootstrap'
     },
     preload : ["jQuery"]
+
+    ,
+    map : ['bootstrap' , 'bootstrap.min']
+
 });
