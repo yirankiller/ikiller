@@ -5,6 +5,7 @@
  */
 define(function(require){
     require('../css/bootstrap.css');
+    require('../css/bootstrap-theme.css');
     var jQuery = require('jQuery');
 if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery") }
 

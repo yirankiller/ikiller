@@ -14,9 +14,16 @@ seajs.config({
         'jQuery' : '/js/jquery/{jqueryV}/jquery',
         'bootstrap' : '/bootstrap/{bootstrapV}/js/bootstrap'
     },
-    preload : ["jQuery"]
+    preload : [
+        'jQuery',
+        '/bootstrap/3.0.3/doc/docs.css'
+    ]
 
     ,
-    map : ['bootstrap' , 'bootstrap.min']
+    map : [
+/*        ['bootstrap.js' , 'bootstrap.min.js'],
+        ['jquery.js' ,'jquery.min.js'],*/
+        ['bootstrap.css','bootstrap.min.css']
+    ]
 
 });
