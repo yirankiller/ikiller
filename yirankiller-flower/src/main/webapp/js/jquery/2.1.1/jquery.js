@@ -11,6 +11,7 @@
  *
  * Date: 2014-05-01T17:11Z
  */
+define(function(require, exports, module) {
 (function( global, factory ) {
 
     if ( typeof module === "object" && typeof module.exports === "object" ) {
@@ -9186,4 +9187,5 @@
 
     return jQuery;
 
-}));
+}))
+});

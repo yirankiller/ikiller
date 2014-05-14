@@ -7,10 +7,11 @@ seajs.config({
     plugins: ['text'],
     debug : true,
     vars : {
-        'jqueryV' : '2.0.2'
+        'jqueryV' : '1.11.1',
+        'bootstrapV' : '3.0.3'
     },
     alias: {
         'jQuery' : '/js/jquery/{jqueryV}/jquery',
-        'bootstrap' : '/bootstrap/3.0.3/js/bootstrap'
+        'bootstrap' : '/bootstrap/{bootstrapV}/js/bootstrap'
     }
 });
