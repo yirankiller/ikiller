@@ -19,13 +19,22 @@
 </head>
 <body>
 <div class="container show-grid">
-    <c:forEach items="${bookList}" var="book">
-    <div class="row">
-        <div class="col-md-2"><c:out value="${book.name}" /></div>
-        <div class="col-md-2"><c:out value="${book.author}" /></div>
-    </div>
-    </c:forEach>
-
+    <table class="table table-striped table-hover">
+        <thead>
+            <th>#</th>
+            <th>Name</th>
+            <th>Author</th>
+        </thead>
+        <tbody>
+        <c:forEach items="${bookList}" var="book" varStatus="status">
+            <tr>
+                <td><c:out value="${status.count}" /></td>
+                <td><c:out value="${book.name}" /></td>
+                <td><c:out value="${book.author}" /></td>
+            </tr>
+        </c:forEach>
+        </tbody>
+    </table>
     <div class="row">
         <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
         <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
