@@ -19,7 +19,7 @@
 </head>
 <body>
 <div class="container show-grid">
-    <table class="table table-striped table-hover">
+    <table class="table ">
         <thead>
             <th>#</th>
             <th>Name</th>
@@ -27,52 +27,51 @@
         </thead>
         <tbody>
         <c:forEach items="${bookList}" var="book" varStatus="status">
-            <tr>
+            <tr >
                 <td><c:out value="${status.count}" /></td>
-                <td><c:out value="${book.name}" /></td>
+                <td class="success"><c:out value="${book.name}" /></td>
                 <td><c:out value="${book.author}" /></td>
             </tr>
         </c:forEach>
         </tbody>
     </table>
-    <div class="row">
-        <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
-        <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
-
-        <!-- Add the extra clearfix for only the required viewport -->
-        <div class="clearfix visible-xs"></div>
-
-        <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
-        <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
-    </div>
 
 
-    <div class="row">
-        <div class="col-md-4">.col-md-4</div>
-        <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
-    </div>
-    <div class="row">
-        <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
-        <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
-    </div>
-    <div class="row">
-        <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
-    </div>
-    <div class="bs-example bs-example-type">
-        <h1>h1. Bootstrap heading</h1>
-        <h2>h2. Bootstrap heading</h2>
-        <h3>h3. Bootstrap heading</h3>
-        <h4>h4. Bootstrap heading</h4>
-        <h5>h5. Bootstrap heading</h5>
-        <h6>h6. Bootstrap heading</h6>
-    </div>
 </div>
-<hr />
-<h2>Add Book</h2>
-<form method="post" action="<%=request.getContextPath() %>/book.do?addbook">
-    bookname:<input type="text" name="name" id="name">
-    author:<input type="text" name="author" id="author">
-    <input type="submit" value="Add">
-</form>
+
+<div class="container">
+    <h1 class="text-hide">Custom heading</h1>
+    <h2>Add Book</h2>
+
+    <form class="form-horizontal" role="form" method="post" action="<%=request.getContextPath() %>/book.do?addbook">
+        <div class="form-group">
+            <label for="bookName" class="col-sm-2 control-label">BookName</label>
+            <div class="col-sm-10">
+                <input type="email" id="bookName" placeholder="Enter book name" class="form-control input-lg-6" name="name">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="bookAuthor" class="col-sm-2 control-label">Author</label>
+            <div class="col-sm-10">
+                <input type="text" id="bookAuthor" placeholder="Author" class="form-control" name="author">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> I Agree
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Add Book</button>
+            </div>
+        </div>
+    </form>
+    <span class="glyphicon glyphicon-search"></span>
+</div>
 </body>
 </html>
