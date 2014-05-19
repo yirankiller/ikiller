@@ -11,6 +11,7 @@
 <head>
     <title>ftitle</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <script src="/js/seajs/latest/sea.js" id="seajsnode"></script>
     <script src="/js/seajs/config.js" type="text/javascript"></script>
     <script language="JavaScript">
@@ -71,7 +72,12 @@
             </div>
         </div>
     </form>
-    <span class="glyphicon glyphicon-search"></span>
+
+    <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo">
+        simple collapsible
+    </button>
+
+    <div id="demo" class="collapsing ">...</div>
 </div>
 </body>
 </html>
