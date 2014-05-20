@@ -9,36 +9,19 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-    <title>ftitle</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <script src="/js/seajs/latest/sea.js" id="seajsnode"></script>
-    <script src="/js/seajs/config.js" type="text/javascript"></script>
-    <script language="JavaScript">
-        seajs.use(["bootstrap"]);
-    </script>
+  <title>ftitle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <script src="/js/seajs/latest/sea.js" id="seajsnode"></script>
+  <script src="/js/seajs/config.js" type="text/javascript"></script>
+  <script language="JavaScript">
+    seajs.use(["bootstrap"]);
+  </script>
 </head>
 <body>
-<div class="container show-grid">
-    <table class="table ">
-        <thead>
-            <th>#</th>
-            <th>Name</th>
-            <th>Author</th>
-        </thead>
-        <tbody>
-        <c:forEach items="${bookList}" var="book" varStatus="status">
-            <tr >
-                <td><c:out value="${status.count}" /></td>
-                <td class="success"><c:out value="${book.name}" /></td>
-                <td><c:out value="${book.author}" /></td>
-            </tr>
-        </c:forEach>
-        </tbody>
-    </table>
+<jsp:include page="topbar.jsp"/>
 
-
-</div>
 
 <div class="container">
     <h1 class="text-hide">Custom heading</h1>
@@ -72,12 +55,6 @@
             </div>
         </div>
     </form>
-
-    <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo">
-        simple collapsible
-    </button>
-
-    <div id="demo" class="collapsing ">...</div>
 </div>
 </body>
 </html>

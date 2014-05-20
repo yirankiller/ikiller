@@ -23,7 +23,7 @@ seajs.config({
 
     preload : [
         'jQuery',
-        'bootstrapHome/doc/docs.css',
+        //'bootstrapHome/doc/docs.css',
         'seajs-text'
     ],
 
