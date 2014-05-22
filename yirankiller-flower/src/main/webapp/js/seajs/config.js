@@ -30,7 +30,7 @@ seajs.config({
     map : [
 //        ['bootstrap.js' , 'bootstrap.min.js'],
 //        ['jquery.js' ,'jquery.min.js'],
-        ['bootstrap.css','bootstrap.min.css']
+//        ['bootstrap.css','bootstrap.min.css']
     ],
 
     debug : true

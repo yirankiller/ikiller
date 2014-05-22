@@ -6,15 +6,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page language="java" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<style type="text/css">
-  .topnavbar .navbar {
-    min-height: 40px;
-  }
-  .topnavbar .navbar-brand ,.topnavbar .navbar-nav li a{
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-</style>
   <!-- customize top nav bar -->
   <div class="topnavbar">
     <nav class="navbar navbar-default navbar-static-top" role="banner">
