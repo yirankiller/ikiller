@@ -9,7 +9,7 @@ function reload(){
     var _ssnList = "_ssnList";
     var newId = _ssnList+"_gbselect";
     var ssnArr = ["252571944","4608143998","5003072260","5103014303","6112143448","6112181729","6504042224","7607119349","7704179501"];
-    if(window.location.pathname.startWith("/mina-sidor/")){
+    if(window.location.pathname.startWith && window.location.pathname.startWith("/mina-sidor/")){
         $("body").append("<div style='width:360px;position: fixed;right: 10px;top: 5px;'><table border='0' width='520'><tbody><tr><td width='84%'><div class='gb-select text-luc3' style=''><select id='"+_ssnList+"' name='"+_ssnList+"' size='1' style='width: 300px; display: none;'></select><div class='list'><table width='100%' cellspacing='0' border='0'><thead><tr><td colspan='12'></td></tr></thead><tbody><tr class='selected'><td class='left'></td><td class='col1'>Konto:</td><td class='col2'>1146745</td><td class='col3'>0</td><td>kr</td><td class='right'></td></tr><tr><td class='left'></td><td class='col1'>Konto:</td><td class='col2'>1129741</td><td class='col3'>0</td><td>kr</td><td class='right'></td></tr></tbody><tfoot><tr><td colspan='12'></td></tr></tfoot></table></div></div></td></tr></tbody></table></div>");
 
     }
