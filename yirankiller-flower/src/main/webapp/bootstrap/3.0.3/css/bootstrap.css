@@ -5954,3 +5954,44 @@ td.visible-print {
     display: none !important;
   }
 }
+.btn-search-default {
+  color: #ffffff;
+  background-color: #e4393c;
+  border-color: #e12326;
+}
+.btn-search-default:hover,
+.btn-search-default:focus,
+.btn-search-default:active,
+.btn-search-default.active,
+.open .dropdown-toggle.btn-search-default {
+  color: #ffffff;
+  background-color: #d71d21;
+  border-color: #af181a;
+}
+.btn-search-default:active,
+.btn-search-default.active,
+.open .dropdown-toggle.btn-search-default {
+  background-image: none;
+}
+.btn-search-default.disabled,
+.btn-search-default[disabled],
+fieldset[disabled] .btn-search-default,
+.btn-search-default.disabled:hover,
+.btn-search-default[disabled]:hover,
+fieldset[disabled] .btn-search-default:hover,
+.btn-search-default.disabled:focus,
+.btn-search-default[disabled]:focus,
+fieldset[disabled] .btn-search-default:focus,
+.btn-search-default.disabled:active,
+.btn-search-default[disabled]:active,
+fieldset[disabled] .btn-search-default:active,
+.btn-search-default.disabled.active,
+.btn-search-default[disabled].active,
+fieldset[disabled] .btn-search-default.active {
+  background-color: #e4393c;
+  border-color: #e12326;
+}
+.btn-search-default .badge {
+  color: #e4393c;
+  background-color: #fff;
+}

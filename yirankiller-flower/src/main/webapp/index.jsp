@@ -20,7 +20,31 @@
   </script>
 </head>
 <body>
+<!-- short cut part -->
 <jsp:include page="topbar.jsp"/>
+<!-- header part -->
+<jsp:include page="header.jsp"/>
+
+<div class="container show-grid">
+  <table class="table ">
+    <thead>
+    <th>#</th>
+    <th>Name</th>
+    <th>Author</th>
+    </thead>
+    <tbody>
+    <c:forEach items="${bookList}" var="book" varStatus="status">
+      <tr >
+        <td><c:out value="${status.count}" /></td>
+        <td class="success"><c:out value="${book.name}" /></td>
+        <td><c:out value="${book.author}" /></td>
+      </tr>
+    </c:forEach>
+    </tbody>
+  </table>
+
+
+</div>
 
 
 <div class="container">

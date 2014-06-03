@@ -36,8 +36,8 @@
           </ul>
           -->
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">登陆</a></li>
-            <li><a href="#">注册</a></li>
+            <li><a href="#"><small>登陆</small></a></li>
+            <li><a href="#"><small>注册</small></a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -54,23 +54,4 @@
     </nav>
   </div>
 
-  <div class="container show-grid">
-    <table class="table ">
-      <thead>
-      <th>#</th>
-      <th>Name</th>
-      <th>Author</th>
-      </thead>
-      <tbody>
-      <c:forEach items="${bookList}" var="book" varStatus="status">
-        <tr >
-          <td><c:out value="${status.count}" /></td>
-          <td class="success"><c:out value="${book.name}" /></td>
-          <td><c:out value="${book.author}" /></td>
-        </tr>
-      </c:forEach>
-      </tbody>
-    </table>
 
-
-  </div>
