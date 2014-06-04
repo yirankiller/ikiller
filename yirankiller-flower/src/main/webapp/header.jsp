@@ -32,7 +32,13 @@
             </div><!-- /btn-group -->
           </div><!-- /input-group -->
         </form>
-        <div>绿萝</div>
+        <div class="header-hot">
+          <span>热门搜索:</span>
+          <ul class="list-inline in-line">
+            <li>绿萝</li>
+            <li>发财树</li>
+          </ul>
+        </div>
       </div><!-- /.col-lg-5 -->
     </div><!-- /.row -->
   </div>
