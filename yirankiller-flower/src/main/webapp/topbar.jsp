@@ -36,8 +36,8 @@
           </ul>
           -->
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><small>登陆</small></a></li>
-            <li><a href="#"><small>注册</small></a></li>
+            <li><a href="#">登陆</a></li>
+            <li><a href="#">注册</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
               <ul class="dropdown-menu">

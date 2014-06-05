@@ -1,0 +1,14 @@
+.in-line {
+  display: inline;
+}
+.font-red {
+  color: #ff0000;
+}
+.header-hot {
+  margin-top: 2px;
+  margin-left: 2px;
+  padding-top: 2px;
+}
+.header-hot .list-inline > li:first-child {
+  color: #ff0000;
+}

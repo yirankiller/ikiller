@@ -35,8 +35,13 @@
         <div class="header-hot">
           <span>热门搜索:</span>
           <ul class="list-inline in-line">
-            <li>绿萝</li>
-            <li>发财树</li>
+            <li><a href="#">绿萝</a></li>
+            <li><a href="#">幸福树</a></li>
+            <li><a href="#">发财树</a></li>
+            <li><a href="#">黑金刚</a></li>
+            <li><a href="#">金钻</a></li>
+            <li><a href="#">君子兰</a></li>
+            <li><a href="#">蟹爪兰</a></li>
           </ul>
         </div>
       </div><!-- /.col-lg-5 -->
