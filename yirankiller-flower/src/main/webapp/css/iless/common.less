@@ -1,4 +1,9 @@
 @import "variables";
+li > a:hover,
+     a:focus {
+     color: @my-theme;
+     text-decoration: underline;
+}
 
 .in-line{
   display: inline;
@@ -11,6 +16,9 @@
   margin-left: 2px;
   padding-top: 2px;
 }
-.header-hot .list-inline > li:first-child {
+.header-hotword .list-inline > li:first-child a{
   color:@font-red;
+}
+.header-hotword,.header-hotword .list-inline > li > a{
+  color:#999;
 }

@@ -3917,7 +3917,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #88bb00;
+  color: #ff0000;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a,
@@ -3958,7 +3958,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #88bb00;
+    color: #ff0000;
     background-color: transparent;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
@@ -3978,7 +3978,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   color: #777777;
 }
 .navbar-default .navbar-link:hover {
-  color: #88bb00;
+  color: #ff0000;
 }
 .navbar-inverse {
   background-color: #222222;
