@@ -1,13 +1,11 @@
-li > a:hover,
-a:focus {
-  color: #ff0000;
-  text-decoration: underline;
-}
 .in-line {
   display: inline;
 }
 .font-red {
   color: #ff0000;
+}
+.topbar-height {
+  min-height: 30px;
 }
 .header-hot {
   margin-top: 2px;
@@ -17,7 +15,27 @@ a:focus {
 .header-hotword .list-inline > li:first-child a {
   color: #ff0000;
 }
-.header-hotword,
-.header-hotword .list-inline > li > a {
-  color: #999;
+.header-hotword {
+  color: #999999;
+}
+.list-inline > li > a {
+  color: #999999;
+}
+.list-inline > li > a:hover,
+.list-inline > li > a:focus {
+  color: #ff0000;
+  text-decoration: underline;
+  cursor: auto;
+}
+.topnavbar {
+  background: #F7F7F7;
+  border-bottom: 1px solid #eee;
+}
+.header {
+  margin-top: 15px;
+}
+.welcomeback,
+.topinfor ul li {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

@@ -1,15 +1,13 @@
 @import "variables";
-li > a:hover,
-     a:focus {
-     color: @my-theme;
-     text-decoration: underline;
-}
 
 .in-line{
   display: inline;
 }
 .font-red{
   color:@font-red;
+}
+.topbar-height{
+  min-height: @topbar-height;
 }
 .header-hot{
   margin-top: 2px;
@@ -19,6 +17,27 @@ li > a:hover,
 .header-hotword .list-inline > li:first-child a{
   color:@font-red;
 }
-.header-hotword,.header-hotword .list-inline > li > a{
-  color:#999;
+.header-hotword{
+  color:@default-hotword-color;
+}
+
+.list-inline > li > a{
+  color:@default-hotword-color;
+  &:hover,
+  &:focus {
+    color: @my-theme;
+    text-decoration: underline;
+    cursor: auto;
+  }
+}
+.topnavbar{
+  background: #F7F7F7;
+  border-bottom: 1px solid #eee;
+}
+.header{
+  margin-top: 15px;
+}
+.welcomeback ,.topinfor ul li{
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
