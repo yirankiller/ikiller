@@ -10,7 +10,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <div class="header">
   <div class="container">
-    <div class="row">
+    <div class="row logo-search">
       <div class="col-xs-3">
         <img src="/images/logo.png" alt="" class="logo-default">
       </div>
@@ -62,9 +62,15 @@
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
+        <ul class="nav navbar-nav nav-font">
           <li class="active"><a href="#">首页</a></li>
-          <li><a href="#">Link</a></li>
+          <li ><a href="#">经验</a></li>
+          <li ><a href="#">新居</a></li>
+          <li ><a href="#">办公室</a></li>
+          <li ><a href="#">除味</a></li>
+          <li ><a href="#">Link</a></li>
+          <li ><a href="#">Link</a></li>
+
         </ul>
       </div><!-- /.navbar-collapse -->
     </nav>

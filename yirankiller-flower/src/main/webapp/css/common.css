@@ -2,7 +2,7 @@
   display: inline;
 }
 .font-red {
-  color: #ff0000;
+  color: #e4393c;
 }
 .topbar-height {
   min-height: 30px;
@@ -13,17 +13,21 @@
   padding-top: 2px;
 }
 .header-hotword .list-inline > li:first-child a {
-  color: #ff0000;
+  color: #e4393c;
 }
 .header-hotword {
   color: #999999;
+  margin-top: 6px;
+}
+.logo-search {
+  margin-bottom: 10px;
 }
 .list-inline > li > a {
   color: #999999;
 }
 .list-inline > li > a:hover,
 .list-inline > li > a:focus {
-  color: #ff0000;
+  color: #e4393c;
   text-decoration: underline;
   cursor: auto;
 }
@@ -35,7 +39,19 @@
   margin-top: 15px;
 }
 .welcomeback,
-.topinfor ul li {
+.topinfor > ul > li {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+.nav-font,
+.navbar-header {
+  font-size: 15px;
+  font-weight: 700;
+}
+.nav-font > li > a {
+  width: 85px;
+  text-align: center;
+}
+.navbar-header {
+  width: 210px;
 }
