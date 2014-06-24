@@ -82,3 +82,23 @@
   min-width: 100%;
   height: @carousel-default-height;
 }
+
+
+//nav-sidebar
+.nav-sidbar{
+  width: 200px;
+  .nav{
+    background-color: #f8f8f8;
+    li{
+      border-bottom: 1px dashed #fdeff0;
+    }
+    .active > a{
+      color: @my-theme;
+      border-right: 1px solid @my-theme;
+      font-weight: bold;
+    }
+  }
+}
+.nav-sidbar.affix{
+  top: 80px;
+}

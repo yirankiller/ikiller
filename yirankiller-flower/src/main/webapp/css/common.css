@@ -77,3 +77,20 @@
   min-width: 100%;
   height: 280px;
 }
+.nav-sidbar {
+  width: 200px;
+}
+.nav-sidbar .nav {
+  background-color: #f8f8f8;
+}
+.nav-sidbar .nav li {
+  border-bottom: 1px dashed #fdeff0;
+}
+.nav-sidbar .nav .active > a {
+  color: #e4393c;
+  border-right: 1px solid #e4393c;
+  font-weight: bold;
+}
+.nav-sidbar.affix {
+  top: 80px;
+}

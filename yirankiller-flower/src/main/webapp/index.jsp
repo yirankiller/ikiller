@@ -19,7 +19,7 @@
     seajs.use(["bootstrap","/css/common.css"]);
   </script>
 </head>
-<body>
+<body data-spy="scroll" data-target=".nav-sidbar" data-offset="400">
 <!-- short cut part -->
 <jsp:include page="topbar.jsp"/>
 <!-- header part -->
@@ -27,6 +27,7 @@
 
 <jsp:include page="middle.jsp"/>
 
+<!--
 <div class="container show-grid">
   <table class="table ">
     <thead>
@@ -82,5 +83,6 @@
         </div>
     </form>
 </div>
+-->
 </body>
 </html>
