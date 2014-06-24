@@ -85,6 +85,7 @@
 }
 .nav-sidbar .nav li {
   border-bottom: 1px dashed #fdeff0;
+  font-size: 15px;
 }
 .nav-sidbar .nav .active > a {
   color: #e4393c;

@@ -9,7 +9,7 @@
 
 <div class="middle">
   <div class="container">
-    <div class="nav-sidbar" data-spy="affix" data-offset-top="150">
+    <div class="nav-sidbar pull-left" data-spy="affix" data-offset-top="150">
       <ul class="nav">
         <li>
           <a href="#floor1"><span class="glyphicon glyphicon-shopping-cart"></span> 1F 盆栽</a>
