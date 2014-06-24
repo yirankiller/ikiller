@@ -1,4 +1,4 @@
-@import "variables";
+@import "ivariables";
 
 .in-line{
   display: inline;
@@ -55,5 +55,30 @@
   text-align: center;
 }
 .navbar-header{
-  width: 210px;
+  width: 300px;
+}
+
+// carousel ----------------------------------------------------------------------------------------
+.carousel {
+  left: 565px;
+  height: @carousel-default-height;
+  width: @carousel-default-width;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: @carousel-default-height;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: @carousel-default-height;
 }

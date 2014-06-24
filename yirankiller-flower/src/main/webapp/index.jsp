@@ -25,6 +25,8 @@
 <!-- header part -->
 <jsp:include page="header.jsp"/>
 
+<jsp:include page="middle.jsp"/>
+
 <div class="container show-grid">
   <table class="table ">
     <thead>
