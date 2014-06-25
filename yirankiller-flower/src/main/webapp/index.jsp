@@ -19,7 +19,7 @@
     seajs.use(["bootstrap","/css/common.css"]);
   </script>
 </head>
-<body data-spy="scroll" data-target=".nav-sidbar" data-offset="400">
+<body data-spy="scroll" data-target=".nav-sidbar" data-offset="100" style="position: relative">
 <!-- short cut part -->
 <jsp:include page="topbar.jsp"/>
 <!-- header part -->

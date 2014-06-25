@@ -9,73 +9,89 @@
 
 <div class="middle">
   <div class="container">
-    <div class="nav-sidbar pull-left" data-spy="affix" data-offset-top="150">
+    <div class="nav-sidbar pull-left" data-spy="affix" data-offset-top="150" data-offset-top="0">
       <ul class="nav">
         <li>
-          <a href="#floor1"><span class="glyphicon glyphicon-shopping-cart"></span> 1F 盆栽</a>
+          <a href="#floor1"> 1F 盆栽</a>
+          <ul class="nav">
+            <li>
+              <a href="#home"> home</a>
+            </li>
+            <li>
+              <a href="#profile"> profile</a>
+            </li>
+            <li>
+              <a href="#messages"> Messages</a>
+            </li>
+          </ul>
         </li>
         <li>
-          <a href="#floor2"><span class="glyphicon glyphicon-shopping-cart"></span> 2F 绿植</a>
+          <a href="#floor2"> 2F 绿植</a>
         </li>
         <li>
-          <a href="#floor3"><span class="glyphicon glyphicon-shopping-cart"></span> 3F 盆景</a>
+          <a href="#floor3"> 3F 盆景</a>
         </li>
       </ul>
     </div>
 
+    <div class="middle-content">
+      <div id="centerCarousel" class="carousel slide middle-carousel" data-ride="carousel" data-interval="7000">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#centerCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#centerCarousel" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="/images/tushu.jpg" data-src="holder.js/400x300/auto/#777:#7a7a7a/text:First slide" alt="First slide">
+            <!--
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Example headline.</h1>
+                <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+              </div>
+            </div>
+            -->
+          </div>
+          <div class="item">
+            <img src="/images/songxia.jpg" data-src="holder.js/400x300/auto/#666:#6a6a6a/text:Second slide" alt="Second slide">
+            <!--
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Another example headline.</h1>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+              </div>
+            </div>
+            -->
+          </div>
+        </div>
+        <a class="left carousel-control" href="#centerCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a class="right carousel-control" href="#centerCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+      </div>
+      <div class="floor">
+        <div id="floor1">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs">
+            <li><a href="#home" data-toggle="tab">Home</a></li>
+            <li><a href="#profile" data-toggle="tab">Profile</a></li>
+            <li><a href="#messages" data-toggle="tab">Messages</a></li>
+          </ul>
 
-    <div id="centerCarousel" class="carousel slide middle-carousel" data-ride="carousel" data-interval="20000000">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#centerCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#centerCarousel" data-slide-to="1"></li>
-        <li data-target="#centerCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="item active">
-          <img data-src="holder.js/400x300/auto/#777:#7a7a7a/text:First slide" alt="First slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Example headline.</h1>
-              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-            </div>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="tab-pane active" id="home">Home</div>
+            <div class="tab-pane" id="profile">Profile</div>
+            <div class="tab-pane" id="messages">Messages</div>
           </div>
         </div>
-        <div class="item">
-          <img data-src="holder.js/400x300/auto/#666:#6a6a6a/text:Second slide" alt="Second slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-            </div>
-          </div>
+        <div style="width:700px;height:500px;background: green" id="floor2">
+          floor 2
         </div>
-        <div class="item">
-          <img data-src="holder.js/400x300/auto/#555:#5a5a5a/text:Third slide" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-            </div>
-          </div>
+        <div style="width:700px;height:500px;background: #ffff00" id="floor3">
+          floor 3
         </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div>
-
-    <div class="container" style="margin-left: 200px;" >
-      <div style="width:1000px;height:500px;background: blue" id="floor1">
-        floor 1
-      </div>
-      <div style="width:1000px;height:500px;background: green" id="floor2">
-        floor 2
-      </div>
-      <div style="width:1000px;height:500px;background: #ffff00" id="floor3">
-        floor 3
       </div>
     </div>
   </div>

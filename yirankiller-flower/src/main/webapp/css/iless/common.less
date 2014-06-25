@@ -18,7 +18,7 @@
   color:@font-red;
 }
 .header-hotword{
-  color:@default-hotword-color;
+  color:@my-theme-default-gray;
   margin-top: 6px;
 }
 .logo-search{
@@ -26,7 +26,6 @@
 }
 
 .list-inline > li > a{
-  color:@default-hotword-color;
   &:hover,
   &:focus {
     color: @my-theme;
@@ -37,6 +36,7 @@
 .topnavbar{
   background: #F7F7F7;
   border-bottom: 1px solid #eee;
+  color: @my-theme-default-gray;
 }
 .header{
   margin-top: 15px;
@@ -60,7 +60,6 @@
 
 // carousel ----------------------------------------------------------------------------------------
 .carousel {
-  left: 565px;
   height: @carousel-default-height;
   width: @carousel-default-width;
   margin-bottom: 60px;
@@ -86,12 +85,12 @@
 
 //nav-sidebar
 .nav-sidbar{
-  width: 200px;
+  width: @nav-sidbar-default-width;
   .nav{
     background-color: #f8f8f8;
     li{
-      border-bottom: 1px dashed #fdeff0;
-      font-size: 15px;
+      border-bottom: 1px dashed #FAE5E7;
+      font-size: 14px;
     }
     .active > a{
       color: @my-theme;
@@ -102,4 +101,11 @@
 }
 .nav-sidbar.affix{
   top: 80px;
+}
+.middle-content{
+  margin-left: (@nav-sidbar-default-width + 10px);
+}
+
+.floor .tab-content .tab-pane{
+  height: 360px;
 }

@@ -1,5 +1,7 @@
 @my-theme:                                                  #E4393c;
-@default-hotword-color:                                     #999;
+@my-theme-default-gray:                                     #999;
+@my-theme-default-black:                                    #333;
+@link-color:                                                @my-theme-default-black;
 @my-theme-white:                                            #fff;
 
 
@@ -25,8 +27,10 @@
 @navbar-default-link-hover-bg:                              darken(@navbar-default-bg, 6.5%);
 
 //carousel
-@carousel-default-height:                                   280px;
-@carousel-default-width:                                    520px;
+@carousel-default-height:                                   240px;
+@carousel-default-width:                                    670px;
+
+@carousel-control-opacity:                                  .01;
 
 
 //grid
@@ -38,4 +42,6 @@
 @grid-gutter-width:                                         30px;
 @container-llarge-desktop:                                  ((1250px + @grid-gutter-width));
 @container-llg:                                             @container-llarge-desktop;
+
+@nav-sidbar-default-width:                                  200px;
 
