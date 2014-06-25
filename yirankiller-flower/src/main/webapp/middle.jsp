@@ -13,17 +13,6 @@
       <ul class="nav">
         <li>
           <a href="#floor1"> 1F 盆栽</a>
-          <ul class="nav">
-            <li>
-              <a href="#home"> home</a>
-            </li>
-            <li>
-              <a href="#profile"> profile</a>
-            </li>
-            <li>
-              <a href="#messages"> Messages</a>
-            </li>
-          </ul>
         </li>
         <li>
           <a href="#floor2"> 2F 绿植</a>
@@ -71,10 +60,13 @@
         <a class="right carousel-control" href="#centerCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
       </div>
       <div class="floor">
-        <div id="floor1">
+        <div id="floor1" class="each-floor">
+          <div class="floor-title">
+            <div class="floor-sign">1F</div>
+          </div>
           <!-- Nav tabs -->
           <ul class="nav nav-tabs">
-            <li><a href="#home" data-toggle="tab">Home</a></li>
+            <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
             <li><a href="#profile" data-toggle="tab">Profile</a></li>
             <li><a href="#messages" data-toggle="tab">Messages</a></li>
           </ul>
@@ -86,10 +78,10 @@
             <div class="tab-pane" id="messages">Messages</div>
           </div>
         </div>
-        <div style="width:700px;height:500px;background: green" id="floor2">
+        <div id="floor2" class="each-floor">
           floor 2
         </div>
-        <div style="width:700px;height:500px;background: #ffff00" id="floor3">
+        <div id="floor3" class="each-floor">
           floor 3
         </div>
       </div>

@@ -106,6 +106,31 @@
   margin-left: (@nav-sidbar-default-width + 10px);
 }
 
-.floor .tab-content .tab-pane{
-  height: 360px;
+.floor {
+  .tab-content .tab-pane{
+    height: 360px;
+  }
+  .each-floor{
+    height: 360px;
+    position: relative;
+    .floor-title{
+      position:absolute;
+      .floor-sign{
+        background-image: url(/images/floorBackground.png);
+        width: 30px;
+        height: 36px;
+        background-position: -40px 0;
+        color: #fff;
+        padding-top: 4px;
+        font-size: 16px;
+        padding-left: 4px;
+        font-weight: 700;
+      }
+    }
+
+  }
+  .nav-tabs{
+    padding-left: 160px;
+  }
 }
+
