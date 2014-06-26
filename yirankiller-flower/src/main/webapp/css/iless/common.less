@@ -1,4 +1,5 @@
 @import "ivariables";
+@import "bootstrap/mixins";
 
 .in-line{
   display: inline;
@@ -111,13 +112,16 @@
     height: 360px;
   }
   .each-floor{
+    .clearfix();
     .floor-left{
       width: 160px;
+      float:left;
       .floor-title{
+        border-bottom: 1px solid #dddddd;
         .floor-sign{
           background-image: url(/images/floorBackground.png);
           width: 30px;
-          height: 36px;
+          height: 38px;
           background-position: -40px 0;
           color: #fff;
           padding-top: 4px;
@@ -130,6 +134,11 @@
         height: 360px;
       }
     }
+    .floor-center-navtabs{
+      float: left;
+      width: 630px;
+    }
+
   }
 
   .nav-tabs{

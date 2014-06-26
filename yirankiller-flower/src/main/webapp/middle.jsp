@@ -70,14 +70,13 @@
 
             </div>
           </div>
-          <div>
+          <div class="floor-center-navtabs">
             <!-- Nav tabs -->
             <ul class="nav nav-tabs">
               <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
               <li><a href="#profile" data-toggle="tab">Profile</a></li>
               <li><a href="#messages" data-toggle="tab">Messages</a></li>
             </ul>
-
             <!-- Tab panes -->
             <div class="tab-content">
               <div class="tab-pane active" id="home">Home</div>
@@ -87,10 +86,52 @@
           </div>
         </div>
         <div id="floor2" class="each-floor">
-          floor 2
+          <div class="floor-left">
+            <div class="floor-title">
+              <div class="floor-sign">1F</div>
+            </div>
+            <div class="floor-left-nav">
+
+            </div>
+          </div>
+          <div class="floor-center-navtabs">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#home2" data-toggle="tab">Home</a></li>
+              <li><a href="#profile2" data-toggle="tab">Profile</a></li>
+              <li><a href="#messages2" data-toggle="tab">Messages</a></li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div class="tab-pane active" id="home2">Home</div>
+              <div class="tab-pane" id="profile2">Profile</div>
+              <div class="tab-pane" id="messages2">Messages</div>
+            </div>
+          </div>
         </div>
         <div id="floor3" class="each-floor">
-          floor 3
+          <div class="floor-left">
+            <div class="floor-title">
+              <div class="floor-sign">1F</div>
+            </div>
+            <div class="floor-left-nav">
+
+            </div>
+          </div>
+          <div class="floor-center-navtabs">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#home3" data-toggle="tab">Home</a></li>
+              <li><a href="#profile3" data-toggle="tab">Profile</a></li>
+              <li><a href="#messages3" data-toggle="tab">Messages</a></li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div class="tab-pane active" id="home3">Home</div>
+              <div class="tab-pane" id="profile3">Profile</div>
+              <div class="tab-pane" id="messages3">Messages</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

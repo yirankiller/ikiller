@@ -98,13 +98,25 @@
 .floor .tab-content .tab-pane {
   height: 360px;
 }
+.floor .each-floor:before,
+.floor .each-floor:after {
+  content: " ";
+  display: table;
+}
+.floor .each-floor:after {
+  clear: both;
+}
 .floor .each-floor .floor-left {
   width: 160px;
+  float: left;
+}
+.floor .each-floor .floor-left .floor-title {
+  border-bottom: 1px solid #dddddd;
 }
 .floor .each-floor .floor-left .floor-title .floor-sign {
   background-image: url(/images/floorBackground.png);
   width: 30px;
-  height: 36px;
+  height: 38px;
   background-position: -40px 0;
   color: #fff;
   padding-top: 4px;
@@ -114,4 +126,8 @@
 }
 .floor .each-floor .floor-left .floor-left-nav {
   height: 360px;
+}
+.floor .each-floor .floor-center-navtabs {
+  float: left;
+  width: 630px;
 }
