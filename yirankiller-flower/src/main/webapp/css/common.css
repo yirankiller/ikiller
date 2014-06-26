@@ -98,14 +98,10 @@
 .floor .tab-content .tab-pane {
   height: 360px;
 }
-.floor .each-floor {
-  height: 360px;
-  position: relative;
+.floor .each-floor .floor-left {
+  width: 160px;
 }
-.floor .each-floor .floor-title {
-  position: absolute;
-}
-.floor .each-floor .floor-title .floor-sign {
+.floor .each-floor .floor-left .floor-title .floor-sign {
   background-image: url(/images/floorBackground.png);
   width: 30px;
   height: 36px;
@@ -116,6 +112,6 @@
   padding-left: 4px;
   font-weight: 700;
 }
-.floor .nav-tabs {
-  padding-left: 160px;
+.floor .each-floor .floor-left .floor-left-nav {
+  height: 360px;
 }

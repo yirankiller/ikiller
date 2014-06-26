@@ -59,23 +59,31 @@
         <a class="left carousel-control" href="#centerCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
         <a class="right carousel-control" href="#centerCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
       </div>
+
       <div class="floor">
         <div id="floor1" class="each-floor">
-          <div class="floor-title">
-            <div class="floor-sign">1F</div>
-          </div>
-          <!-- Nav tabs -->
-          <ul class="nav nav-tabs">
-            <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
-            <li><a href="#profile" data-toggle="tab">Profile</a></li>
-            <li><a href="#messages" data-toggle="tab">Messages</a></li>
-          </ul>
+          <div class="floor-left">
+            <div class="floor-title">
+              <div class="floor-sign">1F</div>
+            </div>
+            <div class="floor-left-nav">
 
-          <!-- Tab panes -->
-          <div class="tab-content">
-            <div class="tab-pane active" id="home">Home</div>
-            <div class="tab-pane" id="profile">Profile</div>
-            <div class="tab-pane" id="messages">Messages</div>
+            </div>
+          </div>
+          <div>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+              <li><a href="#profile" data-toggle="tab">Profile</a></li>
+              <li><a href="#messages" data-toggle="tab">Messages</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div class="tab-pane active" id="home">Home</div>
+              <div class="tab-pane" id="profile">Profile</div>
+              <div class="tab-pane" id="messages">Messages</div>
+            </div>
           </div>
         </div>
         <div id="floor2" class="each-floor">
