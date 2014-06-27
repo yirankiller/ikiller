@@ -98,6 +98,9 @@
 .floor .tab-content .tab-pane {
   height: 360px;
 }
+.floor .each-floor {
+  margin-bottom: 16px;
+}
 .floor .each-floor:before,
 .floor .each-floor:after {
   content: " ";
@@ -126,8 +129,12 @@
 }
 .floor .each-floor .floor-left .floor-left-nav {
   height: 360px;
+  border-bottom: 1px solid #dddddd;
 }
 .floor .each-floor .floor-center-navtabs {
   float: left;
   width: 630px;
+}
+.floor .each-floor .floor-center-navtabs .tab-content {
+  border-left: 1px solid #dddddd;
 }

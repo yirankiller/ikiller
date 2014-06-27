@@ -16,7 +16,14 @@
   <script src="/js/seajs/latest/sea.js" id="seajsnode"></script>
   <script src="/js/seajs/config.js" type="text/javascript"></script>
   <script language="JavaScript">
-    seajs.use(["bootstrap","/css/common.css"]);
+    seajs.use(["bootstrap","/css/common.css","jQuery"],function(a,b,$){
+      $(function(){
+        $('#floornav1 a').click(function (e) {
+          e.preventDefault()
+          $(this).tab('show')
+        })
+      });
+    });
   </script>
 </head>
 <body data-spy="scroll" data-target=".nav-sidbar" data-offset="100" style="position: relative">

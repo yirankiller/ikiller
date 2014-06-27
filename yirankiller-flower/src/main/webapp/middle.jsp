@@ -72,10 +72,10 @@
           </div>
           <div class="floor-center-navtabs">
             <!-- Nav tabs -->
-            <ul class="nav nav-tabs">
-              <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
-              <li><a href="#profile" data-toggle="tab">Profile</a></li>
-              <li><a href="#messages" data-toggle="tab">Messages</a></li>
+            <ul class="nav nav-tabs" id="floornav1">
+              <li class="active"><a href="#home" >Home</a></li>
+              <li><a href="#profile" >Profile</a></li>
+              <li><a href="#messages" >Messages</a></li>
             </ul>
             <!-- Tab panes -->
             <div class="tab-content">
