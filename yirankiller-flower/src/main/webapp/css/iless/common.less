@@ -4,6 +4,7 @@
 
 .in-line{
   display: inline;
+  list-style: none;
 }
 .font-red{
   color:@font-red;
@@ -103,9 +104,10 @@
 .floor {
   .each-floor{
     .clearfix();
-    margin-bottom: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     .floor-left{
-      width: 160px;
+      width: 23%;
       float:left;
       .floor-title{
         border-bottom: 2px solid #dddddd;
@@ -119,33 +121,63 @@
           font-size: 16px;
           padding-left: 4px;
           font-weight: 700;
+          float:left;
+
         }
+        .floor-title-text{
+          padding: 10px 100px 0;
+          font-size: 18px;
+          font-weight: 700;
+        }
+        .clearfix();
       }
       .floor-left-nav{
-        height: 360px;
+        height:556px;
         border-bottom: 1px solid #dddddd;
-        border-left: 1px solid #dddddd;
+        padding: 0 10px;
+        ul{
+          padding-left: 0;
+          display: inline-block;
+          li{
+            width:99px;
+            font-size: 12px;
+            line-height: 25px;
+            float:left;
+            list-style: none;
+            font-family: Arial, Verdana, "\5b8b\4f53";
+          }
+        }
+
       }
     }
     .floor-center-navtabs{
       float: left;
-      width: 80%;
+      width: 70%;
       .nav-tabs{
         border-bottom-width: @floor-center-navtabs-border-width;
         > li {
           margin-bottom: -@floor-center-navtabs-border-width;
+          font-size: 13px;
+          font-weight: 700;
         }
       }
       .tab-content{
-        height:554px;
+        height:556px;
         border-left: 1px solid #dddddd;
         border-bottom: 1px solid #dddddd;
+        overflow: hidden;
         .list-each-item {
           width: 230px;
           float: left;
           padding: 12px 16px;
+          border-bottom: 1px solid #dddddd;
+          border-right: 1px solid #dddddd;
           .item-img{
             overflow: hidden;
+            img{
+              max-height: @default-list-image-width;
+            }
+
           }
           .item-desc{
             word-break: break-all;
@@ -154,6 +186,10 @@
           }
           .item-price{
             color:@my-theme;
+            font-size: 15px;
+            span{
+              font-size: 12px;
+            }
           }
         }
 
