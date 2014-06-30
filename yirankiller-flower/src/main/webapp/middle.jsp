@@ -79,7 +79,86 @@
             </ul>
             <!-- Tab panes -->
             <div class="tab-content">
-              <div class="tab-pane active" id="home">Home</div>
+              <div class="tab-pane active" id="home">
+                <div class="list-each-item">
+                  <div class="item-img">
+                    <a href="#">
+                      <img src="/images/lvluo.jpg" data-src="holder.js/100x180">
+                    </a>
+                  </div>
+                  <div class="item-desc">
+                    <a href="#">小盆绿萝小盆绿萝小盆绿萝小盆绿萝小盆绿萝</a>
+                  </div>
+                  <div class="item-price">
+                    <span>￥</span><span>138.00</span>
+                  </div>
+                </div>
+                <div class="list-each-item">
+                  <div class="index-img-list">
+                    <a href="#">
+                      <img src="/images/lvluo.jpg" data-src="holder.js/100x180">
+                    </a>
+                  </div>
+                  <div class="item-desc">
+                    <a href="#">小盆绿萝小盆绿萝萝</a>
+                  </div>
+                  <div class="item-price">
+                    <span>￥</span><span>138.00</span>
+                  </div>
+                </div>
+                <div class="list-each-item">
+                  <div class="item-img">
+                    <a href="#">
+                      <img src="/images/lvluo.jpg" data-src="holder.js/100x180">
+                    </a>
+                  </div>
+                  <div class="item-desc">
+                    <a href="#">小盆绿萝小盆绿萝小盆绿萝小盆绿萝小盆绿萝</a>
+                  </div>
+                  <div class="item-price">
+                    <span>￥</span><span>138.00</span>
+                  </div>
+                </div>
+                <div class="list-each-item">
+                  <div class="item-img">
+                    <a href="#">
+                      <img src="/images/lvluo.jpg" data-src="holder.js/100x180">
+                    </a>
+                  </div>
+                  <div class="item-desc">
+                    <a href="#">小盆绿萝小盆绿萝小盆绿萝小盆绿萝小盆绿萝</a>
+                  </div>
+                  <div class="item-price">
+                    <span>￥</span><span>138.00</span>
+                  </div>
+                </div>
+                <div class="list-each-item">
+                  <div class="item-img">
+                    <a href="#">
+                      <img src="/images/lvluo.jpg" data-src="holder.js/100x180">
+                    </a>
+                  </div>
+                  <div class="item-desc">
+                    <a href="#">小盆绿萝小盆绿萝小盆绿萝小盆绿萝小盆绿萝</a>
+                  </div>
+                  <div class="item-price">
+                    <span>￥</span><span>138.00</span>
+                  </div>
+                </div>
+                <div class="list-each-item">
+                  <div class="item-img">
+                    <a href="#">
+                      <img src="/images/lvluo.jpg" data-src="holder.js/100x180">
+                    </a>
+                  </div>
+                  <div class="item-desc">
+                    <a href="#">小盆绿萝小盆绿萝小盆绿萝小盆绿萝小盆绿萝</a>
+                  </div>
+                  <div class="item-price">
+                    <span>￥</span><span>138.00</span>
+                  </div>
+                </div>
+              </div>
               <div class="tab-pane" id="profile">Profile</div>
               <div class="tab-pane" id="messages">Messages</div>
             </div>
@@ -88,7 +167,7 @@
         <div id="floor2" class="each-floor">
           <div class="floor-left">
             <div class="floor-title">
-              <div class="floor-sign">1F</div>
+              <div class="floor-sign">2F</div>
             </div>
             <div class="floor-left-nav">
 
@@ -97,9 +176,9 @@
           <div class="floor-center-navtabs">
             <!-- Nav tabs -->
             <ul class="nav nav-tabs">
-              <li class="active"><a href="#home2" data-toggle="tab">Home</a></li>
-              <li><a href="#profile2" data-toggle="tab">Profile</a></li>
-              <li><a href="#messages2" data-toggle="tab">Messages</a></li>
+              <li class="active"><a href="#home2">Home</a></li>
+              <li><a href="#profile2" >Profile</a></li>
+              <li><a href="#messages2" >Messages</a></li>
             </ul>
             <!-- Tab panes -->
             <div class="tab-content">
@@ -112,7 +191,7 @@
         <div id="floor3" class="each-floor">
           <div class="floor-left">
             <div class="floor-title">
-              <div class="floor-sign">1F</div>
+              <div class="floor-sign">3F</div>
             </div>
             <div class="floor-left-nav">
 
@@ -121,9 +200,9 @@
           <div class="floor-center-navtabs">
             <!-- Nav tabs -->
             <ul class="nav nav-tabs">
-              <li class="active"><a href="#home3" data-toggle="tab">Home</a></li>
-              <li><a href="#profile3" data-toggle="tab">Profile</a></li>
-              <li><a href="#messages3" data-toggle="tab">Messages</a></li>
+              <li class="active"><a href="#home3" >Home</a></li>
+              <li><a href="#profile3" >Profile</a></li>
+              <li><a href="#messages3" >Messages</a></li>
             </ul>
             <!-- Tab panes -->
             <div class="tab-content">

@@ -18,7 +18,7 @@
   <script language="JavaScript">
     seajs.use(["bootstrap","/css/common.css","jQuery"],function(a,b,$){
       $(function(){
-        $('#floornav1 a').click(function (e) {
+        $('.each-floor .nav-tabs a').hover(function (e) {
           e.preventDefault()
           $(this).tab('show')
         })

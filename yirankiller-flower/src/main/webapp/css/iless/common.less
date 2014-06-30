@@ -1,6 +1,7 @@
 @import "ivariables";
 @import "bootstrap/mixins";
 
+
 .in-line{
   display: inline;
 }
@@ -26,14 +27,6 @@
   margin-bottom: 10px;
 }
 
-.list-inline > li > a{
-  &:hover,
-  &:focus {
-    color: @my-theme;
-    text-decoration: underline;
-    cursor: auto;
-  }
-}
 .topnavbar{
   background: #F7F7F7;
   border-bottom: 1px solid #eee;
@@ -108,9 +101,6 @@
 }
 
 .floor {
-  .tab-content .tab-pane{
-    height: 360px;
-  }
   .each-floor{
     .clearfix();
     margin-bottom: 16px;
@@ -118,7 +108,7 @@
       width: 160px;
       float:left;
       .floor-title{
-        border-bottom: 1px solid #dddddd;
+        border-bottom: 2px solid #dddddd;
         .floor-sign{
           background-image: url(/images/floorBackground.png);
           width: 30px;
@@ -134,20 +124,41 @@
       .floor-left-nav{
         height: 360px;
         border-bottom: 1px solid #dddddd;
-
+        border-left: 1px solid #dddddd;
       }
     }
     .floor-center-navtabs{
       float: left;
-      width: 630px;
+      width: 80%;
+      .nav-tabs{
+        border-bottom-width: @floor-center-navtabs-border-width;
+        > li {
+          margin-bottom: -@floor-center-navtabs-border-width;
+        }
+      }
       .tab-content{
+        height:554px;
         border-left: 1px solid #dddddd;
+        border-bottom: 1px solid #dddddd;
+        .list-each-item {
+          width: 230px;
+          float: left;
+          padding: 12px 16px;
+          .item-img{
+            overflow: hidden;
+          }
+          .item-desc{
+            word-break: break-all;
+            word-wrap: break-word;
+            min-height: 34px;
+          }
+          .item-price{
+            color:@my-theme;
+          }
+        }
+
       }
     }
-
-  }
-
-  .nav-tabs{
 
   }
 }
