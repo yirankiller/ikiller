@@ -135,16 +135,22 @@
   clear: both;
 }
 .floor .each-floor .floor-left .floor-left-nav {
-  height: 556px;
-  border-bottom: 1px solid #dddddd;
+  height: auto;
   padding: 0 10px;
+  color: #666666;
 }
-.floor .each-floor .floor-left .floor-left-nav ul {
+.floor .each-floor .floor-left .floor-left-nav .floor-category {
+  min-height: 292px;
+  max-height: 292px;
+  overflow: hidden;
+  padding: 12px 16px;
+}
+.floor .each-floor .floor-left .floor-left-nav .floor-category ul {
   padding-left: 0;
   display: inline-block;
 }
-.floor .each-floor .floor-left .floor-left-nav ul li {
-  width: 99px;
+.floor .each-floor .floor-left .floor-left-nav .floor-category ul li {
+  width: 90px;
   font-size: 12px;
   line-height: 25px;
   float: left;
@@ -164,33 +170,88 @@
   font-weight: 700;
 }
 .floor .each-floor .floor-center-navtabs .tab-content {
-  height: 556px;
+  height: auto;
   border-left: 1px solid #dddddd;
-  border-bottom: 1px solid #dddddd;
   overflow: hidden;
 }
-.floor .each-floor .floor-center-navtabs .tab-content .list-each-item {
+.floor .each-floor .floor-center-navtabs .tab-content .list-inline > li:first-child {
+  padding-left: 5px;
+}
+.list-each-item {
   width: 230px;
   float: left;
   padding: 12px 16px;
   border-bottom: 1px solid #dddddd;
   border-right: 1px solid #dddddd;
 }
-.floor .each-floor .floor-center-navtabs .tab-content .list-each-item .item-img {
+.list-each-item .item-img {
   overflow: hidden;
 }
-.floor .each-floor .floor-center-navtabs .tab-content .list-each-item .item-img img {
+.list-each-item .item-img img {
   max-height: 202px;
 }
-.floor .each-floor .floor-center-navtabs .tab-content .list-each-item .item-desc {
+.list-each-item .item-desc {
   word-break: break-all;
   word-wrap: break-word;
   min-height: 34px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
-.floor .each-floor .floor-center-navtabs .tab-content .list-each-item .item-price {
+.list-each-item .item-price {
   color: #e4393c;
   font-size: 15px;
 }
-.floor .each-floor .floor-center-navtabs .tab-content .list-each-item .item-price span {
+.list-each-item .item-price span {
   font-size: 12px;
+}
+.recommendation {
+  width: 230px;
+  padding: 12px 16px;
+  border-bottom: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  position: relative;
+}
+.recommendation .item-img {
+  overflow: hidden;
+}
+.recommendation .item-img img {
+  max-height: 202px;
+}
+.recommendation .item-desc {
+  word-break: break-all;
+  word-wrap: break-word;
+  min-height: 34px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.recommendation .item-price {
+  color: #e4393c;
+  font-size: 15px;
+}
+.recommendation .item-price span {
+  font-size: 12px;
+}
+.recommendation .hot-sale .back-img {
+  position: absolute;
+  left: -8px;
+  top: -12px;
+  color: #e4393c;
+  font-size: 60px;
+}
+.recommendation .hot-sale .text {
+  color: #ffffff;
+  position: absolute;
+  left: 6px;
+  top: 8px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.footer .footer-nav-link {
+  text-align: center;
+}
+.footer .footer-nav-link .list-inline > li {
+  border-right: 1px solid #dddddd;
+}
+.footer .footer-nav-link .list-inline > li:last-child {
+  border-right: 0;
 }

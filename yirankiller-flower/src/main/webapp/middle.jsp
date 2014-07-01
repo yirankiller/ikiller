@@ -68,16 +68,41 @@
               <div class="floor-title-text">盆栽</div>
             </div>
             <div class="floor-left-nav">
-              <ul class="">
-                <li>绿萝</li>
-                <li>文竹</li>
-                <li>绿萝</li>
-                <li>吉利红星</li>
-                <li>绿萝</li>
-                <li>三叶草</li>
-                <li>仙人球</li>
-                <li>巴西木</li>
-              </ul>
+              <div class="floor-category">
+                <ul class="">
+                  <li><a href="#">绿萝</a></li>
+                  <li><a href="#">文竹</a></li>
+                  <li><a href="#">绿萝</a></li>
+                  <li><a href="#">吉利红星</a></li>
+                  <li><a href="#">三叶草</a></li>
+                  <li><a href="#">仙人球</a></li>
+                  <li><a href="#">巴西木</a></li>
+                  <li><a href="#">绿萝</a></li>
+                  <li><a href="#">吉利红星</a></li>
+                  <li><a href="#">三叶草</a></li>
+                  <li><a href="#">仙人球</a></li>
+                  <li><a href="#">巴西木</a></li>
+                </ul>
+              </div>
+              <div class="recommendation">
+                <div class="hot-sale">
+                  <span class="back-img glyphicon glyphicon-certificate"></span>
+                  <div class="text">推荐</div>
+                </div>
+                <div class="item-img">
+                  <a href="#">
+                    <img src="/images/resources/lvluo.jpg" data-src="holder.js/100x180">
+                  </a>
+                </div>
+                <div class="item-desc">
+                  <a href="#">小盆绿萝小盆绿萝小盆绿萝小盆绿萝小盆绿萝</a>
+                </div>
+                <div class="item-price">
+                  <span>￥</span>
+                  138
+                  <span>.00</span>
+                </div>
+              </div>
             </div>
           </div>
           <div class="floor-center-navtabs">
@@ -380,7 +405,41 @@
               <div class="floor-sign">2F</div>
             </div>
             <div class="floor-left-nav">
-
+              <div class="floor-category">
+                <ul class="">
+                  <li><a href="#">绿萝</a></li>
+                  <li><a href="#">文竹</a></li>
+                  <li><a href="#">绿萝</a></li>
+                  <li><a href="#">吉利红星</a></li>
+                  <li><a href="#">三叶草</a></li>
+                  <li><a href="#">仙人球</a></li>
+                  <li><a href="#">巴西木</a></li>
+                  <li><a href="#">绿萝</a></li>
+                  <li><a href="#">吉利红星</a></li>
+                  <li><a href="#">三叶草</a></li>
+                  <li><a href="#">仙人球</a></li>
+                  <li><a href="#">巴西木</a></li>
+                </ul>
+              </div>
+              <div class="recommendation">
+                <div class="hot-sale">
+                  <span class="back-img glyphicon glyphicon-certificate"></span>
+                  <div class="text">推荐</div>
+                </div>
+                <div class="item-img">
+                  <a href="#">
+                    <img src="/images/resources/lvluo.jpg" data-src="holder.js/100x180">
+                  </a>
+                </div>
+                <div class="item-desc">
+                  <a href="#">小盆绿萝小盆绿萝小盆绿萝小盆绿萝小盆绿萝</a>
+                </div>
+                <div class="item-price">
+                  <span>￥</span>
+                  138
+                  <span>.00</span>
+                </div>
+              </div>
             </div>
           </div>
           <div class="floor-center-navtabs">
@@ -683,7 +742,41 @@
               <div class="floor-sign">3F</div>
             </div>
             <div class="floor-left-nav">
-
+              <div class="floor-category">
+                <ul class="">
+                  <li><a href="#">绿萝</a></li>
+                  <li><a href="#">文竹</a></li>
+                  <li><a href="#">绿萝</a></li>
+                  <li><a href="#">吉利红星</a></li>
+                  <li><a href="#">三叶草</a></li>
+                  <li><a href="#">仙人球</a></li>
+                  <li><a href="#">巴西木</a></li>
+                  <li><a href="#">绿萝</a></li>
+                  <li><a href="#">吉利红星</a></li>
+                  <li><a href="#">三叶草</a></li>
+                  <li><a href="#">仙人球</a></li>
+                  <li><a href="#">巴西木</a></li>
+                </ul>
+              </div>
+              <div class="recommendation">
+                <div class="hot-sale">
+                  <span class="back-img glyphicon glyphicon-certificate"></span>
+                  <div class="text">推荐</div>
+                </div>
+                <div class="item-img">
+                  <a href="#">
+                    <img src="/images/resources/lvluo.jpg" data-src="holder.js/100x180">
+                  </a>
+                </div>
+                <div class="item-desc">
+                  <a href="#">小盆绿萝小盆绿萝小盆绿萝小盆绿萝小盆绿萝</a>
+                </div>
+                <div class="item-price">
+                  <span>￥</span>
+                  138
+                  <span>.00</span>
+                </div>
+              </div>
             </div>
           </div>
           <div class="floor-center-navtabs">
