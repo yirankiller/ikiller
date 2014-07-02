@@ -255,3 +255,7 @@
 .footer .footer-nav-link .list-inline > li:last-child {
   border-right: 0;
 }
+.galleria-item {
+  height: 320px;
+  width: 320px;
+}
