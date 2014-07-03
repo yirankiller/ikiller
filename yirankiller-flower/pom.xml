@@ -161,5 +161,35 @@
         </dependency>
         <!-- other end -->
     </dependencies>
-
+    <build>
+        <plugins>
+            <!--
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <configuration>
+                    <warSourceExcludes>**/igalleria.js</warSourceExcludes>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.samaxes.maven</groupId>
+                <artifactId>minify-maven-plugin</artifactId>
+                <version>1.6.2</version>
+                <executions>
+                    <execution>
+                        <id>default-minify</id>
+                        <configuration>
+                            <jsSourceFiles>
+                                <jsSourceFile>igalleria.js</jsSourceFile>
+                            </jsSourceFiles>
+                        </configuration>
+                        <goals>
+                            <goal>minify</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            -->
+        </plugins>
+    </build>
 </project>
