@@ -21,7 +21,9 @@ seajs.config({
         'jQuery' : 'jQueryHome/jquery',
         'bootstrap' : 'bootstrapHome/js/bootstrap',
         'seajs-text' : 'seaHome/seajs-text',
-        'galleria' : 'galleriaHome/galleria'
+        'galleria' : 'galleriaHome/galleria',
+        'igalleria' : 'galleria/igalleria',
+        'galleria.classic' : 'galleriaHome/galleria.classic'
     },
 
     preload : [
@@ -31,10 +33,12 @@ seajs.config({
     ],
 
     map : [
-//        ['bootstrap.js' , 'bootstrap.min.js'],
-//        ['galleria.js' , 'galleria.min.js'],
-//        ['jquery.js' ,'jquery.min.js'],
-//        ['bootstrap.css','bootstrap.min.css']
+        ['/igalleria.js' ,'/igalleria.enc.js'],
+        ['/galleria.js' , '/galleria.min.js'],
+        ['/galleria.classic.js' , '/galleria.classic.min.js'],
+        ['/bootstrap.js' , '/bootstrap.min.js'],
+        ['/jquery.js' ,'/jquery.min.js']
+//        ['/bootstrap.css','/bootstrap.min.css']
     ],
 
     debug : true

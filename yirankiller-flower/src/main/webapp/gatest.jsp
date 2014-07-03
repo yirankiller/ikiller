@@ -16,9 +16,9 @@
   <script src="/js/seajs/latest/sea.js" id="seajsnode"></script>
   <script src="/js/seajs/config.js" type="text/javascript"></script>
   <script language="JavaScript">
-    seajs.use(["galleria"],function(Galleria){
+    seajs.use(["igalleria"],function(Galleria){
       // Load the classic theme
-      Galleria.loadTheme('/js/galleria/1.3.6/galleria.classic.js');
+      //Galleria.loadTheme('/js/galleria/1.3.6/galleria.classic.js');
 
       // Initialize Galleria
       Galleria.run('#galleria');

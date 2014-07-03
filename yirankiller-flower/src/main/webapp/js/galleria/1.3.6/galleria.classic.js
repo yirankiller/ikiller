@@ -7,6 +7,8 @@
  *
  */
 define(function(require) {
+  var jQuery = require('jQuery');
+  var Galleria = require('galleria');
 (function($) {
 
 /*global window, jQuery, Galleria */
@@ -61,24 +63,24 @@ Galleria.addTheme({
 
             if (! touch ) {
                 // fade thumbnails
-                $(e.thumbTarget).css('opacity', 0.6).parent().hover(function() {
+                $(e.thumbTarget).css('opacity', 0.8).parent().hover(function() {
                     $(this).not('.active').children().stop().fadeTo(100, 1);
                 }, function() {
-                    $(this).not('.active').children().stop().fadeTo(400, 0.6);
+                    $(this).not('.active').children().stop().fadeTo(400, 0.8);
                 });
 
                 if ( e.index === this.getIndex() ) {
                     $(e.thumbTarget).css('opacity',1);
                 }
             } else {
-                $(e.thumbTarget).css('opacity', this.getIndex() ? 1 : 0.6).bind('click:fast', function() {
-                    $(this).css( 'opacity', 1 ).parent().siblings().children().css('opacity', 0.6);
+                $(e.thumbTarget).css('opacity', this.getIndex() ? 1 : 0.8).bind('click:fast', function() {
+                    $(this).css( 'opacity', 1 ).parent().siblings().children().css('opacity', 0.8);
                 });
             }
         });
 
         var activate = function(e) {
-            $(e.thumbTarget).css('opacity',1).parent().siblings().children().css('opacity', 0.6);
+            $(e.thumbTarget).css('opacity',1).parent().siblings().children().css('opacity', 0.8);
         };
 
         this.bind('loadstart', function(e) {

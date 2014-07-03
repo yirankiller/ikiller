@@ -110,7 +110,7 @@
       width: 23%;
       float:left;
       .floor-title{
-        border-bottom: 2px solid #dddddd;
+        border-bottom: 2px solid @default-gray-background;
         .floor-sign{
           background-image: url(/images/floorBackground.png);
           width: 30px;
@@ -168,7 +168,7 @@
       }
       .tab-content{
         height:auto;
-        border-left: 1px solid #dddddd;
+        border-left: 1px solid @default-gray-background;
         overflow: hidden;
         .list-inline > li:first-child{
           padding-left: 5px;
@@ -183,8 +183,8 @@
   width: 230px;
   float: left;
   padding: 12px 16px;
-  border-bottom: 1px solid #dddddd;
-  border-right: 1px solid #dddddd;
+  border-bottom: 1px solid @default-gray-background;
+  border-right: 1px solid @default-gray-background;
   .item-img{
     overflow: hidden;
     img{
@@ -210,8 +210,8 @@
 .recommendation{
   width: 230px;
   padding: 12px 16px;
-  border-bottom: 1px solid #dddddd;
-  border-right: 1px solid #dddddd;
+  border-bottom: 1px solid @default-gray-background;
+  border-right: 1px solid @default-gray-background;
   position: relative;
   .item-img{
     overflow: hidden;
@@ -259,7 +259,7 @@
     text-align: center;
     .list-inline
     > li{
-      border-right: 1px solid #dddddd;
+      border-right: 1px solid @default-gray-background;
       &:last-child{
         border-right: 0;
       }
@@ -269,6 +269,21 @@
 
 // item - middle
 .galleria-item{
-  height:320px;
-  width: 320px;
+  height:350px;
+  width: 350px;
+  .galleria-container{
+    background: @my-theme-white;
+    border: 1px solid @default-gray-background;
+
+  }
+  .notouch .galleria-thumb-nav-left,
+  .notouch .galleria-thumb-nav-right,
+  .notouch .galleria-thumb-nav-left:hover,
+  .notouch .galleria-thumb-nav-right:hover {
+    background-color:@default-gray-background;
+  }
+  .touch .galleria-thumb-nav-left:active,
+  .touch .galleria-thumb-nav-right:active {
+    background-color:@default-gray-background;
+  }
 }

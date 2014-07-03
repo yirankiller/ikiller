@@ -256,6 +256,20 @@
   border-right: 0;
 }
 .galleria-item {
-  height: 320px;
-  width: 320px;
+  height: 350px;
+  width: 350px;
+}
+.galleria-item .galleria-container {
+  background: #ffffff;
+  border: 1px solid #dddddd;
+}
+.galleria-item .notouch .galleria-thumb-nav-left,
+.galleria-item .notouch .galleria-thumb-nav-right,
+.galleria-item .notouch .galleria-thumb-nav-left:hover,
+.galleria-item .notouch .galleria-thumb-nav-right:hover {
+  background-color: #dddddd;
+}
+.galleria-item .touch .galleria-thumb-nav-left:active,
+.galleria-item .touch .galleria-thumb-nav-right:active {
+  background-color: #dddddd;
 }
