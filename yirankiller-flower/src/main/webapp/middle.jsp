@@ -23,7 +23,7 @@
       </ul>
     </div>
 
-    <div class="middle-content">
+    <div class="middle-content inner-middle">
       <div id="centerCarousel" class="carousel slide middle-carousel" data-ride="carousel" data-interval="7000">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -115,7 +115,7 @@
             <!-- Tab panes -->
             <div class="tab-content">
               <div class="tab-pane active" id="home">
-                <ul class="list-inline in-line">
+                <ul class="list-inline-item in-line">
                   <li class="list-each-item">
                     <div class="item-img">
                       <a href="#">

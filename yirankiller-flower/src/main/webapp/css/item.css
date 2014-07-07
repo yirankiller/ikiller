@@ -1,0 +1,73 @@
+.galleria-item {
+  float: left;
+  height: 350px;
+  width: 350px;
+}
+.galleria-item .galleria-container {
+  background: #ffffff;
+  border: 1px solid #dddddd;
+}
+.galleria-item .notouch .galleria-thumb-nav-left,
+.galleria-item .notouch .galleria-thumb-nav-right,
+.galleria-item .notouch .galleria-thumb-nav-left:hover,
+.galleria-item .notouch .galleria-thumb-nav-right:hover {
+  background-color: #dddddd;
+}
+.galleria-item .touch .galleria-thumb-nav-left:active,
+.galleria-item .touch .galleria-thumb-nav-right:active {
+  background-color: #dddddd;
+}
+.item-select {
+  min-height: 400px;
+}
+.item-info {
+  float: left;
+  width: 72%;
+  padding: 10px 20px;
+  max-height: 360px;
+  min-height: 280px;
+  position: relative;
+}
+.item-info .item-name {
+  border-bottom: 1px dotted #dddddd;
+  padding: 5px 0;
+  font-size: 16px;
+}
+.item-info .item-name .name {
+  font-weight: 700;
+  color: #666666;
+}
+.item-info .item-name .sale-info {
+  color: #e4393c;
+}
+.item-info .item-desc {
+  padding-bottom: 20px;
+  padding-top: 15px;
+  width: 70%;
+  height: 240px;
+}
+.item-info .add-cart {
+  font-weight: 700;
+}
+.item-info .item-num {
+  position: relative;
+}
+.item-info .item-num .input-item-num {
+  padding: 6px 24px;
+}
+.item-info .item-num .minux-num {
+  position: absolute;
+  top: 9px;
+  left: 20px;
+}
+.item-info .item-num .plus-num {
+  position: absolute;
+  top: 9px;
+  right: 20px;
+}
+.item-detail .list-inline-item li {
+  width: 300px;
+}
+.item-detail .list-inline-item li .name {
+  margin-right: 15px;
+}

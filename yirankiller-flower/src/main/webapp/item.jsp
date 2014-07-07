@@ -16,8 +16,9 @@
   <script src="/js/seajs/latest/sea.js" id="seajsnode"></script>
   <script src="/js/seajs/config.js" type="text/javascript"></script>
   <script language="JavaScript">
-    seajs.use(["bootstrap","/css/common.css","igalleria"],function(a,b,Galleria){
-      Galleria.run('#galleria');
+    seajs.use(["/css/common.css","/css/item.css"]);
+    seajs.use(["bootstrap","/js/item"],function(b,itemPage){
+      itemPage.initItem();
     });
   </script>
 </head>
