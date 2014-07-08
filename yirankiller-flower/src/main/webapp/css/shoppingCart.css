@@ -1,0 +1,116 @@
+.footer .footer-nav-link {
+  text-align: center;
+}
+.footer .footer-nav-link .list-inline > li {
+  border-right: 1px solid #dddddd;
+}
+.footer .footer-nav-link .list-inline > li:last-child {
+  border-right: 0;
+}
+.in-line {
+  display: inline;
+  list-style: none;
+}
+.font-red {
+  color: #e4393c;
+}
+.inner-middle {
+  margin-left: 210px;
+}
+.list-inline-item {
+  padding-left: 0;
+  list-style: none;
+}
+.list-inline-item > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.logo-search {
+  margin-bottom: 10px;
+}
+.header {
+  margin-top: 15px;
+}
+.nav-font,
+.navbar-header {
+  font-size: 15px;
+  font-weight: 700;
+}
+.nav-font > li > a {
+  width: 85px;
+  text-align: center;
+}
+.navbar-header {
+  width: 300px;
+}
+.topbar-height {
+  min-height: 30px;
+}
+.topnavbar {
+  background: #F7F7F7;
+  border-bottom: 1px solid #eee;
+  color: #999999;
+}
+.welcomeback,
+.topinfor > ul > li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.header .cart-process {
+  padding-top: 16px;
+}
+.header .cart-process .process-1 {
+  background: url(/images/step1.png) no-repeat;
+  padding-top: 26px;
+}
+.header .cart-process .process-1 li {
+  width: 160px;
+  text-align: center;
+  color: #bce8a3;
+}
+.header .cart-process .process-1 .step1 {
+  color: #7abd54;
+}
+.header .cart-process .process-1 .step2 {
+  color: #aaaaaa;
+}
+.header .cart-process .process-1 .step3 {
+  color: #aaaaaa;
+}
+.header .cart-process .process-2 {
+  background: url(/images/step2.png) no-repeat;
+  padding-top: 26px;
+}
+.header .cart-process .process-2 li {
+  width: 160px;
+  text-align: center;
+  color: #bce8a3;
+}
+.header .cart-process .process-2 .step1 {
+  color: #bce8a3;
+}
+.header .cart-process .process-2 .step2 {
+  color: #7abd54;
+}
+.header .cart-process .process-2 .step3 {
+  color: #aaaaaa;
+}
+.header .cart-process .process-3 {
+  background: url(/images/step2.png) no-repeat;
+  padding-top: 26px;
+}
+.header .cart-process .process-3 li {
+  width: 160px;
+  text-align: center;
+  color: #bce8a3;
+}
+.header .cart-process .process-3 .step1 {
+  color: #bce8a3;
+}
+.header .cart-process .process-3 .step2 {
+  color: #bce8a3;
+}
+.header .cart-process .process-3 .step3 {
+  color: #7abd54;
+}

@@ -1,0 +1,58 @@
+@import "ivariables";
+@import "iutilities";
+@import "header-navbar";
+@import "topbar";
+@import "footer";
+
+.header{
+  .cart-process{
+    padding-top: 16px;
+    .process-1{
+      background: url(/images/step1.png) no-repeat;
+      .process();
+      .step1{
+        color:@current-step;
+      }
+      .step2{
+        color:@next-step;
+      }
+      .step3{
+        color:@next-step;
+      }
+    }
+    .process-2{
+      background: url(/images/step2.png) no-repeat;
+      .process();
+      .step1{
+        color:@previous-step;
+      }
+      .step2{
+        color:@current-step;
+      }
+      .step3{
+        color:@next-step;
+      }
+    }
+    .process-3{
+      background: url(/images/step2.png) no-repeat;
+      .process();
+      .step1{
+        color:@previous-step;
+      }
+      .step2{
+        color:@previous-step;
+      }
+      .step3{
+        color:@current-step;
+      }
+    }
+  }
+}
+.process() {
+  padding-top: 26px;
+  li{
+    width: 160px;
+    text-align: center;
+    color:@previous-step;
+  }
+}

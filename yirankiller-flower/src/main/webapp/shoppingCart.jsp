@@ -16,7 +16,7 @@
   <script src="/js/seajs/latest/sea.js" id="seajsnode"></script>
   <script src="/js/seajs/config.js" type="text/javascript"></script>
   <script language="JavaScript">
-    seajs.use(["/css/common.css","bootstrap"]);
+    seajs.use(["/css/shoppingCart.css","bootstrap"]);
   </script>
 </head>
 <body>
