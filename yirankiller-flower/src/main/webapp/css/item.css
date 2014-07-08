@@ -46,6 +46,18 @@
   width: 70%;
   height: 240px;
 }
+.item-info .item-desc .item-price {
+  color: #e4393c;
+  font-size: 18px;
+  padding-top: 2px;
+  font-weight: 700;
+}
+.item-info .item-desc .control-label {
+  font-weight: 300;
+}
+.item-info .item-desc .service-info {
+  color: #e4393c;
+}
 .item-info .add-cart {
   font-weight: 700;
 }
@@ -65,9 +77,9 @@
   top: 9px;
   right: 20px;
 }
-.item-detail .list-inline-item li {
+.item-detail-middle .item-detail .list-inline-item li {
   width: 300px;
 }
-.item-detail .list-inline-item li .name {
+.item-detail-middle .item-detail .list-inline-item li .name {
   margin-right: 15px;
 }
