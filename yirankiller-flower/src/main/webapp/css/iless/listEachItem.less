@@ -1,0 +1,29 @@
+@import "ivariables";
+.list-each-item{
+  width: 230px;
+  float: left;
+  padding: 12px 16px;
+  border-bottom: 1px solid @default-gray-background;
+  border-right: 1px solid @default-gray-background;
+  .item-img{
+    overflow: hidden;
+    img{
+      max-height: @default-list-image-width;
+    }
+
+  }
+  .item-desc{
+    word-break: break-all;
+    word-wrap: break-word;
+    min-height: 34px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .item-price{
+    color:@my-theme;
+    font-size: 15px;
+    span{
+      font-size: 12px;
+    }
+  }
+}

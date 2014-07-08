@@ -16,7 +16,7 @@
   <script src="/js/seajs/latest/sea.js" id="seajsnode"></script>
   <script src="/js/seajs/config.js" type="text/javascript"></script>
   <script language="JavaScript">
-    seajs.use(["bootstrap","/css/common.css","jQuery"],function(a,b,$){
+    seajs.use(["bootstrap","/css/index.css","jQuery"],function(a,b,$){
       $(function(){
         $('.each-floor .nav-tabs a').hover(function (e) {
           e.preventDefault()

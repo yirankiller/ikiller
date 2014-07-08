@@ -1,0 +1,34 @@
+@import "ivariables";
+@import "bootstrap/mixins";
+@import "carousel";
+@import "indexFloor";
+@import "listEachItem";
+@import "recommendation";
+
+//nav-sidebar
+.nav-sidbar{
+  width: @nav-sidbar-default-width;
+  .nav{
+    background-color: #f8f8f8;
+    li{
+      border-bottom: 1px dashed #FAE5E7;
+      font-size: 14px;
+    }
+    .active > a{
+      color: @my-theme;
+      border-right: 1px solid @my-theme;
+      font-weight: bold;
+    }
+  }
+}
+.nav-sidbar.affix{
+  top: 80px;
+}
+
+
+
+
+
+
+
+

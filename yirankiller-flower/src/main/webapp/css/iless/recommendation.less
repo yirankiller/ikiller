@@ -1,0 +1,47 @@
+@import "ivariables";
+
+.recommendation{
+  width: 230px;
+  padding: 12px 16px;
+  border-bottom: 1px solid @default-gray-background;
+  border-right: 1px solid @default-gray-background;
+  position: relative;
+  .item-img{
+    overflow: hidden;
+    img{
+      max-height: @default-list-image-width;
+    }
+
+  }
+  .item-desc{
+    word-break: break-all;
+    word-wrap: break-word;
+    min-height: 34px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .item-price{
+    color:@my-theme;
+    font-size: 15px;
+    span{
+      font-size: 12px;
+    }
+  }
+  .hot-sale{
+    .back-img{
+      position: absolute;
+      left: -8px;
+      top: -12px;
+      color: #e4393c;
+      font-size: 60px;
+    }
+    .text{
+      color: #ffffff;
+      position: absolute;
+      left: 6px;
+      top: 8px;
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+}

@@ -209,7 +209,7 @@
                 </ul>
               </div>
               <div class="tab-pane" id="profile">
-                <ul class="list-inline in-line">
+                <ul class="list-inline-item in-line">
                   <li class="list-each-item">
                     <div class="item-img">
                       <a href="#">
@@ -303,7 +303,7 @@
                 </ul>
               </div>
               <div class="tab-pane" id="messages">
-                <ul class="list-inline in-line">
+                <ul class="list-inline-item in-line">
                   <li class="list-each-item">
                     <div class="item-img">
                       <a href="#">
@@ -452,7 +452,7 @@
             <!-- Tab panes -->
             <div class="tab-content">
               <div class="tab-pane active" id="home2">
-                <ul class="list-inline in-line">
+                <ul class="list-inline-item in-line">
                   <li class="list-each-item">
                     <div class="item-img">
                       <a href="#">
@@ -546,7 +546,7 @@
                 </ul>
               </div>
               <div class="tab-pane" id="profile2">
-                <ul class="list-inline in-line">
+                <ul class="list-inline-item in-line">
                   <li class="list-each-item">
                     <div class="item-img">
                       <a href="#">
@@ -640,7 +640,7 @@
                 </ul>
               </div>
               <div class="tab-pane" id="messages2">
-                <ul class="list-inline in-line">
+                <ul class="list-inline-item in-line">
                   <li class="list-each-item">
                     <div class="item-img">
                       <a href="#">
@@ -789,7 +789,7 @@
             <!-- Tab panes -->
             <div class="tab-content">
               <div class="tab-pane active" id="home3">
-                <ul class="list-inline in-line">
+                <ul class="list-inline-item in-line">
                   <li class="list-each-item">
                     <div class="item-img">
                       <a href="#">

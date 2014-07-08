@@ -1,0 +1,22 @@
+@import "ivariables";
+// item - middle
+.galleria-item{
+  float: left;
+  height:350px;
+  width: 350px;
+  .galleria-container{
+    background: @my-theme-white;
+    border: 1px solid @default-gray-background;
+
+  }
+  .notouch .galleria-thumb-nav-left,
+  .notouch .galleria-thumb-nav-right,
+  .notouch .galleria-thumb-nav-left:hover,
+  .notouch .galleria-thumb-nav-right:hover {
+    background-color:@default-gray-background;
+  }
+  .touch .galleria-thumb-nav-left:active,
+  .touch .galleria-thumb-nav-right:active {
+    background-color:@default-gray-background;
+  }
+}

@@ -1,7 +1,7 @@
 <%--
   User: eason
-  Date: 14-7-2
-  Time: 下午12:14
+  Date: 14-7-8
+  Time: 下午1:44
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page language="java" pageEncoding="UTF-8" %>
@@ -16,19 +16,15 @@
   <script src="/js/seajs/latest/sea.js" id="seajsnode"></script>
   <script src="/js/seajs/config.js" type="text/javascript"></script>
   <script language="JavaScript">
-    seajs.use(["/css/item.css","bootstrap"]);
-    seajs.use(["/js/item"],function(itemPage){
-      itemPage.initItem();
-    });
+    seajs.use(["/css/common.css","bootstrap"]);
   </script>
 </head>
 <body>
-  <!-- short cut part -->
-  <jsp:include page="topbar.jsp"/>
-  <!-- header part -->
-  <jsp:include page="header.jsp"/>
-  <jsp:include page="itemMiddle.jsp"/>
+<!-- short cut part -->
+<jsp:include page="topbar.jsp"/>
+<!-- header part -->
+<jsp:include page="orderHeader.jsp"/>
 
-  <jsp:include page="footer.jsp"/>
+<jsp:include page="footer.jsp"/>
 </body>
 </html>
