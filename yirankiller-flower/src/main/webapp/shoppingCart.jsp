@@ -25,6 +25,7 @@
 <!-- header part -->
 <jsp:include page="orderHeader.jsp"/>
 
+<jsp:include page="orderMiddle.jsp"/>
 <jsp:include page="footer.jsp"/>
 </body>
 </html>

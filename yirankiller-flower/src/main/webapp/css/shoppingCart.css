@@ -26,6 +26,11 @@
   padding-left: 5px;
   padding-right: 5px;
 }
+.panel-default-theme .panel-heading {
+  color: #ffffff;
+  background-color: #e4393c;
+  border-color: #e4393c;
+}
 .logo-search {
   margin-bottom: 10px;
 }
@@ -113,4 +118,25 @@
 }
 .header .cart-process .process-3 .step3 {
   color: #7abd54;
+}
+.order-middle .container {
+  width: 80%;
+}
+.order-middle .container .shopping-cart .cart-title .cart-title-checkbox {
+  width: 8%;
+}
+.order-middle .container .shopping-cart .cart-title .cart-title-info {
+  width: 42%;
+}
+.order-middle .container .shopping-cart .cart-title .cart-title-unit {
+  width: 12%;
+}
+.order-middle .container .shopping-cart .cart-title .cart-title-num {
+  width: 12%;
+}
+.order-middle .container .shopping-cart .cart-title .cart-title-price {
+  width: 12%;
+}
+.order-middle .container .shopping-cart .cart-title .cart-title-option {
+  width: 12%;
 }

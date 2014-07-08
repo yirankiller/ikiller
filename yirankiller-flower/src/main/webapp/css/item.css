@@ -88,6 +88,11 @@
   padding-left: 5px;
   padding-right: 5px;
 }
+.panel-default-theme .panel-heading {
+  color: #ffffff;
+  background-color: #e4393c;
+  border-color: #e4393c;
+}
 .item-select {
   min-height: 400px;
 }
