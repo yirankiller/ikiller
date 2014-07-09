@@ -2,6 +2,8 @@
  * Created by eason on 14-7-7.
  */
 define(function(require, exports, module) {
+  var $ = require('jQuery');
+
   exports.getParameter = function (name) {
     var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
     var r = window.location.search.substr(1).match(reg);
@@ -43,6 +45,23 @@ define(function(require, exports, module) {
       r2 = Number(arg2.toString().replace(".", ""));
       return (r1 / r2) * pow(10, t2 - t1);
     }
+  }
+
+  exports.initItemNumber = function(){
+    $(".btn-minux-num").click(function(){
+      if(!isNaN($(".input-item-num").val()) && $(".input-item-num").val() > 1){
+        $(".input-item-num").val(parseInt($(".input-item-num").val()) - 1);
+      }else {
+        $(".input-item-num").val(1);
+      }
+    });
+    $(".btn-plus-num").click(function(){
+      if(!isNaN($(".input-item-num").val()) && $(".input-item-num").val() > 0){
+        $(".input-item-num").val(parseInt($(".input-item-num").val()) + 1);
+      }else {
+        $(".input-item-num").val(1);
+      }
+    });
   }
 
   //end

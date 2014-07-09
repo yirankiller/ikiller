@@ -17,6 +17,9 @@
   <script src="/js/seajs/config.js" type="text/javascript"></script>
   <script language="JavaScript">
     seajs.use(["/css/shoppingCart.css","bootstrap"]);
+    seajs.use(["/js/shoppingCart"],function(ShoppingCart){
+      ShoppingCart.init();
+    });
   </script>
 </head>
 <body>

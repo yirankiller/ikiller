@@ -93,6 +93,23 @@
   background-color: #e4393c;
   border-color: #e4393c;
 }
+.item-num {
+  position: relative;
+  width: 86px;
+}
+.item-num .input-item-num {
+  padding: 6px 26px;
+}
+.item-num .minux-num {
+  position: absolute;
+  top: 9px;
+  left: 10px;
+}
+.item-num .plus-num {
+  position: absolute;
+  top: 9px;
+  right: 10px;
+}
 .item-select {
   min-height: 400px;
 }

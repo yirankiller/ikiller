@@ -18,7 +18,7 @@
   <script language="JavaScript">
     seajs.use(["/css/item.css","bootstrap"]);
     seajs.use(["/js/item"],function(itemPage){
-      itemPage.initItem();
+      itemPage.init();
     });
   </script>
 </head>
