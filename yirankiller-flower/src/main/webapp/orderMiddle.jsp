@@ -118,15 +118,20 @@
       </div>
       <div class="cart-footer">
         <div class="pull-left">
-          <label class="checkbox-inline">
+          <label class="checkbox-select-all">
             <input type="checkbox" />全选
           </label>
         </div>
-        <div class="pull-left">
-          <a href="#">删除</a>
+        <div class="pull-left footer-middle">
+            <a href="#" class="option">删除</a>
+            <a href="#" class="option">清空购物车</a>
         </div>
-        <div class="pull-right">
-          <button type="button" class="btn btn-default btn-lg active">结算</button>
+        <div class="pull-right footer-right">
+          <span class="item">已选<span class="selecte-num">0</span>件商品</span>
+          <span class="item">合计:<span class="total-price">120.00</span></span>
+          <span class="item">
+            <button type="button" class="btn btn-search-default btn-lg">结算</button>
+          </span>
         </div>
       </div>
     </div>
