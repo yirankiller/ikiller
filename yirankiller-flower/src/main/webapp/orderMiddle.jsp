@@ -10,7 +10,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <div class="order-middle">
   <div class="container ">
-    <div class="panel panel-default-theme shopping-cart">
+    <div  class="panel panel-default-theme shopping-cart">
       <!-- Default panel contents -->
       <div class="panel-heading">
         <h2 class="panel-title"><strong>我的购物车</strong></h2>
@@ -135,6 +135,16 @@
         </div>
       </div>
     </div>
-
+    <div style="display:none" class="panel panel-default-theme empty-shopping-cart">
+      <!-- Default panel contents -->
+      <div class="panel-heading">
+        <h2 class="panel-title"><strong>我的购物车</strong></h2>
+      </div>
+      <div class="panel-body">
+        <div class="empty">
+          <img src="/images/empty-cart.png"/> 购物车内暂时没有商品，您可以去<a href="#" class="index-link">首页</a>挑选喜欢的商品
+        </div>
+      </div>
+    </div>
   </div>
 </div>

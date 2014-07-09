@@ -48,6 +48,10 @@
   top: 9px;
   right: 10px;
 }
+.index-link {
+  color: #e4393c;
+  font-size: 14px;
+}
 .logo-search {
   margin-bottom: 10px;
 }
@@ -245,4 +249,7 @@
   font-size: 18px;
   margin-left: 5px;
   margin-right: 5px;
+}
+.order-middle .container .empty-shopping-cart .empty {
+  padding-left: 150px;
 }
