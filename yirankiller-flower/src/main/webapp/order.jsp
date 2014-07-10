@@ -16,10 +16,8 @@
   <script src="/js/seajs/latest/sea.js" id="seajsnode"></script>
   <script src="/js/seajs/config.js" type="text/javascript"></script>
   <script language="JavaScript">
-    seajs.use(["/css/shoppingCart.css","bootstrap","/js/flower"]);
-//    seajs.use(["/js/shoppingCart"],function(ShoppingCart){
-//      ShoppingCart.init();
-//    });
+    seajs.use(["/css/shoppingCart.css","bootstrap"]);
+    seajs.use(["/js/order"]);
   </script>
 </head>
 <body data-shoppingCart-header-step="process-1">

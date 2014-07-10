@@ -162,6 +162,7 @@
         <!-- other end -->
     </dependencies>
     <build>
+        <finalName>ROOT</finalName>
         <plugins>
             <!--
             <plugin>

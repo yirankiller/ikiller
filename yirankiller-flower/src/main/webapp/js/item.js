@@ -4,11 +4,11 @@
 define(function(require, exports, module) {
   var $ = require('jQuery');
   var Galleria = require('igalleria');
-  var Util = require('util');
+  var flower = require('flower');
 
   exports.init = function(){
     $(function(){
-      Util.initItemNumber();
+      flower.initItemNumber();
       Galleria.run('#galleria');
     });
   }
