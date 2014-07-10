@@ -1,5 +1,6 @@
-@import "ivariables";
+@import "bootstrap/variables";
 @import "bootstrap/mixins";
+@import "ivariables";
 @import "footer";
 
 .in-line{
@@ -55,3 +56,16 @@
   font-size: 14px;
 }
 
+.small-container() {
+  .container{
+    @media (min-width: @screen-sm) {
+      width: @container-sm;
+    }
+    @media (min-width: @screen-md) {
+      width: @container-md;
+    }
+    @media (min-width: @screen-lg-min) {
+      width: @container-lg;
+    }
+  }
+}

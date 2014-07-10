@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page language="java" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<div class="order-middle">
+<div class="cart-middle">
   <div class="container ">
     <div  class="panel panel-default-theme shopping-cart">
       <!-- Default panel contents -->

@@ -16,7 +16,7 @@
   <script src="/js/seajs/latest/sea.js" id="seajsnode"></script>
   <script src="/js/seajs/config.js" type="text/javascript"></script>
   <script language="JavaScript">
-    seajs.use(["/css/shoppingCart.css","bootstrap"]);
+    seajs.use(["bootstrap","/css/order.css"]);
     seajs.use(["/js/order"]);
   </script>
 </head>
@@ -26,7 +26,7 @@
 <!-- header part -->
 <jsp:include page="orderHeader.jsp"/>
 
-<jsp:include page="cartMiddle.jsp"/>
+<jsp:include page="orderMiddle.jsp"/>
 <jsp:include page="footer.jsp"/>
 </body>
 </html>
