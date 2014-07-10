@@ -7,6 +7,21 @@
 
 .order-middle {
   .small-container();
+  .address-title{
+    padding: 0 0 0 10px;
+    .clearfix();
+    .left-title{
+      padding-top: 13px;
+    }
+    .add-new-address{
+      button{
+        border-radius: 0;
+        .glyphicon{
+          margin-right: 5px;
+        }
+      }
+    }
+  }
   .list-address-item{
     .address{
       width:82%;
@@ -33,6 +48,14 @@
   }
   .set2-default,.edit-address{
     visibility:visible;
+  }
+}
+#orderAddressModel{
+  .clear-padding{
+    padding: 0;
+  }
+  input[type="checkbox"]{
+    margin-top: 2px;
   }
 }
 

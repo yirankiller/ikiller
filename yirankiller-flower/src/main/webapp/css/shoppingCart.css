@@ -65,6 +65,10 @@
 .list-group-hover li:hover {
   background: #fff4d3;
 }
+.asterisk-require {
+  color: #e4393c;
+  margin-right: 5px;
+}
 .logo-search {
   margin-bottom: 10px;
 }
