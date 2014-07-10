@@ -173,9 +173,8 @@
 .cart-middle .shopping-cart .cart-title .cart-option {
   width: 12%;
 }
-.cart-middle .shopping-cart .cart-title .input[type="radio"],
 .cart-middle .shopping-cart .cart-title input[type="checkbox"] {
-  margin: 2px 4px 0;
+  margin: 1px 4px 0;
 }
 .cart-middle .shopping-cart .cart-list {
   border: 1px solid #cccccc;
@@ -207,9 +206,8 @@
 .cart-middle .shopping-cart .cart-list .cart-body .cart-option {
   width: 12%;
 }
-.cart-middle .shopping-cart .cart-list .cart-body .input[type="radio"],
 .cart-middle .shopping-cart .cart-list .cart-body input[type="checkbox"] {
-  margin: 2px 4px 0;
+  margin: 1px 4px 0;
 }
 .cart-middle .shopping-cart .cart-list .cart-body .cart-info .cart-item-img {
   border: 1px solid #cccccc;
@@ -230,7 +228,7 @@
   background-color: #fcfcfc;
 }
 .cart-middle .shopping-cart .cart-footer > div {
-  margin-left: 16px;
+  margin-left: 40px;
   vertical-align: middle;
   line-height: 40px;
 }
@@ -240,7 +238,7 @@
 }
 .cart-middle .shopping-cart .cart-footer > div .checkbox-select-all input[type="checkbox"] {
   vertical-align: middle;
-  margin: 0 6px;
+  margin: 1px 6px 3px 0;
 }
 .cart-middle .shopping-cart .cart-footer .footer-middle {
   margin-left: 30px;

@@ -29,10 +29,12 @@
           </div>
           <ul class="list-group">
             <li class="list-group-item">
+              <div>
               <label>
                 <input type="radio" name="receiveAddress"/>
               </label>
               <span>河南 郑州市 管城区 十八里河镇   管城回族区十八里河镇刘湾村72号刘启明</span>
+              </div>
             </li>
             <li class="list-group-item">
               <label>
