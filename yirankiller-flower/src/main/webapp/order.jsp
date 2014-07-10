@@ -20,7 +20,7 @@
     seajs.use(["/js/order"]);
   </script>
 </head>
-<body data-shoppingCart-header-step="process-1">
+<body data-header-step="process-2">
 <!-- short cut part -->
 <jsp:include page="topbar.jsp"/>
 <!-- header part -->
