@@ -10,6 +10,15 @@
 .font-red{
   color:@font-red;
 }
+.checkbox-radio-label{
+  display: inline-block;
+  font-weight: normal;
+  margin-bottom: 0;
+  input[type='radio'],input[type='checkbox']{
+    vertical-align: middle;
+    margin: 0 6px 0 0;
+  }
+}
 
 .inner-middle{
   margin-left: (@nav-sidbar-default-width + 10px);
@@ -67,5 +76,11 @@
     @media (min-width: @screen-lg-min) {
       width: @container-lg;
     }
+  }
+}
+
+.list-group-hover{
+  li:hover{
+    background: @default-li-list-group-hover-bg;
   }
 }

@@ -6,5 +6,33 @@
 @import "footer";
 
 .order-middle {
-  .small-container()
+  .small-container();
+  .list-address-item{
+    .address{
+      width:82%;
+    }
+    .set2-default{
+      width:8%;
+      visibility:hidden;
+    }
+    .edit-address{
+      visibility:hidden;
+      width:6%;
+    }
+    &.active{
+      background-color: @default-li-list-group-hover-bg;
+      .list-address-item();
+    }
+  }
+
 }
+.list-address-item(){
+  label{
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .set2-default,.edit-address{
+    visibility:visible;
+  }
+}
+

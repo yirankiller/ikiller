@@ -249,6 +249,16 @@
 .font-red {
   color: #e4393c;
 }
+.checkbox-radio-label {
+  display: inline-block;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+.checkbox-radio-label input[type='radio'],
+.checkbox-radio-label input[type='checkbox'] {
+  vertical-align: middle;
+  margin: 0 6px 0 0;
+}
 .inner-middle {
   margin-left: 210px;
 }
@@ -286,4 +296,7 @@
 .index-link {
   color: #e4393c;
   font-size: 14px;
+}
+.list-group-hover li:hover {
+  background: #fff4d3;
 }

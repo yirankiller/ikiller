@@ -27,20 +27,42 @@
             河南 郑州市 管城区 十八里河镇   管城回族区十八里河镇刘湾村72号刘启明
             </div>
           </div>
-          <ul class="list-group">
-            <li class="list-group-item">
-              <div>
-              <label>
-                <input type="radio" name="receiveAddress"/>
-              </label>
-              <span>河南 郑州市 管城区 十八里河镇   管城回族区十八里河镇刘湾村72号刘启明</span>
-              </div>
+          <ul class="list-group list-group-hover">
+            <li class="list-group-item list-address-item">
+              <ul class="list-inline">
+                <li class="address">
+                  <label class="checkbox-radio-label">
+                    <input type="radio" name="receiveAddress"/>
+                    <span>河南 郑州市 管城区 十八里河镇   管城回族区十八里河镇刘湾村72号刘启明</span>
+                  </label>
+                </li>
+                <li class="set2-default"><a href="#">设为默认</a></li>
+                <li class="edit-address"><a href="#"><span class="glyphicon glyphicon-pencil"></span>&nbsp;编辑</a></li>
+              </ul>
             </li>
-            <li class="list-group-item">
-              <label>
-                <input type="radio" name="receiveAddress"/>
-              </label>
-              <span>河南 郑州市 管城区 十八里河镇   管城回族区十八里河镇刘湾村72号刘启明</span>
+            <li class="list-group-item list-address-item">
+              <ul class="list-inline ">
+                <li class="address">
+                  <label class="checkbox-radio-label">
+                    <input type="radio" name="receiveAddress"/>
+                    <span>河南 郑州市 管城区 十八里河镇   管城回族区十八里河镇刘湾村72号刘启明</span>
+                  </label>
+                </li>
+                <li class="set2-default"><a href="#">设为默认</a></li>
+                <li class="edit-address"><a href="#"><span class="glyphicon glyphicon-pencil"></span>&nbsp;编辑</a></li>
+              </ul>
+            </li>
+            <li class="list-group-item list-address-item">
+              <ul class="list-inline ">
+                <li class="address">
+                  <label class="checkbox-radio-label">
+                    <input type="radio" name="receiveAddress"/>
+                    <span>河南 郑州市 管城区 十八里河镇   管城回族区十八里河镇刘湾村72号刘启明</span>
+                  </label>
+                </li>
+                <li class="set2-default"><a href="#">设为默认</a></li>
+                <li class="edit-address"><a href="#"><span class="glyphicon glyphicon-pencil"></span>&nbsp;编辑</a></li>
+              </ul>
             </li>
           </ul>
         </div>
