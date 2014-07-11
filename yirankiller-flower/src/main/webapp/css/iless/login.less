@@ -1,0 +1,57 @@
+@import "ivariables";
+@import "bootstrap/mixins";
+@import "footer";
+@import "loginHeader";
+.body{
+  background-color: #f2f2f2;
+}
+.login{
+
+  .container{
+    margin:auto;
+    padding-top: 10px;
+    width:1000px;
+
+    .login-middle{
+      background-color: #fff;
+      margin-top: 100px;
+      height: 356px;
+      width: 880px;
+      overflow: hidden;
+      border: 1px solid @my-theme-default-gray;
+      .login-form{
+        height: 360px;
+        width: 439px;
+        padding: 25px 10px 15px ;
+        .input-fields{
+          input{
+            padding-left: 25px;
+          }
+          .username-label,.passwd-label{
+            position: relative;
+            .label-icon{
+              position: absolute;
+              top: 15px;
+              left: 22px;
+            }
+          }
+          .form-group{
+            margin-bottom: 25px;
+          }
+          margin-bottom: 60px;
+        }
+
+        .btn{
+          width: 100%;
+        }
+      }
+      .login-img{
+        max-height: 360px;
+        height: 356px;
+        width: 439px;
+        background: url("/images/login.png") -50px -50px no-repeat;
+      }
+      .clearfix();
+    }
+  }
+}
