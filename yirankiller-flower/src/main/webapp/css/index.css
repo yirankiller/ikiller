@@ -308,3 +308,9 @@
   color: #e4393c;
   font-size: 14px;
 }
+.clear-padding {
+  padding: 0;
+}
+.money-sign {
+  color: #e4393c;
+}

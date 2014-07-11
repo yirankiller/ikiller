@@ -122,7 +122,7 @@
                   </label>
                 </li>
                 <li class="set2-default"><a href="#">设为默认</a></li>
-                <li class="edit-address"><a href="#"><span class="glyphicon glyphicon-pencil"></span>&nbsp;编辑</a></li>
+                <li class="edit-address"><a href="#" data-target="#orderAddressModel" data-toggle="modal"><span class="glyphicon glyphicon-pencil"></span>&nbsp;编辑</a></li>
               </ul>
             </li>
             <li class="list-group-item list-address-item">
@@ -134,7 +134,7 @@
                   </label>
                 </li>
                 <li class="set2-default"><a href="#">设为默认</a></li>
-                <li class="edit-address"><a href="#"><span class="glyphicon glyphicon-pencil"></span>&nbsp;编辑</a></li>
+                <li class="edit-address"><a href="#" data-target="#orderAddressModel" data-toggle="modal"><span class="glyphicon glyphicon-pencil"></span>&nbsp;编辑</a></li>
               </ul>
             </li>
             <li class="list-group-item list-address-item">
@@ -146,7 +146,7 @@
                   </label>
                 </li>
                 <li class="set2-default"><a href="#">设为默认</a></li>
-                <li class="edit-address"><a href="#"><span class="glyphicon glyphicon-pencil"></span>&nbsp;编辑</a></li>
+                <li class="edit-address"><a href="#" data-target="#orderAddressModel" data-toggle="modal"><span class="glyphicon glyphicon-pencil"></span>&nbsp;编辑</a></li>
               </ul>
             </li>
           </ul>
@@ -163,8 +163,9 @@
         </div>
         <div class="panel panel-default ">
           <!-- Default panel contents -->
-          <div class="panel-heading">
-            <h2 class="panel-title"><strong>确认订单信息</strong></h2>
+          <div class="panel-heading order-item-header">
+            <h2 class="panel-title pull-left"><strong>确认订单信息</strong></h2>
+            <h2 class="panel-title pull-right"><a href="#">返回购物车</a></h2>
           </div>
           <div class="panel-body">
             <div class="order-item-list">
@@ -222,8 +223,8 @@
                 <li class="order-item-list-summary">
                   <div class="pull-right">
                     <ul class="list-group">
-                      <li class="list-group-item"><div class="total-price price pull-right default-price">￥3479.00</div><div class="summary-label pull-right"><span class="font-red">2</span> 件商品,总商品金额:</div></li>
-                      <li class="list-group-item"><div class="actual-price price pull-right default-price">￥3379.00</div><div class="summary-label pull-right">应付总额:</div></li>
+                      <li class="list-group-item"><div class="total-price price pull-right default-price"><span >￥</span><span class="price-value">3479.00</span></div><div class="summary-label pull-right"><span class="font-red">2</span> 件商品,总商品金额:</div></li>
+                      <li class="list-group-item"><div class="actual-price price pull-right default-price"><span >￥</span><span class="price-value">3379.00</span></div><div class="summary-label pull-right">应付总额:</div></li>
                       <li class="list-group-item"><label class="label-item receive-address">寄送至:</label>河南 郑州市 管城区 十八里河镇 管城回族区十八里河镇刘湾村72号</li>
                       <li class="list-group-item"><label class="label-item">收件人:</label><span class="label-item receiver-name">刘启明</span><span class="mobile-phone">18510169266</span></li>
                     </ul>
@@ -233,6 +234,10 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="panel-footer order-footer">
+        <button type="button" class="btn btn-search-default btn-lg pull-right">提交订单</button>
+        <div class="pull-right order-confirm-info default-price">应付总额：<span>￥</span><span class=" price-value">3379.00</span>元</div>
       </div>
     </div>
   </div>

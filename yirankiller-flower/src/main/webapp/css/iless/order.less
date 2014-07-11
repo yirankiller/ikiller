@@ -39,6 +39,12 @@
       .list-address-item();
     }
   }
+  .order-item-header{
+    a:hover{
+      color:@my-theme;
+    }
+    .clearfix();
+  }
   .order-item-list{
     li{
       width: 100%;
@@ -114,6 +120,22 @@
       width:13%;
     }
   }
+  .order-footer{
+    padding: 0;
+    button{
+      border-radius: 0;
+    }
+    .order-confirm-info{
+      height: 40px;
+      font-size: 16px;
+      padding: 10px 15px;
+      .default-price{
+        font-size: 16px;
+        font-weight: 700;
+      }
+    }
+    .clearfix();
+  }
 }
 .list-address-item(){
   label{
@@ -125,10 +147,6 @@
   }
 }
 #orderAddressModel{
-  .clear-padding{
-    padding: 0;
-
-  }
   input[type="checkbox"]{
     margin-top: 2px;
   }

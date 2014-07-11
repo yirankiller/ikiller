@@ -73,6 +73,12 @@
   color: #e4393c;
   font-size: 14px;
 }
+.clear-padding {
+  padding: 0;
+}
+.money-sign {
+  color: #e4393c;
+}
 .logo-search {
   margin-bottom: 10px;
 }
@@ -218,6 +224,17 @@
 .order-middle .list-address-item.active .edit-address {
   visibility: visible;
 }
+.order-middle .order-item-header a:hover {
+  color: #e4393c;
+}
+.order-middle .order-item-header:before,
+.order-middle .order-item-header:after {
+  content: " ";
+  display: table;
+}
+.order-middle .order-item-header:after {
+  clear: both;
+}
 .order-middle .order-item-list li {
   width: 100%;
 }
@@ -300,8 +317,28 @@
 .order-middle .order-item-list .order-item-totalprice {
   width: 13%;
 }
-#orderAddressModel .clear-padding {
+.order-middle .order-footer {
   padding: 0;
+}
+.order-middle .order-footer button {
+  border-radius: 0;
+}
+.order-middle .order-footer .order-confirm-info {
+  height: 40px;
+  font-size: 16px;
+  padding: 10px 15px;
+}
+.order-middle .order-footer .order-confirm-info .default-price {
+  font-size: 16px;
+  font-weight: 700;
+}
+.order-middle .order-footer:before,
+.order-middle .order-footer:after {
+  content: " ";
+  display: table;
+}
+.order-middle .order-footer:after {
+  clear: both;
 }
 #orderAddressModel input[type="checkbox"] {
   margin-top: 2px;
