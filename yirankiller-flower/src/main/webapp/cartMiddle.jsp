@@ -23,9 +23,9 @@
             </label>
           </li>
           <li class="cart-info">商品信息</li>
-          <li class="cart-unit">单价（元）</li>
+          <li class="cart-unit">单价(元)</li>
           <li class="cart-num">数量</li>
-          <li class="cart-price">金额（元）</li>
+          <li class="default-price">金额(元)</li>
           <li class="cart-option">操作</li>
         </ul>
         <div class="cart-list">
@@ -62,7 +62,7 @@
                   <a href="javascript:void(0);" class="btn-plus-num"><span class="glyphicon glyphicon-plus plus-num"></span></a>
                 </div>
               </li>
-              <li class="cart-price">
+              <li class="default-price">
                 <div class=""><strong>28.00</strong>
                 </div>
               </li>
@@ -105,7 +105,7 @@
                 <a href="javascript:void(0);" class="btn-plus-num"><span class="glyphicon glyphicon-plus plus-num"></span></a>
               </div>
             </li>
-            <li class="cart-price">
+            <li class="default-price">
               <div class=""><strong>28.00</strong>
               </div>
             </li>

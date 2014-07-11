@@ -69,6 +69,10 @@
   color: #e4393c;
   margin-right: 5px;
 }
+.default-price {
+  color: #e4393c;
+  font-size: 14px;
+}
 .logo-search {
   margin-bottom: 10px;
 }
@@ -235,10 +239,6 @@
   width: 260px;
   min-height: 40px;
   padding-left: 8px;
-}
-.cart-middle .shopping-cart .cart-list .cart-body .cart-price {
-  color: #e4393c;
-  font-size: 14px;
 }
 .cart-middle .shopping-cart .cart-footer {
   height: 40px;

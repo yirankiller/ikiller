@@ -131,6 +131,10 @@
   color: #e4393c;
   margin-right: 5px;
 }
+.default-price {
+  color: #e4393c;
+  font-size: 14px;
+}
 .item-select {
   min-height: 400px;
 }
