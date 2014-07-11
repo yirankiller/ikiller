@@ -79,6 +79,18 @@
 .money-sign {
   color: #e4393c;
 }
+.panel-footer button {
+  border-radius: 0;
+}
+.price-label {
+  padding: 0 8px;
+  color: #e4393c;
+  font-size: 16px;
+}
+.price-label .default-price {
+  font-size: 16px;
+  font-weight: 700;
+}
 .logo-search {
   margin-bottom: 10px;
 }
@@ -327,10 +339,6 @@
   height: 40px;
   font-size: 16px;
   padding: 10px 15px;
-}
-.order-middle .order-footer .order-confirm-info .default-price {
-  font-size: 16px;
-  font-weight: 700;
 }
 .order-middle .order-footer:before,
 .order-middle .order-footer:after {

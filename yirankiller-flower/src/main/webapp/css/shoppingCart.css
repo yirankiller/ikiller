@@ -79,6 +79,18 @@
 .money-sign {
   color: #e4393c;
 }
+.panel-footer button {
+  border-radius: 0;
+}
+.price-label {
+  padding: 0 8px;
+  color: #e4393c;
+  font-size: 16px;
+}
+.price-label .default-price {
+  font-size: 16px;
+  font-weight: 700;
+}
 .logo-search {
   margin-bottom: 10px;
 }
@@ -249,6 +261,7 @@
 .cart-middle .shopping-cart .cart-footer {
   height: 40px;
   background-color: #fcfcfc;
+  padding: 0;
 }
 .cart-middle .shopping-cart .cart-footer > div {
   margin-left: 40px;
@@ -269,19 +282,17 @@
 .cart-middle .shopping-cart .cart-footer .footer-middle .option {
   margin-right: 20px;
 }
-.cart-middle .shopping-cart .cart-footer .footer-right {
-  margin-right: 18px;
-}
-.cart-middle .shopping-cart .cart-footer .footer-right .item {
-  margin-left: 50px;
-}
-.cart-middle .shopping-cart .cart-footer .footer-right .item .selecte-num,
-.cart-middle .shopping-cart .cart-footer .footer-right .item .total-price {
+.cart-middle .shopping-cart .cart-footer .selecte-num {
   color: #e4393c;
-  font-weight: 700;
-  font-size: 18px;
-  margin-left: 5px;
-  margin-right: 5px;
+  padding: 0 8px;
+}
+.cart-middle .shopping-cart .cart-footer:before,
+.cart-middle .shopping-cart .cart-footer:after {
+  content: " ";
+  display: table;
+}
+.cart-middle .shopping-cart .cart-footer:after {
+  clear: both;
 }
 .cart-middle .empty-shopping-cart .empty {
   padding-left: 150px;

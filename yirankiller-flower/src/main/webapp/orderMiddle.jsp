@@ -165,7 +165,7 @@
           <!-- Default panel contents -->
           <div class="panel-heading order-item-header">
             <h2 class="panel-title pull-left"><strong>确认订单信息</strong></h2>
-            <h2 class="panel-title pull-right"><a href="#">返回购物车</a></h2>
+            <h2 class="panel-title pull-right"><a href="/cart.jsp">返回购物车</a></h2>
           </div>
           <div class="panel-body">
             <div class="order-item-list">
@@ -237,7 +237,7 @@
       </div>
       <div class="panel-footer order-footer">
         <button type="button" class="btn btn-search-default btn-lg pull-right">提交订单</button>
-        <div class="pull-right order-confirm-info default-price">应付总额：<span>￥</span><span class=" price-value">3379.00</span>元</div>
+        <div class="pull-right order-confirm-info ">应付总额：<span class="price-label"><span>￥</span><span class="default-price price-value">3379.00</span>元</span></div>
       </div>
     </div>
   </div>

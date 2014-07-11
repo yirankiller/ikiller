@@ -42,6 +42,7 @@
     .cart-footer {
       height: 40px;
       background-color: #fcfcfc;
+      padding: 0;
       > div {
         margin-left: 40px;
         vertical-align: middle;
@@ -61,19 +62,11 @@
           margin-right: 20px;
         }
       }
-      .footer-right {
-        margin-right: 18px;
-        .item {
-          .selecte-num, .total-price {
-            color: @my-theme;
-            font-weight: 700;
-            font-size: 18px;
-            margin-left: 5px;
-            margin-right: 5px;
-          }
-          margin-left: 50px;
-        }
+      .selecte-num{
+        color: @my-theme;
+        padding: 0 8px;
       }
+      .clearfix();
     }
   }
   .empty-shopping-cart {

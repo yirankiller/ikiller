@@ -25,7 +25,7 @@
           <li class="cart-info">商品信息</li>
           <li class="cart-unit">单价(元)</li>
           <li class="cart-num">数量</li>
-          <li class="default-price">金额(元)</li>
+          <li class="cart-price">金额(元)</li>
           <li class="cart-option">操作</li>
         </ul>
         <div class="cart-list">
@@ -62,7 +62,7 @@
                   <a href="javascript:void(0);" class="btn-plus-num"><span class="glyphicon glyphicon-plus plus-num"></span></a>
                 </div>
               </li>
-              <li class="default-price">
+              <li class="cart-price default-price">
                 <div class=""><strong>28.00</strong>
                 </div>
               </li>
@@ -105,7 +105,7 @@
                 <a href="javascript:void(0);" class="btn-plus-num"><span class="glyphicon glyphicon-plus plus-num"></span></a>
               </div>
             </li>
-            <li class="default-price">
+            <li class="cart-price default-price">
               <div class=""><strong>28.00</strong>
               </div>
             </li>
@@ -116,7 +116,7 @@
         </div>
 
       </div>
-      <div class="cart-footer">
+      <div class="cart-footer panel-footer">
         <div class="pull-left">
           <label class="checkbox-select-all">
             <input type="checkbox" />全选
@@ -126,12 +126,12 @@
             <a href="#" class="option">删除</a>
             <a href="#" class="option">清空购物车</a>
         </div>
-        <div class="pull-right footer-right">
-          <span class="item">已选<span class="selecte-num">0</span>件商品</span>
-          <span class="item">合计:<span class="total-price">120.00</span></span>
-          <span class="item">
-            <button type="button" class="btn btn-search-default btn-lg">结算</button>
-          </span>
+        <div class="pull-right footer-right ">
+            <button type="button" class="pull-right btn btn-search-default btn-lg"><strong>去结算&nbsp;<span class="glyphicon glyphicon-chevron-right"></span></strong></button>
+        </div>
+        <div class="pull-right">
+          已选<span class="selecte-num">0</span>件商品
+          合计:<span class="total-price price-label"><span>￥</span><span class="price-value default-price">120.00</span></span>
         </div>
       </div>
     </div>
