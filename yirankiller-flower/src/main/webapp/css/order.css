@@ -19,10 +19,13 @@
   font-weight: normal;
   margin-bottom: 0;
 }
-.checkbox-radio-label input[type='radio'],
-.checkbox-radio-label input[type='checkbox'] {
+.checkbox-radio-label input[type="radio"] {
   vertical-align: middle;
   margin: 0 6px 0 0;
+}
+.checkbox-radio-label input[type="checkbox"] {
+  vertical-align: middle;
+  margin: 3px 6px 0 0;
 }
 .inner-middle {
   margin-left: 210px;
@@ -90,6 +93,10 @@
 .price-label .default-price {
   font-size: 16px;
   font-weight: 700;
+}
+.blue-link:link,
+.blue-link:visited {
+  color: #005AA0;
 }
 .logo-search {
   margin-bottom: 10px;
@@ -225,15 +232,15 @@
   visibility: hidden;
   width: 6%;
 }
-.order-middle .list-address-item.active {
+.order-middle .list-address-item.address-active {
   background-color: #fff4d3;
 }
-.order-middle .list-address-item.active label {
+.order-middle .list-address-item.address-active label {
   font-size: 14px;
   font-weight: 700;
 }
-.order-middle .list-address-item.active .set2-default,
-.order-middle .list-address-item.active .edit-address {
+.order-middle .list-address-item.address-active .set2-default,
+.order-middle .list-address-item.address-active .edit-address {
   visibility: visible;
 }
 .order-middle .order-item-header a:hover {

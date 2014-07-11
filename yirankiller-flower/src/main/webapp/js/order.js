@@ -7,8 +7,8 @@ define(function(require, exports, module) {
 
   exports.bindRadioButtonClick = function (){
     $(".checkbox-radio-label :radio").click(function(){
-      $(".list-address-item").removeClass("active");
-      $(this).parentsUntil(".list-group").filter(".list-address-item").addClass("active");
+      $(".list-address-item").removeClass("address-active");
+      $(this).parentsUntil(".list-group").filter(".list-address-item").addClass("address-active");
     });
   };
 

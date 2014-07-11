@@ -1,5 +1,5 @@
-@import "bootstrap/variables";
-@import "bootstrap/mixins";
+@import "../bootstrap/variables";
+@import "../bootstrap/mixins";
 @import "ivariables";
 @import "footer";
 
@@ -14,9 +14,13 @@
   display: inline-block;
   font-weight: normal;
   margin-bottom: 0;
-  input[type='radio'],input[type='checkbox']{
+  input[type="radio"]{
     vertical-align: middle;
     margin: 0 6px 0 0;
+  }
+  input[type="checkbox"]{
+    vertical-align: middle;
+    margin: 3px 6px 0 0;
   }
 }
 
@@ -112,5 +116,10 @@
   .default-price{
     font-size: 16px;
     font-weight: 700;
+  }
+}
+.blue-link{
+  &:link,&:visited{
+    color: #005AA0;
   }
 }

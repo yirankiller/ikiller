@@ -1,9 +1,9 @@
-@import "ivariables";
-@import "iutilities";
-@import "header-navbar";
-@import "cart-process";
-@import "topbar";
-@import "footer";
+@import "component/ivariables";
+@import "component/iutilities";
+@import "component/header-navbar";
+@import "component/cart-process";
+@import "component/topbar";
+@import "component/footer";
 
 .order-middle {
   .small-container();
@@ -34,7 +34,7 @@
       visibility:hidden;
       width:6%;
     }
-    &.active{
+    &.address-active{
       background-color: @default-li-list-group-hover-bg;
       .list-address-item();
     }

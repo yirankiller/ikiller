@@ -1,7 +1,8 @@
-@import "ivariables";
+@import "component/ivariables";
 @import "bootstrap/mixins";
-@import "footer";
-@import "loginHeader";
+@import "component/iutilities";
+@import "component/footer";
+@import "component/loginHeader";
 .body{
   background-color: #f2f2f2;
 }
@@ -16,6 +17,21 @@
       width: 880px;
       overflow: hidden;
       border: 1px solid @my-theme-default-gray;
+      .btn{
+        width: 100%;
+      }
+      .username-label,.passwd-label{
+        position: relative;
+        input{
+          padding-left: 25px;
+        }
+        .label-icon{
+          position: absolute;
+          top: 15px;
+          left: 22px;
+        }
+      }
+      .clearfix();
     }
     .login-middle{
       height: 356px;
@@ -24,26 +40,15 @@
         width: 439px;
         padding: 25px 10px 15px ;
         .input-fields{
-          input{
-            padding-left: 25px;
-          }
-          .username-label,.passwd-label{
-            position: relative;
-            .label-icon{
-              position: absolute;
-              top: 15px;
-              left: 22px;
-            }
-          }
+
+
           .form-group{
             margin-bottom: 25px;
           }
           margin-bottom: 60px;
         }
 
-        .btn{
-          width: 100%;
-        }
+
       }
       .login-img{
         max-height: 360px;
@@ -51,12 +56,21 @@
         width: 439px;
         background: url("/images/login.png") -50px -50px no-repeat;
       }
-      .clearfix();
+
     }
     .signup-middle{
-      height: 600px;
+      height: 356px;
       .signup-form{
-        padding: 25px 10px 15px ;
+        width:700px;
+        margin: 25px 10px 15px ;
+        border-right: 1px dotted @my-theme-default-gray;
+      }
+      .right-info{
+        margin-top: 25px;
+        padding-left: 10px;
+        .login-button{
+          margin-top: 10px;
+        }
       }
     }
   }

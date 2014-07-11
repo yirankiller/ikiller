@@ -19,10 +19,13 @@
   font-weight: normal;
   margin-bottom: 0;
 }
-.checkbox-radio-label input[type='radio'],
-.checkbox-radio-label input[type='checkbox'] {
+.checkbox-radio-label input[type="radio"] {
   vertical-align: middle;
   margin: 0 6px 0 0;
+}
+.checkbox-radio-label input[type="checkbox"] {
+  vertical-align: middle;
+  margin: 3px 6px 0 0;
 }
 .inner-middle {
   margin-left: 210px;
@@ -90,6 +93,10 @@
 .price-label .default-price {
   font-size: 16px;
   font-weight: 700;
+}
+.blue-link:link,
+.blue-link:visited {
+  color: #005AA0;
 }
 .logo-search {
   margin-bottom: 10px;
