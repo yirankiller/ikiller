@@ -6,19 +6,19 @@
   background-color: #f2f2f2;
 }
 .login{
-
   .container{
     margin:auto;
     padding-top: 10px;
     width:1000px;
-
-    .login-middle{
+    .login-middle,.signup-middle{
       background-color: #fff;
       margin-top: 100px;
-      height: 356px;
       width: 880px;
       overflow: hidden;
       border: 1px solid @my-theme-default-gray;
+    }
+    .login-middle{
+      height: 356px;
       .login-form{
         height: 360px;
         width: 439px;
@@ -52,6 +52,12 @@
         background: url("/images/login.png") -50px -50px no-repeat;
       }
       .clearfix();
+    }
+    .signup-middle{
+      height: 600px;
+      .signup-form{
+        padding: 25px 10px 15px ;
+      }
     }
   }
 }
