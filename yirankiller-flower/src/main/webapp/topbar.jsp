@@ -13,7 +13,7 @@
         Hi yirankiller,欢迎回来
       </div>
       <div class="topinfor pull-right">
-        <ul class="list-inline in-line">
+        <ul class="list-inline">
           <li><a href="/login.jsp">登陆</a></li>
           <li><a href="#">注册</a></li>
           <li><a href="#">我的订单</a></li>

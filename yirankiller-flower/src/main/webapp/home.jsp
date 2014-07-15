@@ -1,7 +1,7 @@
 <%--
   User: eason
-  Date: 14-7-11
-  Time: 下午3:32
+  Date: 14-7-2
+  Time: 下午12:14
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page language="java" pageEncoding="UTF-8" %>
@@ -16,25 +16,19 @@
   <script src="/js/seajs/latest/sea.js" id="seajsnode"></script>
   <script src="/js/seajs/config.js" type="text/javascript"></script>
   <script language="JavaScript">
-    seajs.use(["/css/signup.css","bootstrap"]);
+    seajs.use(["/css/item.css","bootstrap"]);
+    seajs.use(["/js/item"],function(itemPage){
+      itemPage.init();
+    });
   </script>
 </head>
-<body class="body">
-  <div class="login">
-    <div class="container">
-    <div class="signup-header">
-      <div class="login-logo-img">
-        <img src="/images/logo2.png" class="pull-left">
-        <div class="pull-left login-welcome">欢迎注册</div>
-      </div>
+<body>
+  <!-- short cut part -->
+  <jsp:include page="topbar.jsp"/>
+  <!-- header part -->
+  <jsp:include page="header.jsp"/>
+  <jsp:include page="homeMiddle.jsp"/>
 
-    </div>
-    <div class="login-middle">
-
-    </div>
-    </div>
-  </div>
-
-<jsp:include page="footer.jsp" />
+  <jsp:include page="footer.jsp"/>
 </body>
 </html>

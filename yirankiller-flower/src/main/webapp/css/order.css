@@ -173,13 +173,12 @@
 .header .cart-process .process-3 .step3 {
   color: #7abd54;
 }
-.topbar-height {
-  min-height: 30px;
-}
 .topnavbar {
   background: #F7F7F7;
   border-bottom: 1px solid #eee;
   color: #999999;
+  min-height: 30px;
+  max-height: 37px;
 }
 .welcomeback,
 .topinfor > ul > li {
