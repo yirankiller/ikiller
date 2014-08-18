@@ -1,0 +1,52 @@
+@import "ivariables";
+.nav-list{
+  position: relative;
+  background-color: #f8f8f8;
+  width:210px;
+  z-index: 0;
+  .nav-style{
+    position: absolute;
+    top:77px;
+    width:218px;
+    height:40px;
+    margin-left:-8px;
+    background-color: #ffffff;
+    z-index: -1;
+    .nav-label{
+      position: absolute;
+      width:8px;
+      height:40px;
+      background-color: @my-theme;
+    }
+  }
+  .nav-list-group{
+    margin-bottom: 20px;
+    padding-left: 0;
+    .nav-list-item {
+      &.title{
+        background-color: @my-theme;
+        color: @my-theme-white;
+        font-size: 14px;
+        padding-left:15px;
+        font-weight: 700;
+        margin: 0 0;
+        border-width: 0;
+      }
+      &.category{
+        padding-left:15px;
+        font-weight: 700;
+      }
+      display: block;
+      padding: 10px 15px 10px 26px;
+
+      border-bottom: 1px solid #ffffff;
+      margin: 0 20px;
+      a {
+        color: #555555;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

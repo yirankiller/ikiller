@@ -7,3 +7,30 @@
 <%@ page language="java" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
+<div class="home-middle">
+  <div class="nav-list">
+    <div class="nav-style">
+      <span class="nav-label"></span>
+    </div>
+    <ul class="nav-list-group">
+      <li class="nav-list-item title">
+        我的京东
+      </li>
+      <li class="nav-list-item category">
+        订单中心
+      </li>
+      <li class="nav-list-item">
+        <a href="#" >我的订单</a>
+      </li>
+      <li class="nav-list-item category">
+        账户中心
+      </li>
+      <li class="nav-list-item">
+        <a href="#" >账户信息</a>
+      </li>
+      <li class="nav-list-item">
+        <a href="#" >收获地址</a>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -16,10 +16,8 @@
   <script src="/js/seajs/latest/sea.js" id="seajsnode"></script>
   <script src="/js/seajs/config.js" type="text/javascript"></script>
   <script language="JavaScript">
-    seajs.use(["/css/item.css","bootstrap"]);
-    seajs.use(["/js/item"],function(itemPage){
-      itemPage.init();
-    });
+    seajs.use(["/css/item.css","/css/home.css","bootstrap"]);
+
   </script>
 </head>
 <body>
@@ -27,8 +25,9 @@
   <jsp:include page="topbar.jsp"/>
   <!-- header part -->
   <jsp:include page="header.jsp"/>
-  <jsp:include page="homeMiddle.jsp"/>
-
+  <div class="container">
+    <jsp:include page="homeMiddle.jsp"/>
+  </div>
   <jsp:include page="footer.jsp"/>
 </body>
 </html>
