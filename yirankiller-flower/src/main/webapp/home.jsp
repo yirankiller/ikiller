@@ -17,7 +17,7 @@
   <script src="/js/seajs/config.js" type="text/javascript"></script>
   <script language="JavaScript">
     seajs.use(["/css/item.css","/css/home.css","bootstrap"]);
-
+    seajs.use(["/js/home"]);
   </script>
 </head>
 <body>

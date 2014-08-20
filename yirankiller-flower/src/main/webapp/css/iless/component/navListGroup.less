@@ -6,7 +6,6 @@
   z-index: 0;
   .nav-style{
     position: absolute;
-    top:77px;
     width:218px;
     height:40px;
     margin-left:-8px;
@@ -15,7 +14,7 @@
     .nav-label{
       position: absolute;
       width:8px;
-      height:40px;
+      height:100%;
       background-color: @my-theme;
     }
   }
@@ -35,14 +34,24 @@
       &.category{
         padding-left:15px;
         font-weight: 700;
+        &.active{
+
+        }
       }
       display: block;
       padding: 10px 15px 10px 26px;
 
       border-bottom: 1px solid #ffffff;
       margin: 0 20px;
+      &.active{
+        a{
+          color:@my-theme;
+        }
+
+      }
       a {
         color: #555555;
+        display: block;
         &:hover{
           text-decoration: none;
         }
