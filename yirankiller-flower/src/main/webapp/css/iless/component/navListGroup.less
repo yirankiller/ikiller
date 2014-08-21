@@ -4,6 +4,7 @@
   background-color: #f8f8f8;
   width:210px;
   z-index: 0;
+  padding-bottom: 12px;
   .nav-style{
     position: absolute;
     width:218px;
@@ -19,7 +20,7 @@
     }
   }
   .nav-list-group{
-    margin-bottom: 20px;
+    margin-bottom: 0;
     padding-left: 0;
     .nav-list-item {
       &.title{
@@ -35,25 +36,25 @@
         padding-left:15px;
         font-weight: 700;
         &.active{
-
+          color : @my-theme;
         }
       }
       display: block;
       padding: 10px 15px 10px 26px;
-
       border-bottom: 1px solid #ffffff;
       margin: 0 20px;
       &.active{
         a{
-          color:@my-theme;
+          color : @my-theme;
         }
-
       }
       a {
+
         color: #555555;
         display: block;
         &:hover{
           text-decoration: none;
+          color:@my-theme;
         }
       }
     }

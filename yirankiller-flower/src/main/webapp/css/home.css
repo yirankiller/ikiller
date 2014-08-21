@@ -3,6 +3,7 @@
   background-color: #f8f8f8;
   width: 210px;
   z-index: 0;
+  padding-bottom: 12px;
 }
 .nav-list .nav-style {
   position: absolute;
@@ -19,7 +20,7 @@
   background-color: #e4393c;
 }
 .nav-list .nav-list-group {
-  margin-bottom: 20px;
+  margin-bottom: 0;
   padding-left: 0;
 }
 .nav-list .nav-list-group .nav-list-item {
@@ -41,6 +42,9 @@
   padding-left: 15px;
   font-weight: 700;
 }
+.nav-list .nav-list-group .nav-list-item.category.active {
+  color: #e4393c;
+}
 .nav-list .nav-list-group .nav-list-item.active a {
   color: #e4393c;
 }
@@ -50,4 +54,5 @@
 }
 .nav-list .nav-list-group .nav-list-item a:hover {
   text-decoration: none;
+  color: #e4393c;
 }

@@ -3,15 +3,11 @@
  */
 define(function(require, exports, module) {
   var $ = require('jQuery');
-  var flower = require('navList');
+  var navList = require('navList');
 
   //exports.bindRadioButtonClick = function (){
 
   //};
 
-  (function(){
-    $(function(){
-      flower.nav();
-    });
-  })()
+
 });
