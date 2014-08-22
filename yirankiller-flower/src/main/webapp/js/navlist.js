@@ -24,7 +24,6 @@ define(function(require, exports, module) {
     $navLabel.css(options);
 
     $navListItem.mouseenter(function(){
-      $(this).closest(".category").addClass("active");
       var option = {
         top : $(this).position().top,
         height : $(this).outerHeight()
