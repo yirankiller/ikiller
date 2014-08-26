@@ -56,3 +56,160 @@
   text-decoration: none;
   color: #e4393c;
 }
+.footer .footer-nav-link {
+  text-align: center;
+}
+.footer .footer-nav-link .list-inline > li {
+  border-right: 1px solid #dddddd;
+}
+.footer .footer-nav-link .list-inline > li:last-child {
+  border-right: 0;
+}
+.in-line {
+  display: inline;
+  list-style: none;
+}
+.font-red {
+  color: #e4393c;
+}
+.checkbox-radio-label {
+  display: inline-block;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+.checkbox-radio-label input[type="radio"] {
+  vertical-align: middle;
+  margin: 0 6px 0 0;
+}
+.checkbox-radio-label input[type="checkbox"] {
+  vertical-align: middle;
+  margin: 3px 6px 0 0;
+}
+.inner-middle {
+  margin-left: 210px;
+}
+.list-inline-item {
+  padding-left: 0;
+  list-style: none;
+}
+.list-inline-item > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.panel-default-theme .panel-heading {
+  color: #ffffff;
+  background-color: #e4393c;
+  border-color: #e4393c;
+}
+.item-num {
+  position: relative;
+  width: 86px;
+}
+.item-num .input-item-num {
+  padding: 6px 26px;
+}
+.item-num .minux-num {
+  position: absolute;
+  top: 9px;
+  left: 10px;
+}
+.item-num .plus-num {
+  position: absolute;
+  top: 9px;
+  right: 10px;
+}
+.index-link {
+  color: #e4393c;
+  font-size: 14px;
+}
+.list-group-hover li:hover {
+  background: #fff4d3;
+}
+.asterisk-require {
+  color: #e4393c;
+  margin-right: 5px;
+}
+.default-price {
+  color: #e4393c;
+  font-size: 14px;
+}
+.clear-padding {
+  padding: 0;
+}
+.money-sign {
+  color: #e4393c;
+}
+.panel-footer button {
+  border-radius: 0;
+}
+.price-label {
+  padding: 0 8px;
+  color: #e4393c;
+  font-size: 16px;
+}
+.price-label .default-price {
+  font-size: 16px;
+  font-weight: 700;
+}
+.blue-link:link,
+.blue-link:visited {
+  color: #005AA0;
+}
+.inav-tabs {
+  position: relative;
+  z-index: 0;
+  border-bottom: 2px solid #e5e5e5;
+}
+.inav-tabs .nav-new-tabs {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.inav-tabs .nav-new-tabs > li {
+  float: left;
+  display: block;
+}
+.inav-tabs .nav-new-tabs > li.active > a,
+.inav-tabs .nav-new-tabs > li.active > a:hover,
+.inav-tabs .nav-new-tabs > li.active > a:focus {
+  color: #e4393c;
+  background-color: #ffffff;
+}
+.inav-tabs .nav-new-tabs > li > a {
+  font-size: 16px;
+  color: #666666;
+  background-color: #ffffff;
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+.inav-tabs .nav-new-tabs > li > a:hover {
+  color: #e4393c;
+}
+.inav-tabs .nav-new-tabs:before,
+.inav-tabs .nav-new-tabs:after {
+  content: " ";
+  display: table;
+}
+.inav-tabs .nav-new-tabs:after {
+  clear: both;
+}
+.inav-tabs .nav-label {
+  height: 42px;
+  position: absolute;
+  width: 94px;
+  border-bottom: 2px solid #e4393c;
+  margin-top: 2px;
+  z-index: -1;
+}
+.home-middle .home-middle-item {
+  margin-left: 16px;
+  float: left;
+}
+.home-middle .home-middle-item:first-child {
+  margin-left: 0;
+}
+.home-order {
+  width: 81%;
+}

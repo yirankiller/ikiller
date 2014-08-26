@@ -25,8 +25,9 @@
   <jsp:include page="topbar.jsp"/>
   <!-- header part -->
   <jsp:include page="header.jsp"/>
-  <div class="container">
-    <jsp:include page="homeMiddle.jsp"/>
+  <div class="container home-middle">
+    <jsp:include page="homeNav.jsp"/>
+    <jsp:include page="homeOrder.jsp"/>
   </div>
   <jsp:include page="footer.jsp"/>
 </body>

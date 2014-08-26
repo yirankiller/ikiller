@@ -4,10 +4,16 @@
 define(function(require, exports, module) {
   var $ = require('jQuery');
   var navList = require('navlist');
+  var navTabs = require('navtabs');
 
-  //exports.bindRadioButtonClick = function (){
-
-  //};
+  (function(){
+    $(function(){
+      $('.nav-new-tabs a').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+      })
+    })
+  })();
 
 
 });

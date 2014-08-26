@@ -7,7 +7,7 @@
 <%@ page language="java" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<div class="home-middle">
+<div class="home-nav home-middle-item">
   <div class="nav-list">
     <div class="nav-style">
       <span class="nav-label"></span>

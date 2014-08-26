@@ -1,0 +1,48 @@
+@import "ivariables";
+@import "iutilities";
+
+.inav-tabs{
+  position : relative;
+  z-index: 0;
+  border-bottom: 2px solid #e5e5e5;
+  .nav-new-tabs {
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    & > li{
+
+      float: left;
+      display: block;
+      &.active {
+        & > a,
+        & > a:hover,
+        & > a:focus {
+          color: @my-theme;
+          background-color: @my-theme-white;
+        }
+      }
+      & > a{
+        &:hover {
+          color: @my-theme;
+        }
+        font-size: 16px;
+        color: @my-theme-default-black;
+        background-color: @my-theme-white;
+        display: block;
+        padding: 10px 15px;
+        text-decoration: none;
+      }
+    }
+    .clearfix();
+  }
+
+  .nav-label{
+    height: 42px;
+    position: absolute;
+    width: 94px;
+    border-bottom: 2px solid @my-theme;
+    margin-top: 2px;
+    z-index: -1;
+  }
+}
