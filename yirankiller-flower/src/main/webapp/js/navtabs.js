@@ -16,12 +16,7 @@ define(function(require, exports, module) {
     var $this        = this.element;
     var $navLabel    = $this.find(".nav-label");
     var $navListItem = $this.find(".nav-new-tabs li");
-    var options = {
-      left : 0,
-      width : 0
-    }
-    options = $.extend(options ,option);
-    $navLabel.css(options);
+
 
     $navListItem.mouseenter(function(){
       var option = {
@@ -31,30 +26,33 @@ define(function(require, exports, module) {
       $navLabel.stop().animate(option,
         calcDurTime( $(this).position().left ),
         function(){
-      });
+        }
+      );
 
     });
 
     $this.mouseleave(function(){
-      var option = {
-        left : 0,
-        width : 0
-      };
-
-      if($navListItem.hasClass("active")){
-        var activeItem = $navListItem.filter(".active");
-        option.left     = activeItem.position().left;
-        option.width  = activeItem.outerWidth();
-      }
-
+      var option = defaultOption();
       $navLabel.stop().animate(option,
         calcDurTime(),
         function(){
         }
       );
       console.log("mouse leave");
-
     });
+
+    var defaultOption = function(){
+      var option = {
+        left : 0,
+        width : 0
+      };
+      if($navListItem.hasClass("active")){
+        var activeItem = $navListItem.filter(".active");
+        option.left     = activeItem.position().left;
+        option.width  = activeItem.outerWidth();
+      }
+      return option;
+    }
 
     var calcDurTime = function (moveToLeft){
       if(!moveToLeft){
@@ -66,10 +64,11 @@ define(function(require, exports, module) {
       var time =  Math.max( NavTabs.MIN_TIME ,moveLength / $this.outerWidth() * NavTabs.MAX_TIME );
       return time;
     }
+
+    var options = defaultOption();
+    options = $.extend(options ,option);
+    $navLabel.css(options);
   };
-
-
-
   exports= NavTabs;
 
   (function(){
