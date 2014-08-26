@@ -17,7 +17,6 @@ define(function(require, exports, module) {
     var $navLabel    = $this.find(".nav-label");
     var $navListItem = $this.find(".nav-new-tabs li");
 
-
     $navListItem.mouseenter(function(){
       var option = {
         left : $(this).position().left,

@@ -19,7 +19,7 @@
       <li class="nav-list-item category">
         订单中心
       </li>
-      <li class="nav-list-item">
+      <li class="nav-list-item active">
         <a href="#" >我的订单</a>
       </li>
       <li class="nav-list-item category">

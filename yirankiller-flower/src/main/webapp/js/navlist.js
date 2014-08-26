@@ -16,12 +16,6 @@ define(function(require, exports, module) {
     var $this        = this.element;
     var $navLabel    = $this.find(".nav-style");
     var $navListItem = $this.find(".nav-list-group .nav-list-item:not(.category)");
-    var options = {
-      top : 0,
-      height : 0
-    }
-    options = $.extend(options ,option);
-    $navLabel.css(options);
 
     $navListItem.mouseenter(function(){
       var option = {
@@ -31,8 +25,8 @@ define(function(require, exports, module) {
       $navLabel.stop().animate(option,
         calcDurTime( $(this).position().top ),
         function(){
-      });
-
+        }
+      );
     });
 
     $navListItem.click(function(){
@@ -41,6 +35,16 @@ define(function(require, exports, module) {
     });
 
     $this.mouseleave(function(){
+      var option = defaultOption();
+      $navLabel.stop().animate(option,
+        calcDurTime(),
+        function(){
+        }
+      );
+      console.log("mouse leave");
+    });
+
+    var defaultOption = function(){
       var option = {
         top : 0,
         height : 0
@@ -51,15 +55,8 @@ define(function(require, exports, module) {
         option.top    = activeItem.position().top;
         option.height = activeItem.outerHeight();
       }
-
-      $navLabel.stop().animate(option,
-        calcDurTime(),
-        function(){
-        }
-      );
-      console.log("mouse leave");
-
-    });
+      return option;
+    }
 
     var calcDurTime = function (moveToHeight){
       if(!moveToHeight){
@@ -71,10 +68,11 @@ define(function(require, exports, module) {
       var time =  Math.max( NavList.MIN_TIME ,moveLength / $this.outerHeight() * NavList.MAX_TIME );
       return time;
     }
+
+    var options = defaultOption();
+    options = $.extend(options ,option);
+    $navLabel.css(options);
   };
-
-
-
   exports= NavList;
 
   (function(){
