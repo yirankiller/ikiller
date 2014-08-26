@@ -43,13 +43,15 @@ define(function(require, exports, module) {
     var defaultOption = function(){
       var option = {
         left : 0,
-        width : 0
+        width : 0,
+        height:0
       };
       if($navListItem.hasClass("active")){
         var activeItem = $navListItem.filter(".active");
-        option.left     = activeItem.position().left;
-        option.width  = activeItem.outerWidth();
+        option.left    = activeItem.position().left;
+        option.width   = activeItem.outerWidth();
       }
+      option.height    = $navListItem.outerHeight();
       return option;
     }
 

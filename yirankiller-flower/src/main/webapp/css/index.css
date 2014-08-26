@@ -332,3 +332,50 @@
 .blue-link:visited {
   color: #005AA0;
 }
+.inav-tabs {
+  position: relative;
+  z-index: 0;
+  border-bottom: 2px solid #e5e5e5;
+}
+.inav-tabs .nav-new-tabs {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.inav-tabs .nav-new-tabs > li {
+  float: left;
+  display: block;
+}
+.inav-tabs .nav-new-tabs > li.active > a,
+.inav-tabs .nav-new-tabs > li.active > a:hover,
+.inav-tabs .nav-new-tabs > li.active > a:focus {
+  color: #e4393c;
+  background-color: #ffffff;
+}
+.inav-tabs .nav-new-tabs > li > a {
+  font-size: 13px;
+  color: #666666;
+  background-color: #ffffff;
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+.inav-tabs .nav-new-tabs > li > a:hover {
+  color: #e4393c;
+}
+.inav-tabs .nav-new-tabs:before,
+.inav-tabs .nav-new-tabs:after {
+  content: " ";
+  display: table;
+}
+.inav-tabs .nav-new-tabs:after {
+  clear: both;
+}
+.inav-tabs .nav-label {
+  height: 42px;
+  position: absolute;
+  width: 94px;
+  border-bottom: 2px solid #e4393c;
+  margin-top: 2px;
+  z-index: -1;
+}

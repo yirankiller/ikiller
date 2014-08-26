@@ -107,11 +107,14 @@
           </div>
           <div class="floor-center-navtabs">
             <!-- Nav tabs -->
-            <ul class="nav nav-tabs" id="floornav1">
-              <li class="active"><a href="#home" >Home</a></li>
-              <li><a href="#profile" >Profile</a></li>
-              <li><a href="#messages" >Messages</a></li>
-            </ul>
+            <div class="inav-tabs">
+              <div class="nav-label"></div>
+              <ul class="nav-new-tabs" id="floornav1">
+                <li class="active"><a href="#home" >Home</a></li>
+                <li><a href="#profile" >Profile</a></li>
+                <li><a href="#messages" >Messages</a></li>
+              </ul>
+            </div>
             <!-- Tab panes -->
             <div class="tab-content">
               <div class="tab-pane active" id="home">
@@ -444,11 +447,14 @@
           </div>
           <div class="floor-center-navtabs">
             <!-- Nav tabs -->
-            <ul class="nav nav-tabs">
-              <li class="active"><a href="#home2">Home</a></li>
-              <li><a href="#profile2" >Profile</a></li>
-              <li><a href="#messages2" >Messages</a></li>
-            </ul>
+            <div class="inav-tabs">
+              <div class="nav-label"></div>
+              <ul class="nav-new-tabs">
+                <li class="active"><a href="#home2">Home</a></li>
+                <li><a href="#profile2" >Profile</a></li>
+                <li><a href="#messages2" >Messages</a></li>
+              </ul>
+            </div>
             <!-- Tab panes -->
             <div class="tab-content">
               <div class="tab-pane active" id="home2">
@@ -781,11 +787,14 @@
           </div>
           <div class="floor-center-navtabs">
             <!-- Nav tabs -->
-            <ul class="nav nav-tabs">
-              <li class="active"><a href="#home3" >Home</a></li>
-              <li><a href="#profile3" >Profile</a></li>
-              <li><a href="#messages3" >Messages</a></li>
-            </ul>
+            <div class="inav-tabs">
+              <div class="nav-label"></div>
+              <ul class="nav-new-tabs">
+                <li class="active"><a href="#home3" >Home</a></li>
+                <li><a href="#profile3" >Profile</a></li>
+                <li><a href="#messages3" >Messages</a></li>
+              </ul>
+            </div>
             <!-- Tab panes -->
             <div class="tab-content">
               <div class="tab-pane active" id="home3">

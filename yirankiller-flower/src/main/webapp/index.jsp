@@ -16,9 +16,9 @@
   <script src="/js/seajs/latest/sea.js" id="seajsnode"></script>
   <script src="/js/seajs/config.js" type="text/javascript"></script>
   <script language="JavaScript">
-    seajs.use(["bootstrap","/css/index.css","jQuery"],function(a,b,$){
+    seajs.use(["bootstrap","/js/navtabs","/css/index.css","jQuery"],function(a,b,c,$){
       $(function(){
-        $('.each-floor .nav-tabs a').hover(function (e) {
+        $('.each-floor .inav-tabs a').hover(function (e) {
           e.preventDefault()
           $(this).tab('show')
         })
