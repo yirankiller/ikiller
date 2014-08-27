@@ -20,7 +20,7 @@
         订单中心
       </li>
       <li class="nav-list-item active">
-        <a href="#" >我的订单</a>
+        <a href="/home.jsp" >我的订单</a>
       </li>
       <li class="nav-list-item category">
         账户中心

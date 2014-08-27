@@ -353,7 +353,6 @@
   background-color: #ffffff;
 }
 .inav-tabs .nav-new-tabs > li > a {
-  font-size: 13px;
   color: #666666;
   background-color: #ffffff;
   display: block;
@@ -378,4 +377,7 @@
   border-bottom: 2px solid #e4393c;
   margin-top: 2px;
   z-index: -1;
+}
+.nav-new-tabs > li > a {
+  font-size: 13px;
 }
