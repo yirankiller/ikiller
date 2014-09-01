@@ -1,12 +1,3 @@
-.footer .footer-nav-link {
-  text-align: center;
-}
-.footer .footer-nav-link .list-inline > li {
-  border-right: 1px solid #dddddd;
-}
-.footer .footer-nav-link .list-inline > li:last-child {
-  border-right: 0;
-}
 .in-line {
   display: inline;
   list-style: none;
@@ -65,7 +56,7 @@
   color: #e4393c;
   font-size: 14px;
 }
-.list-group-hover li:hover {
+.list-group-hover .list-address-item:hover {
   background: #fff4d3;
 }
 .asterisk-require {
@@ -97,6 +88,15 @@
 .blue-link:link,
 .blue-link:visited {
   color: #005AA0;
+}
+.footer .footer-nav-link {
+  text-align: center;
+}
+.footer .footer-nav-link .list-inline > li {
+  border-right: 1px solid #dddddd;
+}
+.footer .footer-nav-link .list-inline > li:last-child {
+  border-right: 0;
 }
 .login-header .login-logo-img .login-welcome,
 .signup-header .login-logo-img .login-welcome {

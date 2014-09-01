@@ -299,7 +299,7 @@
   color: #e4393c;
   font-size: 14px;
 }
-.list-group-hover li:hover {
+.list-group-hover .list-address-item:hover {
   background: #fff4d3;
 }
 .asterisk-require {

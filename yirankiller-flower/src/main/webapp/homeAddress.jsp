@@ -16,8 +16,8 @@
   <script src="/js/seajs/latest/sea.js" id="seajsnode"></script>
   <script src="/js/seajs/config.js" type="text/javascript"></script>
   <script language="JavaScript">
-    seajs.use(["/css/item.css","/css/home.css","bootstrap"]);
-    seajs.use(["/js/home"]);
+    seajs.use(["/css/homeAddress.css","bootstrap"]);
+    seajs.use(["/js/navlist"]);
   </script>
 </head>
 <body>
