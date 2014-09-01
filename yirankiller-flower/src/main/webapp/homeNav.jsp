@@ -26,7 +26,7 @@
         账户中心
       </li>
       <li class="nav-list-item">
-        <a href="#" >账户信息</a>
+        <a href="/accountInfo.jsp" >账户信息</a>
       </li>
       <li class="nav-list-item">
         <a href="/homeAddress.jsp" >收获地址</a>
