@@ -10,7 +10,7 @@
 <div class="home-middle-item home-content">
   <div class=" panel panel-default">
     <div class="addressupdate-header panel-heading">
-      <h4 class="panel-title">新增收货地址</h4>
+      <h4 class="panel-title">管理收货地址</h4>
     </div>
     <div class="addressupdate-body panel-body">
       <form class="form-horizontal" role="form">
@@ -79,7 +79,7 @@
         </div>
         <div class="form-group">
           <div class="col-sm-offset-2 col-sm-10">
-            <button type="button" class="btn btn-search-default">保存并返回</button>
+            <button type="button" class="btn btn-search-default">新增</button>
             <button type="button" class="btn btn-search-default">取消</button>
           </div>
         </div>
