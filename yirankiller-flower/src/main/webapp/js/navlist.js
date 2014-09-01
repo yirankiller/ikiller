@@ -15,7 +15,7 @@ define(function(require, exports, module) {
   NavList.prototype.nav = function(option){
     var $this        = this.element;
     var $navLabel    = $this.find(".nav-style");
-    var $navListItem = $this.find(".nav-list-group .nav-list-item:not(.category)");
+    var $navListItem = $this.find(".nav-list-group .nav-list-item:not(.category):not(.title)");
 
     $navListItem.mouseenter(function(){
       var option = {
@@ -44,14 +44,16 @@ define(function(require, exports, module) {
       console.log("mouse leave");
     });
 
-    var defaultOption = function(){
+    var defaultOption = function(activeItem){
+      if(!activeItem){
+        activeItem = $navListItem.filter(".active");
+      }
       var option = {
         top : 0,
         height : 0
       };
 
-      if($navListItem.hasClass("active")){
-        var activeItem = $navListItem.filter(".active");
+      if(activeItem && activeItem.size() > 0){
         option.top    = activeItem.position().top;
         option.height = activeItem.outerHeight();
       }
@@ -68,12 +70,14 @@ define(function(require, exports, module) {
       var time =  Math.max( NavList.MIN_TIME ,moveLength / $this.outerHeight() * NavList.MAX_TIME );
       return time;
     }
+    // add default active
+    var pathName = document.location.pathname;
+    $navListItem.find("a[href='"+pathName+"']").parent().addClass("active");
 
     var options = defaultOption();
     options = $.extend(options ,option);
     $navLabel.css(options);
   };
-  exports= NavList;
 
   (function(){
     $(function(){

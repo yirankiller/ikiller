@@ -19,8 +19,8 @@
       <li class="nav-list-item category">
         订单中心
       </li>
-      <li class="nav-list-item active">
-        <a href="/home.jsp" >我的订单</a>
+      <li class="nav-list-item">
+        <a href="/homeOrder.jsp" >我的订单</a>
       </li>
       <li class="nav-list-item category">
         账户中心
@@ -29,7 +29,7 @@
         <a href="#" >账户信息</a>
       </li>
       <li class="nav-list-item">
-        <a href="#" >收获地址</a>
+        <a href="/homeAddress.jsp" >收获地址</a>
       </li>
     </ul>
   </div>
