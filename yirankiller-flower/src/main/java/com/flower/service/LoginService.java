@@ -1,6 +1,7 @@
 package com.flower.service;
 
 import com.flower.dao.UserDao;
+import com.flower.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -14,5 +15,12 @@ public class LoginService {
     @Autowired
     private UserDao userDao;
 
-    public User
+    public boolean checkPassword(User _User){
+        User user = userDao.findByUsername(_User.getUsername());
+        if(user != null && user.getPassword().equals(_User.getPassword())){
+
+        }
+        return false;
+
+    }
 }

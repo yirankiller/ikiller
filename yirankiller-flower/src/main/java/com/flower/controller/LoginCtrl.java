@@ -23,8 +23,8 @@ public class LoginCtrl {
     @RequestMapping(params = "login")
     public String add(User user,Model model){
         logger.info("Username:" + user.getUsername());
-        loginService.
-        model.addAttribute("bookList",bookService.findAllBook());
+        loginService.checkPassword(user);
+
         return "index";
     }
 }
