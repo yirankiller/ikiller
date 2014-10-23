@@ -66,8 +66,6 @@
           <li ><a href="#">新居</a></li>
           <li ><a href="#">办公室</a></li>
           <li ><a href="#">除味</a></li>
-          <li ><a href="#">Link</a></li>
-          <li ><a href="#">Link</a></li>
 
         </ul>
       </div><!-- /.navbar-collapse -->
