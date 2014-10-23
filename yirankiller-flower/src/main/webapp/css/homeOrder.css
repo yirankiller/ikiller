@@ -1,0 +1,333 @@
+.nav-list {
+  position: relative;
+  background-color: #f8f8f8;
+  width: 210px;
+  z-index: 0;
+  padding-bottom: 12px;
+}
+.nav-list .nav-style {
+  position: absolute;
+  width: 218px;
+  height: 40px;
+  margin-left: -8px;
+  background-color: #ffffff;
+  z-index: -1;
+}
+.nav-list .nav-style .nav-label {
+  position: absolute;
+  width: 8px;
+  height: 100%;
+  background-color: #e4393c;
+}
+.nav-list .nav-list-group {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.nav-list .nav-list-group .nav-list-item {
+  display: block;
+  padding: 10px 15px 10px 26px;
+  border-bottom: 1px solid #ffffff;
+  margin: 0 20px;
+}
+.nav-list .nav-list-group .nav-list-item.title {
+  background-color: #e4393c;
+  color: #ffffff;
+  font-size: 14px;
+  padding-left: 15px;
+  font-weight: 700;
+  margin: 0 0;
+  border-width: 0;
+}
+.nav-list .nav-list-group .nav-list-item.category {
+  padding-left: 15px;
+  font-weight: 700;
+}
+.nav-list .nav-list-group .nav-list-item.category.active {
+  color: #e4393c;
+}
+.nav-list .nav-list-group .nav-list-item.active a {
+  color: #e4393c;
+}
+.nav-list .nav-list-group .nav-list-item a {
+  color: #555555;
+  display: block;
+}
+.nav-list .nav-list-group .nav-list-item a:hover {
+  text-decoration: none;
+  color: #e4393c;
+}
+.in-line {
+  display: inline;
+  list-style: none;
+}
+.font-red {
+  color: #e4393c;
+}
+.checkbox-radio-label {
+  display: inline-block;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+.checkbox-radio-label input[type="radio"] {
+  vertical-align: middle;
+  margin: 0 6px 0 0;
+}
+.checkbox-radio-label input[type="checkbox"] {
+  vertical-align: middle;
+  margin: 3px 6px 0 0;
+}
+.inner-middle {
+  margin-left: 210px;
+}
+.list-inline-item {
+  padding-left: 0;
+  list-style: none;
+}
+.list-inline-item > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.panel-default-theme .panel-heading {
+  color: #ffffff;
+  background-color: #e4393c;
+  border-color: #e4393c;
+}
+.item-num {
+  position: relative;
+  width: 86px;
+}
+.item-num .input-item-num {
+  padding: 6px 26px;
+}
+.item-num .minux-num {
+  position: absolute;
+  top: 9px;
+  left: 10px;
+}
+.item-num .plus-num {
+  position: absolute;
+  top: 9px;
+  right: 10px;
+}
+.index-link {
+  color: #e4393c;
+  font-size: 14px;
+}
+.list-group-hover .list-address-item:hover {
+  background: #fff4d3;
+}
+.asterisk-require {
+  color: #e4393c;
+  margin-right: 5px;
+}
+.default-price {
+  color: #e4393c;
+  font-size: 14px;
+}
+.clear-padding {
+  padding: 0;
+}
+.money-sign {
+  color: #e4393c;
+}
+.panel-footer button {
+  border-radius: 0;
+}
+.price-label {
+  padding: 0 8px;
+  color: #e4393c;
+  font-size: 16px;
+}
+.price-label .default-price {
+  font-size: 16px;
+  font-weight: 700;
+}
+.blue-link:link,
+.blue-link:visited {
+  color: #005AA0;
+}
+.inav-tabs {
+  position: relative;
+  z-index: 0;
+  border-bottom: 2px solid #e5e5e5;
+}
+.inav-tabs .nav-new-tabs {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.inav-tabs .nav-new-tabs > li {
+  float: left;
+  display: block;
+}
+.inav-tabs .nav-new-tabs > li.active > a,
+.inav-tabs .nav-new-tabs > li.active > a:hover,
+.inav-tabs .nav-new-tabs > li.active > a:focus {
+  color: #e4393c;
+  background-color: #ffffff;
+}
+.inav-tabs .nav-new-tabs > li > a {
+  color: #666666;
+  background-color: #ffffff;
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+.inav-tabs .nav-new-tabs > li > a:hover {
+  color: #e4393c;
+}
+.inav-tabs .nav-new-tabs:before,
+.inav-tabs .nav-new-tabs:after {
+  content: " ";
+  display: table;
+}
+.inav-tabs .nav-new-tabs:after {
+  clear: both;
+}
+.inav-tabs .nav-label {
+  height: 42px;
+  position: absolute;
+  width: 94px;
+  border-bottom: 2px solid #e4393c;
+  margin-top: 2px;
+  z-index: -1;
+}
+.home-middle .home-middle-item {
+  margin-left: 20px;
+  float: left;
+}
+.home-middle .home-middle-item:first-child {
+  margin-left: 0;
+}
+.home-content {
+  width: 74%;
+}
+.nav-new-tabs > li > a {
+  font-size: 16px;
+}
+.order-middle {
+  margin-top: 18px;
+}
+@media (min-width: 768px) {
+  .order-middle .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .order-middle .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .order-middle .container {
+    width: 1170px;
+  }
+}
+.order-middle .order-title .order-checkbox {
+  width: 8%;
+}
+.order-middle .order-title .order-info {
+  width: 42%;
+}
+.order-middle .order-title .order-unit {
+  width: 12%;
+}
+.order-middle .order-title .order-num {
+  width: 12%;
+}
+.order-middle .order-title .order-price {
+  width: 12%;
+}
+.order-middle .order-title .order-option {
+  width: 12%;
+}
+.order-middle .order-title input[type="checkbox"] {
+  margin-top: 2px;
+}
+.order-middle .order-list {
+  border: 1px solid #cccccc;
+  background: #fcfcfc;
+  margin-left: -1px;
+  margin-bottom: 20px;
+}
+.order-middle .order-list .order-body {
+  margin: 20px 0;
+}
+.order-middle .order-list .order-body li {
+  vertical-align: top;
+}
+.order-middle .order-list .order-body .order-checkbox {
+  width: 8%;
+}
+.order-middle .order-list .order-body .order-info {
+  width: 42%;
+}
+.order-middle .order-list .order-body .order-unit {
+  width: 12%;
+}
+.order-middle .order-list .order-body .order-num {
+  width: 12%;
+}
+.order-middle .order-list .order-body .order-price {
+  width: 12%;
+}
+.order-middle .order-list .order-body .order-option {
+  width: 12%;
+}
+.order-middle .order-list .order-body input[type="checkbox"] {
+  margin-top: 2px;
+}
+.order-middle .order-list .order-body .order-info .order-item-img {
+  border: 1px solid #cccccc;
+  max-height: 80px;
+  max-width: 80px;
+}
+.order-middle .order-list .order-body .order-info .item-title {
+  width: 260px;
+  min-height: 40px;
+  padding-left: 8px;
+}
+.order-middle .order-list .order-body .order-option a {
+  display: block;
+  margin-bottom: 2px;
+}
+.order-middle .order-footer {
+  height: 40px;
+  background-color: #fcfcfc;
+  padding: 0;
+}
+.order-middle .order-footer > div {
+  margin-left: 40px;
+  vertical-align: middle;
+  line-height: 40px;
+}
+.order-middle .order-footer > div .checkbox-select-all {
+  font-weight: normal;
+  cursor: pointer;
+}
+.order-middle .order-footer > div .checkbox-select-all input[type="checkbox"] {
+  vertical-align: middle;
+  margin: 1px 6px 3px 0;
+}
+.order-middle .order-footer .footer-middle {
+  margin-left: 30px;
+}
+.order-middle .order-footer .footer-middle .option {
+  margin-right: 20px;
+}
+.order-middle .order-footer .selecte-num {
+  color: #e4393c;
+  padding: 0 8px;
+}
+.order-middle .order-footer:before,
+.order-middle .order-footer:after {
+  content: " ";
+  display: table;
+}
+.order-middle .order-footer:after {
+  clear: both;
+}
+.order-middle .empty-shopping-order .empty {
+  padding-left: 150px;
+}
