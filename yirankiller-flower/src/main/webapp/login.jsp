@@ -38,13 +38,13 @@
                   <div class="input-fields">
                     <div class="form-group">
                       <div class="col-sm-offset-3 col-md-8 username-label">
-                        <input type="email" class="form-control input-lg" id="inputEmail3" placeholder="手机号/用户名/邮箱" maxlength="23" autocomplete="false">
+                        <input type="email" class="form-control input-lg" id="login_username" name="username" placeholder="手机号/用户名/邮箱" maxlength="23" autocomplete="false">
                         <span class="label-icon glyphicon glyphicon-user"></span>
                       </div>
                     </div>
                     <div class="form-group">
                       <div class="col-sm-offset-3 col-md-8 passwd-label">
-                        <input type="password" class="form-control input-lg" id="inputPassword3" placeholder="密码" maxlength="16">
+                        <input type="password" class="form-control input-lg" id="login_password" name="password" placeholder="密码" maxlength="16">
                         <span class="glyphicon glyphicon-lock label-icon"></span>
                       </div>
                     </div>
