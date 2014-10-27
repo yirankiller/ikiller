@@ -17,19 +17,23 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-                .authorizeRequests()
-                .antMatchers("/images/**").permitAll()
-                .antMatchers("/js/**").permitAll()
-                .antMatchers("/css/**").permitAll()
-                .antMatchers("/bootstrap/**").permitAll()
-                .antMatchers("/home**").authenticated()
-                .and()
-                .formLogin()
-                .loginPage("/login.jsp")
-                .permitAll()
-                .and()
-                .logout()
-                .permitAll();
+            .authorizeRequests()
+            .antMatchers("/images/**").permitAll()
+            .antMatchers("/js/**").permitAll()
+            .antMatchers("/css/**").permitAll()
+            .antMatchers("/bootstrap/**").permitAll()
+            .antMatchers("/home**").authenticated()
+            .and()
+            .formLogin()
+            .loginPage("/login")
+            .permitAll()
+            .and()
+            .logout()
+            .permitAll()
+            .logoutSuccessUrl("/homeOrder.jsp")
+            .permitAll()
+            ;
+
     }
 
     @Autowired

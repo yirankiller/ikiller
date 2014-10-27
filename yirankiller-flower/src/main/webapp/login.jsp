@@ -6,6 +6,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page language="java" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
@@ -34,11 +35,11 @@
             <div class="login-middle">
               <div class="login-img pull-left"></div>
               <div class="pull-right login-form">
-                <form class="form-horizontal" role="form">
+                <form:form class="form-horizontal" role="form" action="/login" method="post">
                   <div class="input-fields">
                     <div class="form-group">
                       <div class="col-sm-offset-3 col-md-8 username-label">
-                        <input type="email" class="form-control input-lg" id="login_username" name="username" placeholder="手机号/用户名/邮箱" maxlength="23" autocomplete="false">
+                        <input type="text" class="form-control input-lg" id="login_username" name="username" placeholder="手机号/用户名/邮箱" maxlength="23" autocomplete="false">
                         <span class="label-icon glyphicon glyphicon-user"></span>
                       </div>
                     </div>
@@ -64,7 +65,7 @@
                       <p class="form-control-static pull-right"><a href="#" data-target="#carousel-login-signup" data-slide-to="1">还没有账号?&nbsp;&nbsp;30秒注册<span class="glyphicon glyphicon-flash"></span></a></p>
                     </div>
                   </div>
-                </form>
+                </form:form>
               </div>
             </div>
           </div data-welcome-title="欢迎登录" data-welcome-title="欢迎登录">
