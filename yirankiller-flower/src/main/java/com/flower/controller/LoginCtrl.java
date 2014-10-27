@@ -17,7 +17,6 @@ public class LoginCtrl {
 
 
     public String add(User user,Model model){
-        logger.info("Username:" + user.getUsername());
 
         return "index";
     }

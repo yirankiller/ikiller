@@ -1,4 +1,4 @@
-package com.flower.controller;
+package com.flower.controller.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -40,6 +40,7 @@ public class WebMvcConfiguration extends WebMvcConfigurerAdapter {
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/login").setViewName("login");
+        registry.addViewController("/home").setViewName("/homeOrder");
         registry.setOrder(Ordered.HIGHEST_PRECEDENCE);
     }
 }

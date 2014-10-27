@@ -40,7 +40,7 @@
         <init-param>
             <param-name>contextConfigLocation</param-name>
             <param-value>
-                com.flower.controller.WebMvcConfiguration
+                com.flower.controller.config.WebMvcConfiguration
             </param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>

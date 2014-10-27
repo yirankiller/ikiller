@@ -16,10 +16,6 @@ public class LoginService {
     private UserDao userDao;
 
     public boolean checkPassword(User _User){
-        User user = userDao.findByUsername(_User.getUsername());
-        if(user != null && user.getPassword().equals(_User.getPassword())){
-
-        }
         return false;
 
     }

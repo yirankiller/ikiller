@@ -1,25 +1,22 @@
 package com.flower.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 /**
  * Created by eason on 14-10-23.
  */
 @Entity
 public class User {
-    @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+
     private int id;
     private String username;
-    private String password;
-    private String nickname;
+    private String nickName;
     private String email;
     private String postcode;
-    private String mobilephone;
+    private String mobilePhone;
 
+    @Id
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     public int getId() {
         return id;
     }
@@ -36,20 +33,12 @@ public class User {
         this.username = username;
     }
 
-    public String getPassword() {
-        return password;
+    public String getNickName() {
+        return nickName;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getNickname() {
-        return nickname;
-    }
-
-    public void setNickname(String nickname) {
-        this.nickname = nickname;
+    public void setNickName(String nickName) {
+        this.nickName = nickName;
     }
 
     public String getEmail() {
@@ -68,11 +57,12 @@ public class User {
         this.postcode = postcode;
     }
 
-    public String getMobilephone() {
-        return mobilephone;
+    public String getMobilePhone() {
+        return mobilePhone;
     }
 
-    public void setMobilephone(String mobilephone) {
-        this.mobilephone = mobilephone;
+    public void setMobilePhone(String mobilePhone) {
+        this.mobilePhone = mobilePhone;
     }
+
 }
