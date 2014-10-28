@@ -8,17 +8,20 @@ import java.util.List;
  */
 @Entity
 public class UserShadow {
-    private int id;
-    private String password;
-    private boolean enable;
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumns({@JoinColumn(name = "userid")})
-    public User user;
-    @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumns({@JoinColumn(name = "id")})
-    private List<UserShadow> userShadowList;
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
+    private int id;
+    @Column(nullable = false)
+    private String password;
+    @Column(nullable = false,columnDefinition = JPAConfig.BOOLEAN_DEFAULT_FALSE)
+    private boolean enable;
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumns({@JoinColumn(name = "user_id")})
+    public User user;
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumns({@JoinColumn(name = "userShadowId")})
+    private List<Authorities> authoritiesList;
+
     public int getId() {
         return id;
     }
@@ -49,5 +52,13 @@ public class UserShadow {
 
     public void setUser(User user) {
         this.user = user;
+    }
+
+    public List<Authorities> getAuthoritiesList() {
+        return authoritiesList;
+    }
+
+    public void setAuthoritiesList(List<Authorities> authoritiesList) {
+        this.authoritiesList = authoritiesList;
     }
 }

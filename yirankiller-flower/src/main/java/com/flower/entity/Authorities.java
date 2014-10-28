@@ -8,14 +8,15 @@ import java.util.List;
  */
 @Entity
 public class Authorities {
-
+    @Id
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     private int id;
-
+    private int userShadowId;
+    @Column(nullable = false)
     private String authority;
 
 
-    @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+
     public int getId() {
         return id;
     }
@@ -32,4 +33,11 @@ public class Authorities {
         this.authority = authority;
     }
 
+    public int getUserShadowId() {
+        return userShadowId;
+    }
+
+    public void setUserShadowId(int userShadowId) {
+        this.userShadowId = userShadowId;
+    }
 }
