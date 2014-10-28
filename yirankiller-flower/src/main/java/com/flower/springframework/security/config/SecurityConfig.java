@@ -1,12 +1,14 @@
 package com.flower.springframework.security.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.annotation.web.servlet.configuration.EnableWebMvcSecurity;
-import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.crypto.password.StandardPasswordEncoder;
 
 import javax.sql.DataSource;
 
@@ -18,6 +20,8 @@ import javax.sql.DataSource;
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private DataSource dataSource;
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
@@ -44,19 +48,22 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
         auth
             .jdbcAuthentication()
+            .passwordEncoder(passwordEncoder)
             .dataSource(dataSource)
             .usersByUsernameQuery("" +
                     "select " +
-                    "user.username,userShadow.password,userShadow.enable " +
+                    "u.username,us.password,us.enable " +
                     "from " +
-                    "UserShadow userShadow " +
-                    "where userShadow.user.username = ? ")
+                    "user_shadow us, user u " +
+                    "where us.user_id = u.id " +
+                    "and u.username = ? ")
             .authoritiesByUsernameQuery("select " +
-                    "auth.userShadow.user.username,auth.authority " +
+                    "u.username,auth.authority " +
                     "from " +
-                    "Authorities auth " +
+                    "authorities auth, user_shadow us, user u " +
                     "where " +
-                    "auth.userShadow.user.username = ? ");
+                    "us.user_id = u.id and auth.user_shadow_id = us.id " +
+                    "and u.username = ? ");
     }
 
 

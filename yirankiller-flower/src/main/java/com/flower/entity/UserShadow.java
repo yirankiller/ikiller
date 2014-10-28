@@ -19,7 +19,7 @@ public class UserShadow {
     @JoinColumns({@JoinColumn(name = "user_id")})
     public User user;
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumns({@JoinColumn(name = "userShadowId")})
+    @JoinColumns({@JoinColumn(name = "user_shadow_id")})
     private List<Authorities> authoritiesList;
 
     public int getId() {

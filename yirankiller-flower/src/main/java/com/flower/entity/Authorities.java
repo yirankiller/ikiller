@@ -11,7 +11,9 @@ public class Authorities {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private int id;
-    private int userShadowId;
+    @ManyToOne(cascade = {CascadeType.REFRESH})
+    @JoinColumns({@JoinColumn(name = "user_shadow_id")})
+    private UserShadow userShadow;
     @Column(nullable = false)
     private String authority;
 
@@ -33,11 +35,11 @@ public class Authorities {
         this.authority = authority;
     }
 
-    public int getUserShadowId() {
-        return userShadowId;
+    public UserShadow getUserShadow() {
+        return userShadow;
     }
 
-    public void setUserShadowId(int userShadowId) {
-        this.userShadowId = userShadowId;
+    public void setUserShadow(UserShadow userShadow) {
+        this.userShadow = userShadow;
     }
 }

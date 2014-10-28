@@ -1,4 +1,4 @@
-package com.flower.controller.config;
+package com.flower.springframework.mvc.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -24,17 +24,17 @@ public class WebMvcConfiguration extends WebMvcConfigurerAdapter {
         registry.addResourceHandler("/js/seajs/latest/**").addResourceLocations("/js/seajs/2.2.1/debug/").setCachePeriod(31556926);
     }
 
-    @Override
-    public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
-        configurer.enable();
-    }
-
     @Bean
     public InternalResourceViewResolver getInternalResourceViewResolver() {
         InternalResourceViewResolver resolver = new InternalResourceViewResolver();
         resolver.setPrefix("/");
         resolver.setSuffix(".jsp");
         return resolver;
+    }
+
+    @Override
+    public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
+        configurer.enable();
     }
 
     @Override
