@@ -25,13 +25,13 @@
     <div class="container">
       <div class="login-header">
         <div class="login-logo-img">
-          <img src="/images/logo2.png" class="pull-left">
+          <a href="/"><img src="/images/logo2.png" class="pull-left"></a>
           <div class="pull-left login-welcome">欢迎登录</div>
         </div>
       </div>
       <div id="carousel-login-signup" class="carousel slide" data-ride="carousel" data-interval="false">
         <div class="carousel-inner" role="listbox" >
-          <div class="item active" data-welcome-title="欢迎登录">
+          <div class="item login" data-welcome-title="欢迎登录">
             <div class="login-middle">
               <div class="login-img pull-left"></div>
               <div class="pull-right login-form">
@@ -69,7 +69,7 @@
               </div>
             </div>
           </div data-welcome-title="欢迎登录" data-welcome-title="欢迎登录">
-          <div class="item " data-welcome-title="欢迎注册">
+          <div class="item signup" data-welcome-title="欢迎注册">
             <div class="signup-middle">
               <div class="signup-form pull-left">
                 <form class="form-horizontal" role="form">

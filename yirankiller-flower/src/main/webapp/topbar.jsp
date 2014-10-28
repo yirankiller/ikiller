@@ -14,8 +14,8 @@
       </div>
       <div class="topinfor pull-right">
         <ul class="list-inline">
-          <li><a href="/login.jsp">登陆</a></li>
-          <li><a href="#">注册</a></li>
+          <li><a href="/login">登陆</a></li>
+          <li><a href="/signup">注册</a></li>
           <li><a href="#">我的订单</a></li>
           <li><a href="#">个人中心</a></li>
           <li class="dropdown">
