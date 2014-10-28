@@ -1,6 +1,6 @@
 package com.flower.springframework.config;
 
-import org.apache.commons.dbcp.BasicDataSource;
+import com.alibaba.druid.pool.DruidDataSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -25,14 +25,22 @@ public class ApplicationContextConfig {
     }
 
     @Bean(name = "dataSource")
-    public BasicDataSource dataSource() {
-        BasicDataSource basicDataSource = new BasicDataSource();
-        basicDataSource.setDriverClassName(env.getProperty("jdbc.driver"));
-        basicDataSource.setUrl(env.getProperty("jdbc.url"));
-        basicDataSource.setUsername(env.getProperty("jdbc.username"));
-        basicDataSource.setPassword(env.getProperty("jdbc.password"));
-        return basicDataSource;
+    public DruidDataSource dataSource() {
+        DruidDataSource dds = new DruidDataSource();
+        dds.setDriverClassName(env.getProperty("jdbc.driver"));
+        dds.setUrl(env.getProperty("jdbc.url"));
+        dds.setUsername(env.getProperty("jdbc.username"));
+        dds.setPassword(env.getProperty("jdbc.password"));
+        dds.setInitialSize(3);
+        dds.setMinIdle(3);
+        dds.setMaxActive(20);
+        dds.setMaxWait(60000);
+        dds.setTimeBetweenEvictionRunsMillis(60000);
+        dds.setMinEvictableIdleTimeMillis(300000);
+        dds.setTestWhileIdle(true);
+        dds.setTestOnBorrow(false);
+        dds.setTestOnReturn(false);
+        return dds;
     }
-
 
 }
