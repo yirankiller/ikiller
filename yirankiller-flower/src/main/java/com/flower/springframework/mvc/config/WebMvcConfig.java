@@ -1,5 +1,7 @@
 package com.flower.springframework.mvc.config;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -14,7 +16,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @ComponentScan("com.flower.controller")
 @Configuration
 public class WebMvcConfig extends WebMvcConfigurerAdapter {
-
+    Logger logger = LoggerFactory.getLogger(WebMvcConfig.class);
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/bootstrap/**").addResourceLocations("/bootstrap/").setCachePeriod(31556926);
@@ -40,8 +42,9 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/login").setViewName("login");
-        registry.addViewController("/signup").setViewName("login?t=signup");
+        registry.addViewController("/signup").setViewName("login");
         registry.addViewController("/home").setViewName("/homeOrder");
+        logger.debug("/home --> /homeOrder");
         registry.setOrder(Ordered.HIGHEST_PRECEDENCE);
     }
 }

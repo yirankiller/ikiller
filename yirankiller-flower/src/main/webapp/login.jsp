@@ -68,29 +68,30 @@
                 </form:form>
               </div>
             </div>
-          </div data-welcome-title="欢迎登录" data-welcome-title="欢迎登录">
+          </div>
           <div class="item signup" data-welcome-title="欢迎注册">
             <div class="signup-middle">
               <div class="signup-form pull-left">
-                <form class="form-horizontal" role="form">
+                <form class="form-horizontal" role="form" action="/register" method="post">
                   <div class="form-group form-group-lg">
-                    <label for="username" class="col-md-2 control-label"><span class="asterisk-require">*</span>账户名:</label>
+                    <label for="signup_username" class="col-md-2 control-label"><span class="asterisk-require">*</span>账户名:</label>
                     <div class="col-xs-5 username-label">
-                      <input type="text" class="form-control" id="username" placeholder="手机号/用户名/邮箱" autocomplete="false">
+                      <input type="text" class="form-control" id="signup_username" name="userShadow.user.username" placeholder="手机号/用户名/邮箱" autocomplete="false" />
                       <span class="label-icon glyphicon glyphicon-user"></span>
                     </div>
                   </div>
                   <div class="form-group form-group-lg">
-                    <label for="password" class="col-sm-2 control-label"><span class="asterisk-require">*</span>请设置密码:</label>
+                    <label for="signup_password" class="col-sm-2 control-label"><span class="asterisk-require">*</span>请设置密码:</label>
                     <div class="col-sm-5 passwd-label">
-                      <input type="password" class="form-control" id="password" placeholder="密码">
+                      <input type="password" class="form-control" id="signup_password" name="userShadow.password" placeholder="密码" />
                       <span class="glyphicon glyphicon-lock label-icon"></span>
                     </div>
                   </div>
                   <div class="form-group form-group-lg">
                     <label for="confirmPassword" class="col-sm-2 control-label"><span class="asterisk-require">*</span>请确认密码:</label>
                     <div class="col-sm-5 passwd-label">
-                      <input type="password" class="form-control" id="confirmPassword" placeholder="确认密码">
+                      <input type="password" class="form-control" id="confirmPassword" name="" placeholder="确认密码" />
+                      <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
                       <span class="glyphicon glyphicon-lock label-icon"></span>
                     </div>
                   </div>
@@ -115,7 +116,7 @@
                 <div class="login-button"><a href="#" class="btn btn-search-default" role="button" data-target="#carousel-login-signup" data-slide-to="0">直接登录</a></div>
               </div>
             </div>
-          </div data-welcome-title="欢迎登录">
+          </div>
         </div>
       </div>
     </div>
