@@ -31,16 +31,16 @@ public class ApplicationContextConfig {
         dds.setUrl(env.getProperty("jdbc.url"));
         dds.setUsername(env.getProperty("jdbc.username"));
         dds.setPassword(env.getProperty("jdbc.password"));
-        dds.setInitialSize(3);
-        dds.setMinIdle(3);
-        dds.setMaxActive(20);
-        dds.setMaxWait(60000);
-        dds.setTimeBetweenEvictionRunsMillis(60000);
-        dds.setMinEvictableIdleTimeMillis(300000);
-        dds.setValidationQuery("SELECT now()");
-        dds.setTestWhileIdle(true);
-        dds.setTestOnBorrow(false);
-        dds.setTestOnReturn(false);
+        dds.setInitialSize(env.getRequiredProperty("dbcp.initialSize",Integer.class));
+        dds.setMinIdle(env.getRequiredProperty("dbcp.minIdle",Integer.class));
+        dds.setMaxActive(env.getRequiredProperty("dbcp.maxActive",Integer.class));
+        dds.setMaxWait(env.getRequiredProperty("dbcp.maxWait",Integer.class));
+        dds.setTimeBetweenEvictionRunsMillis(env.getRequiredProperty("dbcp.timeBetweenEvictionRunsMillis",Integer.class));
+        dds.setMinEvictableIdleTimeMillis(env.getRequiredProperty("dbcp.minEvictableIdleTimeMillis",Integer.class));
+        dds.setValidationQuery(env.getProperty("dbcp.validationQuery"));
+        dds.setTestWhileIdle(env.getRequiredProperty("dbcp.testWhileIdle",Boolean.class));
+        dds.setTestOnBorrow(env.getRequiredProperty("dbcp.testOnBorrow",Boolean.class));
+        dds.setTestOnReturn(env.getRequiredProperty("dbcp.testOnReturn",Boolean.class));
         return dds;
     }
 

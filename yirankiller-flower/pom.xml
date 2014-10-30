@@ -142,21 +142,21 @@
         </dependency>
         <!-- logger end -->
 
-        <!--db connect pool begin-->
+        <!--db connection pool begin-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
             <version>1.0.9</version>
         </dependency>
-        <!--db connect pool end-->
+        <!--db connection pool end-->
 
-        <!-- database begin -->
+        <!-- database driver begin -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>${db.mysql.version}</version>
         </dependency>
-        <!-- database end -->
+        <!-- database driver end -->
 
         <!-- other -->
         <dependency>

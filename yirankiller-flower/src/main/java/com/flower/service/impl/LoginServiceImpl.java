@@ -9,6 +9,7 @@ import com.flower.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,6 +18,7 @@ import java.util.List;
  * Created by eason on 14-10-30.
  */
 @Service
+@Transactional
 public class LoginServiceImpl implements LoginService{
     @Autowired
     private UserShadowDao userShadowDao;
