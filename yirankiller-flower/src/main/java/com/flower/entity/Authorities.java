@@ -15,7 +15,8 @@ public class Authorities {
     @JoinColumns({@JoinColumn(name = "user_shadow_id")})
     private UserShadow userShadow;
     @Column(nullable = false)
-    private String authority;
+    @Enumerated(EnumType.STRING)
+    private AuthoritiesEnum authority;
 
 
 
@@ -27,11 +28,11 @@ public class Authorities {
         this.id = id;
     }
 
-    public String getAuthority() {
+    public AuthoritiesEnum getAuthority() {
         return authority;
     }
 
-    public void setAuthority(String authority) {
+    public void setAuthority(AuthoritiesEnum authority) {
         this.authority = authority;
     }
 

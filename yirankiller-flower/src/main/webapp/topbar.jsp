@@ -10,7 +10,7 @@
   <div class="topnavbar">
     <div class="container">
       <div class="welcomeback pull-left">
-        Hi yirankiller,欢迎回来
+        Hi ${user.username},欢迎回来
       </div>
       <div class="topinfor pull-right">
         <ul class="list-inline">

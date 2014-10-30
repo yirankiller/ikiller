@@ -76,14 +76,14 @@
                   <div class="form-group form-group-lg">
                     <label for="signup_username" class="col-md-2 control-label"><span class="asterisk-require">*</span>账户名:</label>
                     <div class="col-xs-5 username-label">
-                      <input type="text" class="form-control" id="signup_username" name="userShadow.user.username" placeholder="手机号/用户名/邮箱" autocomplete="false" />
+                      <input type="text" class="form-control" id="signup_username" name="username" placeholder="手机号/用户名/邮箱" autocomplete="false" />
                       <span class="label-icon glyphicon glyphicon-user"></span>
                     </div>
                   </div>
                   <div class="form-group form-group-lg">
                     <label for="signup_password" class="col-sm-2 control-label"><span class="asterisk-require">*</span>请设置密码:</label>
                     <div class="col-sm-5 passwd-label">
-                      <input type="password" class="form-control" id="signup_password" name="userShadow.password" placeholder="密码" />
+                      <input type="password" class="form-control" id="signup_password" name="password" placeholder="密码" />
                       <span class="glyphicon glyphicon-lock label-icon"></span>
                     </div>
                   </div>

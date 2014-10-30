@@ -37,6 +37,7 @@ public class ApplicationContextConfig {
         dds.setMaxWait(60000);
         dds.setTimeBetweenEvictionRunsMillis(60000);
         dds.setMinEvictableIdleTimeMillis(300000);
+        dds.setValidationQuery("SELECT now()");
         dds.setTestWhileIdle(true);
         dds.setTestOnBorrow(false);
         dds.setTestOnReturn(false);
