@@ -11,7 +11,7 @@
   <div class="topnavbar">
     <div class="container">
       <div class="welcomeback pull-left">
-        Hi ${user.nickName},欢迎回来
+        Hi <c:if test="${user.nickName != null}"> ${user.nickName}</c:if><c:if test="${user.nickName == null}"> ${user.username}</c:if>,欢迎回来
       </div>
       <div class="topinfor pull-right">
         <ul class="list-inline">
