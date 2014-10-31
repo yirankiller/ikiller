@@ -28,14 +28,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             .authorizeRequests()
             .antMatchers("/images/**", "/js/**", "/css/**", "/bootstrap/**").permitAll()
             .antMatchers("/home**").hasRole(AuthoritiesEnum.USER.toString())
-            .anyRequest().authenticated()
             .and()
             .formLogin()
-            .defaultSuccessUrl("/home")
+            .defaultSuccessUrl("/loginSuccess")
             .loginPage("/login")
             .permitAll()
             .and()
             .logout()
+            .logoutUrl("/logout")
+            .invalidateHttpSession(true)
             .permitAll()
             ;
 

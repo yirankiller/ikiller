@@ -72,25 +72,25 @@
           <div class="item signup" data-welcome-title="欢迎注册">
             <div class="signup-middle">
               <div class="signup-form pull-left">
-                <form class="form-horizontal" role="form" action="/register" method="post">
+                <form class="form-horizontal" role="form" action="/register" method="post" id="signupForm">
                   <div class="form-group form-group-lg">
                     <label for="signup_username" class="col-md-2 control-label"><span class="asterisk-require">*</span>账户名:</label>
                     <div class="col-xs-5 username-label">
-                      <input type="text" class="form-control" id="signup_username" name="username" placeholder="手机号/用户名/邮箱" autocomplete="false" />
+                      <input type="text" class="form-control input-lg" id="signup_username" name="username" placeholder="手机号/用户名/邮箱" autocomplete="false" maxlength="25"/>
                       <span class="label-icon glyphicon glyphicon-user"></span>
                     </div>
                   </div>
                   <div class="form-group form-group-lg">
                     <label for="signup_password" class="col-sm-2 control-label"><span class="asterisk-require">*</span>请设置密码:</label>
                     <div class="col-sm-5 passwd-label">
-                      <input type="password" class="form-control" id="signup_password" name="password" placeholder="密码" />
+                      <input type="password" class="form-control input-lg" id="signup_password" name="password" placeholder="密码" />
                       <span class="glyphicon glyphicon-lock label-icon"></span>
                     </div>
                   </div>
                   <div class="form-group form-group-lg">
                     <label for="confirmPassword" class="col-sm-2 control-label"><span class="asterisk-require">*</span>请确认密码:</label>
                     <div class="col-sm-5 passwd-label">
-                      <input type="password" class="form-control" id="confirmPassword" name="" placeholder="确认密码" />
+                      <input type="password" class="form-control input-lg" id="confirmPassword" name="confirmPassword" placeholder="确认密码" />
                       <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
                       <span class="glyphicon glyphicon-lock label-icon"></span>
                     </div>
@@ -99,7 +99,7 @@
                     <div class="col-sm-offset-2 col-sm-5">
                       <div class="checkbox">
                         <label class="checkbox-radio-label">
-                          <input type="checkbox"> 我已阅读并同意&nbsp;&nbsp;&nbsp;<a href="#" class="blue-link">《用户注册协议》</a>
+                          <input type="checkbox" name="userRegistrationProtocol"> 我已阅读并同意&nbsp;&nbsp;&nbsp;<a href="#" class="blue-link">《用户注册协议》</a>
                         </label>
                       </div>
                     </div>

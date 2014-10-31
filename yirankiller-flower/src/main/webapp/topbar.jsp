@@ -6,16 +6,27 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page language="java" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
   <!-- customize top nav bar -->
   <div class="topnavbar">
     <div class="container">
       <div class="welcomeback pull-left">
-        Hi ${user.username},欢迎回来
+        Hi ${user.nickName},欢迎回来
       </div>
       <div class="topinfor pull-right">
         <ul class="list-inline">
-          <li><a href="/login">登陆</a></li>
-          <li><a href="/signup">注册</a></li>
+          <c:if test="${user == null}">
+            <li><a href="/login">登陆</a></li>
+            <li><a href="/signup">注册</a></li>
+          </c:if>
+          <c:if test="${user != null}">
+            <li>
+              <form:form action="/logout"
+                    method="post">
+                <input type="submit" class="btn btn-xs btn-danger" value="安全退出" />
+              </form:form>
+            </li>
+          </c:if>
           <li><a href="#">我的订单</a></li>
           <li><a href="#">个人中心</a></li>
           <li class="dropdown">

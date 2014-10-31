@@ -22,6 +22,7 @@
         <hibernate.common.version>4.0.1.Final</hibernate.common.version>
         <hibernate.validator.version>5.0.0.Final</hibernate.validator.version>
         <log.version>1.7.7</log.version>
+        <jackson>1.9.13</jackson>
     </properties>
 
     <dependencies>
@@ -157,6 +158,13 @@
             <version>${db.mysql.version}</version>
         </dependency>
         <!-- database driver end -->
+        <!-- important, support return json -->
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+            <version>${jackson}</version>
+        </dependency>
+        <!-- important, support return json end -->
 
         <!-- other -->
         <dependency>

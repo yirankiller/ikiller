@@ -8,7 +8,8 @@ import org.springframework.transaction.annotation.Transactional;
  * Created by eason on 14-10-23.
  */
 @Transactional
-public interface LoginService {
+public interface UserService {
 
     public User register(UserShadow userShadow);
+    public boolean existUser(String username);
 }
