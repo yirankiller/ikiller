@@ -38,7 +38,7 @@ public class UserServiceImpl implements UserService {
             userShadow.setPassword(encodedPassword);
             //set default authority.
             Authorities authorities = new Authorities();
-            authorities.setAuthority(AuthoritiesEnum.USER);
+            authorities.setAuthority(AuthoritiesEnum.ROLE_USER);
             List<Authorities> authoritiesList = new ArrayList<Authorities>();
             authoritiesList.add(authorities);
             userShadow.setAuthoritiesList(authoritiesList);

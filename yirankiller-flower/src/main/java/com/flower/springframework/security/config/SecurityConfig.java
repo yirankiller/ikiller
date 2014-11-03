@@ -27,7 +27,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http
             .authorizeRequests()
             .antMatchers("/images/**", "/js/**", "/css/**", "/bootstrap/**").permitAll()
-            .antMatchers("/home**").hasRole(AuthoritiesEnum.USER.toString())
+            .antMatchers("/home**").hasRole("USER")
             .and()
             .formLogin()
             .defaultSuccessUrl("/loginSuccess")
