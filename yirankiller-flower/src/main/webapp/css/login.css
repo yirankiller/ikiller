@@ -168,6 +168,10 @@
   top: 15px;
   left: 22px;
 }
+.login .container .login-middle .error-msg,
+.login .container .signup-middle .error-msg {
+  color: #e4393c;
+}
 .login .container .login-middle:before,
 .login .container .signup-middle:before,
 .login .container .login-middle:after,
@@ -199,7 +203,7 @@
   padding: 25px 10px 15px ;
 }
 .login .container .login-middle .login-form .input-fields {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 .login .container .login-middle .login-form .input-fields .form-group {
   margin-bottom: 25px;

@@ -8,7 +8,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="zh-cn" >
 <head>
   <title>ftitle</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,6 +47,13 @@
                       <div class="col-sm-offset-3 col-md-8 passwd-label">
                         <input type="password" class="form-control input-lg" id="login_password" name="password" placeholder="密码" maxlength="16">
                         <span class="glyphicon glyphicon-lock label-icon"></span>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-sm-offset-3 col-md-8 error-msg">
+                        <c:if test="${param.error != null}">
+                        <span>用户名或密码错误</span>
+                        </c:if>
                       </div>
                     </div>
                   </div>
