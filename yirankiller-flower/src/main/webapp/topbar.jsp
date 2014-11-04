@@ -27,15 +27,17 @@
               </form:form>
             </li>
           </c:if>
-          <li><a href="#">我的订单</a></li>
-          <li><a href="#">个人中心</a></li>
+          <li><a href="/home/order">我的订单</a></li>
+          <li><a href="/home/account">个人中心</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">网站导航 <b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li><a href="#">首页</a></li>
+              <li><a href="/">首页</a></li>
+              <!--
               <li><a href="#">分类</a></li>
               <li class="divider"></li>
               <li><a href="#">I like</a></li>
+              -->
             </ul>
           </li>
         </ul>

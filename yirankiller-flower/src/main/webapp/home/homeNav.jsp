@@ -20,16 +20,16 @@
         订单中心
       </li>
       <li class="nav-list-item">
-        <a href="/homeOrder.jsp" >我的订单</a>
+        <a href="/home/order" >我的订单</a>
       </li>
       <li class="nav-list-item category">
         账户中心
       </li>
       <li class="nav-list-item">
-        <a href="/accountInfo.jsp" >账户信息</a>
+        <a href="/home/account" >账户信息</a>
       </li>
       <li class="nav-list-item">
-        <a href="/homeAddress.jsp" >收获地址</a>
+        <a href="/home/address" >收货地址</a>
       </li>
     </ul>
   </div>

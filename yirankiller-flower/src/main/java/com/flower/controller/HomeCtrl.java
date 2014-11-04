@@ -29,7 +29,7 @@ public class HomeCtrl {
         logger.debug("login : "+ username);
         User user = userDao.findByUsername(username);
         model.addAttribute(ControllerConstantsConfig.USER_SESSION_FLAG,user);
-        return "homeOrder";
+        return "home/homeOrder";
     }
 
 }

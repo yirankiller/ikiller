@@ -22,13 +22,13 @@
 </head>
 <body>
   <!-- short cut part -->
-  <jsp:include page="topbar.jsp"/>
+  <jsp:include page="../topbar.jsp"/>
   <!-- header part -->
-  <jsp:include page="header.jsp"/>
+  <jsp:include page="../header.jsp"/>
   <div class="container home-middle">
     <jsp:include page="homeNav.jsp"/>
-    <jsp:include page="homeAddressMiddle.jsp"/>
+    <jsp:include page="accountMiddle.jsp"/>
   </div>
-  <jsp:include page="footer.jsp"/>
+  <jsp:include page="../footer.jsp"/>
 </body>
 </html>

@@ -10,7 +10,9 @@
   <div class="container">
     <div class="row logo-search">
       <div class="col-xs-3">
-        <img src="/images/logo.png" alt="" class="logo-default">
+        <a href="/">
+          <img src="/images/logo.png" alt="" class="logo-default">
+        </a>
       </div>
       <div class="col-lg-5 col-lg-offset-1">
         <form role="search" action="/book.do">
