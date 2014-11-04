@@ -9,8 +9,13 @@ import java.io.Serializable;
 @Entity
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public class BaseEntity implements Serializable{
+    @TableGenerator(name = "PK_SEQ",
+            table = "SEQUENCE_TABLE_FLOWER",
+            pkColumnName  = "s_name",
+            valueColumnName  = "s_count")
+
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy= GenerationType.TABLE,generator="PK_SEQ")
     protected int id;
 
     public int getId() {

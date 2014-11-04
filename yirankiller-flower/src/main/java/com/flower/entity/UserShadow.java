@@ -8,9 +8,6 @@ import java.util.List;
  */
 @Entity
 public class UserShadow extends BaseEntity{
-    @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private int id;
     @Column(nullable = false)
     private String password;
     @Column(nullable = false,columnDefinition = JPAConfig.BOOLEAN_DEFAULT_FALSE)

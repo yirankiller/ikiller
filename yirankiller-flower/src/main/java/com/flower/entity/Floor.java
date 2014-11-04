@@ -6,6 +6,14 @@ import javax.persistence.Entity;
  * Created by eason on 14-11-4.
  */
 @Entity
-public class Floor {
-    private int id;
+public class Floor extends BaseEntity{
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }
