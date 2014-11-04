@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 @Entity
 public class Floor extends BaseEntity{
     private String name;
+    private int floor;
 
     public String getName() {
         return name;
