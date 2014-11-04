@@ -6,25 +6,13 @@ import javax.persistence.*;
  * Created by eason on 14-10-23.
  */
 @Entity
-public class User {
-    @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private int id;
+public class User extends BaseEntity{
     @Column(nullable = false, unique = true)
     private String username;
     private String nickName;
     private String email;
     private String postcode;
     private String mobilePhone;
-
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getUsername() {
         return username;

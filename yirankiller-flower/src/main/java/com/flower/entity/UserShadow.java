@@ -7,7 +7,7 @@ import java.util.List;
  * Created by eason on 14-10-27.
  */
 @Entity
-public class UserShadow {
+public class UserShadow extends BaseEntity{
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private int id;
@@ -21,14 +21,6 @@ public class UserShadow {
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumns({@JoinColumn(name = "user_shadow_id")})
     private List<Authorities> authoritiesList;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getPassword() {
         return password;
