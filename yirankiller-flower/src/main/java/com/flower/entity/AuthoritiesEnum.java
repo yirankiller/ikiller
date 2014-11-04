@@ -8,11 +8,11 @@ public enum AuthoritiesEnum {
     ROLE_ADMIN;
 
     public String getRole(){
-        return super.toString();
+        return this.name().substring(5);
     }
 
     @Override
     public String toString() {
-        return "ROLE_" + this.name();
+        return this.getRole();
     }
 }

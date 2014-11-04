@@ -1,3 +1,4 @@
+import com.flower.entity.AuthoritiesEnum;
 import org.junit.Test;
 import org.springframework.security.authentication.encoding.Md5PasswordEncoder;
 import org.springframework.security.crypto.password.StandardPasswordEncoder;
@@ -11,6 +12,11 @@ public class PasswordTest {
     public void testMD5Salt(){
         StandardPasswordEncoder standardPasswordEncoder = new StandardPasswordEncoder("flower-secret");
         System.out.println(standardPasswordEncoder.encode("root"));
+    }
+
+    @Test
+    public void AuthTest(){
+        System.out.println(AuthoritiesEnum.ROLE_USER.getRole());
     }
 
 }

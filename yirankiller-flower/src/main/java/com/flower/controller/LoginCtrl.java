@@ -13,11 +13,13 @@ import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.SessionAttributes;
 
 /**
  * Created by eason on 14-10-23.
  */
 @Controller
+@SessionAttributes(ControllerConstantsConfig.USER_SESSION_FLAG)
 public class LoginCtrl {
     Logger logger = LoggerFactory.getLogger(LoginCtrl.class);
     @Autowired
@@ -33,7 +35,7 @@ public class LoginCtrl {
         userShadow.setPassword(userVO.getPassword());
         userShadow.setUser(user);
         user = userService.register(userShadow);
-        model.addAttribute("user",user);
+        model.addAttribute(ControllerConstantsConfig.USER_SESSION_FLAG,user);
         return "index";
     }
 

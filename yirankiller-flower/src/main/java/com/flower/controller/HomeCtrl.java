@@ -2,6 +2,8 @@ package com.flower.controller;
 
 import com.flower.dao.UserDao;
 import com.flower.entity.User;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -16,7 +18,7 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 @Controller
 @SessionAttributes(ControllerConstantsConfig.USER_SESSION_FLAG)
 public class HomeCtrl {
-
+    Logger logger = LoggerFactory.getLogger(HomeCtrl.class);
     @Autowired
     private UserDao userDao;
 
@@ -24,6 +26,7 @@ public class HomeCtrl {
     public String loginSuccessHandler(Model model){
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String username = auth.getName();
+        logger.debug("login : "+ username);
         User user = userDao.findByUsername(username);
         model.addAttribute(ControllerConstantsConfig.USER_SESSION_FLAG,user);
         return "homeOrder";
