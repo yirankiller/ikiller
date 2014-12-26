@@ -17,16 +17,13 @@
     </div>
     <div class="item-select">
       <div id="galleria" class="galleria-item">
-        <a href="/images/resources/lvluo.jpg">
-          <img src="/images/resources/lvluo.jpg"
-            data-big="/images/resources/lvluo.jpg"
-          >
+        <c:forEach items="${itemPictureList}" var="itemPicture">
+        <a href="${itemPicture.url}">
+          <img src="${itemPicture.url}"
+            data-big="${itemPicture.url}"
+          />
         </a>
-        <a href="/images/resources/lvluo2.jpg">
-          <img src="/images/resources/lvluo2.jpg"
-            data-big="/images/resources/lvluo2.jpg"
-          >
-        </a>
+        </c:forEach>
       </div>
       <div class="item-info">
         <div class="item-name">

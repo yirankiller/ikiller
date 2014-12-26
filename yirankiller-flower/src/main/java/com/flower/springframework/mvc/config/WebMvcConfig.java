@@ -47,6 +47,7 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
         registry.addViewController("/home/order").setViewName("/home/homeOrder");
         registry.addViewController("/home/account").setViewName("/home/accountInfo");
         registry.addViewController("/home/address").setViewName("/home/homeAddress");
+        registry.addViewController("/item").setViewName("/item");
         logger.debug("/home --> /homeOrder");
         registry.setOrder(Ordered.HIGHEST_PRECEDENCE);
     }
