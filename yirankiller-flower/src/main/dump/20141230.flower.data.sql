@@ -68,6 +68,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `item_picture` WRITE;
 /*!40000 ALTER TABLE `item_picture` DISABLE KEYS */;
+INSERT INTO `item_picture` VALUES (201408,201406,201401),(201409,201407,201401);
 /*!40000 ALTER TABLE `item_picture` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -77,7 +78,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `item_properties_option` WRITE;
 /*!40000 ALTER TABLE `item_properties_option` DISABLE KEYS */;
-INSERT INTO `item_properties_option` VALUES (201402,'红色',201403,201401),(2,'粉色',201404,201401);
+INSERT INTO `item_properties_option` VALUES (2,'粉色',201404,201401),(201402,'红色',201403,201401);
 /*!40000 ALTER TABLE `item_properties_option` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -107,6 +108,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `picture` WRITE;
 /*!40000 ALTER TABLE `picture` DISABLE KEYS */;
+INSERT INTO `picture` VALUES (201406,'','/images/resources/lvluo.jpg'),(201407,'','/images/resources/lvluo2.jpg');
 /*!40000 ALTER TABLE `picture` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -139,4 +141,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-12-26 15:45:41
+-- Dump completed on 2014-12-30 17:42:48

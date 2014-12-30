@@ -9,17 +9,16 @@ import java.util.List;
  * Created by eason on 14-12-25.
  */
 @Entity
-@org.hibernate.annotations.Proxy(lazy = false)
 public class Item extends BaseEntity {
     private String name;
     private String displayName;
     private double currentPrice;
     private double marketPrice;
-    @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumns({@JoinColumn(name = "item_id")})
+    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @JoinColumn(name = "item_id")
     private List<ItemPicture> itemPictureList;
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumns({@JoinColumn(name = "item_id")})
+    @JoinColumn(name = "item_id")
     private List<ItemPropertiesOption> itemPropertiesOptionList;
 
     public String getName() {

@@ -18,8 +18,8 @@
         <spring.version>3.2.8.RELEASE</spring.version>
         <spring.security.version>3.2.5.RELEASE</spring.security.version>
         <db.mysql.version>5.1.25</db.mysql.version>
-        <hibernate.version>4.2.1.Final</hibernate.version>
-        <hibernate.common.version>4.0.1.Final</hibernate.common.version>
+        <hibernate.version>4.3.7.Final</hibernate.version>
+        <hibernate.common.version>4.0.4.Final</hibernate.common.version>
         <hibernate.validator.version>5.0.0.Final</hibernate.validator.version>
         <log.version>1.7.7</log.version>
         <jackson>1.9.13</jackson>

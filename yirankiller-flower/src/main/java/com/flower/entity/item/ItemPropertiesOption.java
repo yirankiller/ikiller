@@ -8,10 +8,9 @@ import javax.persistence.*;
  * Created by eason on 14-12-25.
  */
 @Entity
-@org.hibernate.annotations.Proxy(lazy = false)
 public class ItemPropertiesOption extends BaseEntity {
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumns({@JoinColumn(name = "item_property_id")})
+    @JoinColumn(name = "item_property_id")
     private ItemProperty itemProperty;
     private String displayName;
 

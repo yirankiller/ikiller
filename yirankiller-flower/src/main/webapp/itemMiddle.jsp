@@ -18,16 +18,16 @@
     <div class="item-select">
       <div id="galleria" class="galleria-item">
         <c:forEach items="${itemPictureList}" var="itemPicture">
-        <a href="${itemPicture.url}">
-          <img src="${itemPicture.url}"
-            data-big="${itemPicture.url}"
+        <a href="${itemPicture.picture.url}">
+          <img src="${itemPicture.picture.url}"
+            data-big="${itemPicture.picture.url}"
           />
         </a>
         </c:forEach>
       </div>
       <div class="item-info">
         <div class="item-name">
-          <div class="name">盆栽花卉绿植绿萝 吊兰 可水培装修房办公室净化空气吸甲醛 吊兰--含盆 土培</div>
+          <div class="name">${item.displayName}</div>
           <div class="sale-info">七月周年庆</div>
         </div>
         <form class="form-horizontal" role="form">
@@ -35,13 +35,13 @@
             <div class="form-group">
               <label class="col-sm-2 control-label">现价&nbsp;:&nbsp;</label>
               <div class="col-sm-3">
-                <p class="form-control-static item-price">￥24.00</p>
+                <p class="form-control-static item-price">￥${item.currentPrice}</p>
               </div>
             </div>
             <div class="form-group">
               <label class="col-sm-2 control-label">参考价&nbsp;:&nbsp;</label>
               <div class="col-sm-3">
-                <p class="form-control-static refer-price"><del>￥56.00</del></p>
+                <p class="form-control-static refer-price"><del>￥${item.marketPrice}</del></p>
               </div>
             </div>
             <div class="form-group">

@@ -11,7 +11,7 @@ import javax.persistence.*;
 public class ItemProperty extends BaseEntity {
     private String propertyName;
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumns({@JoinColumn(name = "item_property_type_id")})
+    @JoinColumn(name = "item_property_type_id")
     private ItemPropertyType itemPropertyType;
 
     public String getPropertyName() {
