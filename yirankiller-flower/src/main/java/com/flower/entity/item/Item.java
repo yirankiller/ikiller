@@ -19,7 +19,7 @@ public class Item extends BaseEntity {
     private List<ItemPicture> itemPictureList;
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "item_id")
-    private List<ItemPropertiesOption> itemPropertiesOptionList;
+    private List<ItemPropertyOption> itemPropertyOptionList;
 
     public String getName() {
         return name;
@@ -29,12 +29,12 @@ public class Item extends BaseEntity {
         this.name = name;
     }
 
-    public List<ItemPropertiesOption> getItemPropertiesOptionList() {
-        return itemPropertiesOptionList;
+    public List<ItemPropertyOption> getItemPropertyOptionList() {
+        return itemPropertyOptionList;
     }
 
-    public void setItemPropertiesOptionList(List<ItemPropertiesOption> itemPropertiesOptionList) {
-        this.itemPropertiesOptionList = itemPropertiesOptionList;
+    public void setItemPropertyOptionList(List<ItemPropertyOption> itemPropertyOptionList) {
+        this.itemPropertyOptionList = itemPropertyOptionList;
     }
 
     public String getDisplayName() {

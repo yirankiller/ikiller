@@ -15,7 +15,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit.version>4.11</junit.version>
-        <spring.version>3.2.8.RELEASE</spring.version>
+        <spring.version>4.1.4.RELEASE</spring.version>
         <spring.security.version>3.2.5.RELEASE</spring.security.version>
         <db.mysql.version>5.1.25</db.mysql.version>
         <hibernate.version>4.3.7.Final</hibernate.version>
@@ -162,6 +162,11 @@
         <dependency>
             <groupId>org.codehaus.jackson</groupId>
             <artifactId>jackson-mapper-asl</artifactId>
+            <version>${jackson}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-core-asl</artifactId>
             <version>${jackson}</version>
         </dependency>
         <!-- important, support return json end -->

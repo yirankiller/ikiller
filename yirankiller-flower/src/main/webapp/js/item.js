@@ -9,6 +9,7 @@ define(function(require, exports, module) {
   exports.init = function(){
     $(function(){
       Galleria.run('#galleria');
+      $.getJSON( "/item/j/201401", function( data ) {console.log(data)});
     });
   }
 });

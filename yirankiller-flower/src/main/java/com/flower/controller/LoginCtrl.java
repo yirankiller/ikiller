@@ -40,7 +40,7 @@ public class LoginCtrl {
     }
 
     @RequestMapping("/userCheck")
-    public @ResponseBody BVValidation userRegisterCheck(UserVO userVO,Model model){
+    public @ResponseBody BVValidation userRegisterCheck(UserVO userVO){
         logger.debug(userVO.getUsername() +"-------------------------");
         logger.debug(userVO.getPassword() +"-------------------------");
         String username = userVO.getUsername();

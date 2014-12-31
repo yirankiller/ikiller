@@ -78,7 +78,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `item_properties_option` WRITE;
 /*!40000 ALTER TABLE `item_properties_option` DISABLE KEYS */;
-INSERT INTO `item_properties_option` VALUES (2,'粉色',201404,201401),(201402,'红色',201403,201401);
+INSERT INTO `item_property_option` VALUES (201410,'粉色',201404,201401),(201402,'红色',201403,201401);
 /*!40000 ALTER TABLE `item_properties_option` ENABLE KEYS */;
 UNLOCK TABLES;
 
