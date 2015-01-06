@@ -169,6 +169,13 @@
             <artifactId>jackson-core-asl</artifactId>
             <version>${jackson}</version>
         </dependency>
+        <!-- needed when use spring 4.1.1 and latest -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.4.1.1</version>
+        </dependency>
+        <!-- needed when use spring 4.1.1 and latest -->
         <!-- important, support return json end -->
 
         <!-- other -->

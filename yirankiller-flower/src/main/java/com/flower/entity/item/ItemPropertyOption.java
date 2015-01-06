@@ -9,12 +9,9 @@ import javax.persistence.*;
  */
 @Entity
 public class ItemPropertyOption extends BaseEntity {
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
     @JoinColumn(name = "item_property_id")
     private ItemProperty itemProperty;
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "item_id")
-    private Item item;
     private String displayName;
     private String displayPictureUrl;
 
@@ -42,11 +39,4 @@ public class ItemPropertyOption extends BaseEntity {
         this.displayPictureUrl = displayPictureUrl;
     }
 
-    public Item getItem() {
-        return item;
-    }
-
-    public void setItem(Item item) {
-        this.item = item;
-    }
 }

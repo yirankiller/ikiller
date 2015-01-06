@@ -23,8 +23,6 @@ import java.util.Map;
 public class ItemServiceImpl implements ItemService{
     @Autowired
     private ItemDao itemDao;
-    @Autowired
-    private ItemPropertyOptionDao itemPropertyOptionDao;
 
     @Override
     public Item findItemById(int id) {
@@ -34,9 +32,9 @@ public class ItemServiceImpl implements ItemService{
 
     @Override
     public Map<ItemPropertyType,ItemPropertyOptionList> getItemPropertyOptionListById(int itemId) {
-        Item item = new Item();
-        item.setId(itemId);
-        List<ItemPropertyOption> itemPropertyOptionList = itemPropertyOptionDao.getOptionsByItem(item);
+        Item item;
+        item = itemDao.findById(itemId);
+        List<ItemPropertyOption> itemPropertyOptionList = item.getItemPropertyOptionList();
         Map<ItemPropertyType,ItemPropertyOptionList> itemPropertyOptionGroupMap = ItemHelper.group(itemPropertyOptionList);
         return itemPropertyOptionGroupMap;
     }

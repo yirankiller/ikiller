@@ -10,7 +10,7 @@ import javax.persistence.*;
 @Entity
 public class ItemProperty extends BaseEntity {
     private String propertyName;
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
     @JoinColumn(name = "item_property_type_id")
     private ItemPropertyType itemPropertyType;
 
