@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -34,8 +35,13 @@ public class ItemServiceImpl implements ItemService{
     public Map<ItemPropertyType,ItemPropertyOptionList> getItemPropertyOptionListById(int itemId) {
         Item item;
         item = itemDao.findById(itemId);
-        List<ItemPropertyOption> itemPropertyOptionList = item.getItemPropertyOptionList();
-        Map<ItemPropertyType,ItemPropertyOptionList> itemPropertyOptionGroupMap = ItemHelper.group(itemPropertyOptionList);
+        Map<ItemPropertyType,ItemPropertyOptionList> itemPropertyOptionGroupMap;
+        if(item != null){
+            List<ItemPropertyOption> itemPropertyOptionList = item.getItemPropertyOptionList();
+            itemPropertyOptionGroupMap = ItemHelper.group(itemPropertyOptionList);
+        }else{
+            itemPropertyOptionGroupMap = new HashMap<ItemPropertyType, ItemPropertyOptionList>();
+        }
         return itemPropertyOptionGroupMap;
     }
 }

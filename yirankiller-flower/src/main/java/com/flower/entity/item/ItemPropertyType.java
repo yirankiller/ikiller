@@ -27,4 +27,9 @@ public class ItemPropertyType extends BaseEntity {
     public void setDisplayLabelName(String displayLabelName) {
         this.displayLabelName = displayLabelName;
     }
+
+    @Override
+    public String toString() {
+        return getDisplayLabelName()+"---"+getId();
+    }
 }
