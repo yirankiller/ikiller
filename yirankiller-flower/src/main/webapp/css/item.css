@@ -182,11 +182,35 @@
 .item-info .item-name .sale-info {
   color: #e4393c;
 }
-.item-info .item-desc {
-  padding-bottom: 20px;
-  padding-top: 15px;
+.item-info .item-options .option-list {
+  margin-bottom: 0;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.item-info .item-options .option-list .option-item {
+  border: 2px solid #999999;
+  height: 31px;
+  padding: 2px 5px;
+}
+.item-info .item-options .option-list .option-item:hover {
+  cursor: pointer;
+  border: 2px solid #e4393c;
+}
+.item-info .item-options .option-list .option-item a.option-desc {
+  text-decoration: none;
+}
+.item-info .item-info-list {
   width: 70%;
-  height: 240px;
+  padding-bottom: 15px;
+}
+.item-info .item-info-list .form-group {
+  margin-bottom: 0;
+}
+.item-info .item-info-list .control-label {
+  font-weight: 300;
+}
+.item-info .item-desc {
+  padding-top: 10px;
 }
 .item-info .item-desc .item-price {
   color: #e4393c;
@@ -194,13 +218,13 @@
   padding-top: 2px;
   font-weight: 700;
 }
-.item-info .item-desc .control-label {
-  font-weight: 300;
-}
 .item-info .item-desc .service-info {
   color: #e4393c;
 }
-.item-info .add-cart {
+.item-info .item-purchase {
+  margin-top: 15px;
+}
+.item-info .item-purchase .add-cart {
   font-weight: 700;
 }
 .item-info .item-num {

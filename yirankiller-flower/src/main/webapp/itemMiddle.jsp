@@ -25,55 +25,75 @@
         </a>
         </c:forEach>
       </div>
+      <form class="form-horizontal" role="form">
       <div class="item-info">
         <div class="item-name">
           <div class="name">${item.displayName}</div>
           <div class="sale-info">七月周年庆</div>
         </div>
-        <form class="form-horizontal" role="form">
-          <div class="item-desc">
-            <div class="form-group">
-              <label class="col-sm-2 control-label">现价&nbsp;:&nbsp;</label>
-              <div class="col-sm-3">
-                <p class="form-control-static item-price">￥${item.currentPrice}</p>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="col-sm-2 control-label">参考价&nbsp;:&nbsp;</label>
-              <div class="col-sm-3">
-                <p class="form-control-static refer-price"><del>￥${item.marketPrice}</del></p>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="col-sm-2 control-label">配送&nbsp;:&nbsp;</label>
-              <div class="col-sm-3">
-                <p class="form-control-static service-info">全场满199,免费送货</p>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="col-sm-2 control-label">购买数量&nbsp;:&nbsp;</label>
-              <div class="col-sm-2 item-num">
-                <a href="javascript:void(0);" class="btn-minux-num"><span class="glyphicon glyphicon-minus minux-num"></span></a>
-                <input type="text" class="form-control input-item-num" value="1"/>
-                <a href="javascript:void(0);" class="btn-plus-num"><span class="glyphicon glyphicon-plus plus-num"></span></a>
-              </div>
+        <div class="item-info-list item-desc ">
+          <div class="form-group">
+            <label class="col-sm-2 control-label">现价&nbsp;:&nbsp;</label>
+            <div class="col-sm-3">
+              <p class="form-control-static item-price">￥${item.currentPrice}</p>
             </div>
           </div>
-          <div class="">
-            <ul class="list-inline">
-              <li>
-                <button type="submit" class="btn btn-danger btn-lg add-cart">
-                  <span class="glyphicon glyphicon-shopping-cart"></span>
-                  &nbsp;加入购物车
-                </button>
-              </li>
-              <li>
-                <button type="submit" class="btn btn-danger btn-lg add-cart">&nbsp;立即购买</button>
-              </li>
-            </ul>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">参考价&nbsp;:&nbsp;</label>
+            <div class="col-sm-3">
+              <p class="form-control-static refer-price"><del>￥${item.marketPrice}</del></p>
+            </div>
           </div>
-        </form>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">配送&nbsp;:&nbsp;</label>
+            <div class="col-sm-3">
+              <p class="form-control-static service-info">全场满199,免费送货</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="item-info-list item-options">
+          <div class="form-group">
+            <label class="col-sm-2 control-label">颜色&nbsp;:&nbsp;</label>
+            <div class="col-sm-6">
+              <ul class="list-inline option-list">
+                <li class="option-item">
+                  <img src="/images/resources/lvluo.jpg" style="max-width: 25px"/>
+                  <a class="option-desc">红色</a>
+                </li>
+                <li class="option-item">
+                  <img src="/images/resources/lvluo2.jpg" style="max-width: 25px"/>
+                  <a class="option-desc">黑色</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="item-info-list">
+          <div class="form-group">
+            <label class="col-sm-2 control-label">购买数量&nbsp;:&nbsp;</label>
+            <div class="col-sm-2 item-num">
+              <a href="javascript:void(0);" class="btn-minux-num"><span class="glyphicon glyphicon-minus minux-num"></span></a>
+              <input type="text" class="form-control input-item-num" value="1"/>
+              <a href="javascript:void(0);" class="btn-plus-num"><span class="glyphicon glyphicon-plus plus-num"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="item-purchase">
+          <ul class="list-inline">
+            <li>
+              <button type="submit" class="btn btn-danger btn-lg add-cart">
+                <span class="glyphicon glyphicon-shopping-cart"></span>
+                &nbsp;加入购物车
+              </button>
+            </li>
+            <li>
+              <button type="submit" class="btn btn-danger btn-lg add-cart">&nbsp;立即购买</button>
+            </li>
+          </ul>
+        </div>
       </div>
+      </form>
     </div>
     <div class="item-detail-middle inner-middle">
       <div class="item-detail">
