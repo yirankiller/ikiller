@@ -37,19 +37,27 @@
       padding-top: 1px;
       padding-bottom: 1px;
       .option-item{
-        border: 2px solid @my-theme-default-gray;
+        margin-bottom: 6px;
+        margin-right: 6px;
+        border: 1px solid #b8b7bd;
+        vertical-align: middle;
         &:hover{
           cursor: pointer;
           border: 2px solid @my-theme;
+          a{
+            color: @my-theme;
+          }
         }
         height: 31px;
-        padding: 2px 5px;
+        padding: 2px 8px;
         a{
           &.option-desc{
             text-decoration: none;
           }
         }
-
+      }
+      .option-item.text-only{
+        padding-top: 6px;
       }
     }
   }

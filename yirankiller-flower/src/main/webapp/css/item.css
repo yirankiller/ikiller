@@ -188,16 +188,25 @@
   padding-bottom: 1px;
 }
 .item-info .item-options .option-list .option-item {
-  border: 2px solid #999999;
+  margin-bottom: 6px;
+  margin-right: 6px;
+  border: 1px solid #b8b7bd;
+  vertical-align: middle;
   height: 31px;
-  padding: 2px 5px;
+  padding: 2px 8px;
 }
 .item-info .item-options .option-list .option-item:hover {
   cursor: pointer;
   border: 2px solid #e4393c;
 }
+.item-info .item-options .option-list .option-item:hover a {
+  color: #e4393c;
+}
 .item-info .item-options .option-list .option-item a.option-desc {
   text-decoration: none;
+}
+.item-info .item-options .option-list .option-item.text-only {
+  padding-top: 6px;
 }
 .item-info .item-info-list {
   width: 70%;

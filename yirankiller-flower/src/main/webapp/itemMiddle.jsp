@@ -61,8 +61,22 @@
                   <img src="/images/resources/lvluo.jpg" style="max-width: 25px"/>
                   <a class="option-desc">红色</a>
                 </li>
+                <li class="option-item text-only">
+                  <a class="option-desc">黑色</a>
+                </li>
                 <li class="option-item">
                   <img src="/images/resources/lvluo2.jpg" style="max-width: 25px"/>
+                  <a class="option-desc">黑色</a>
+                </li>
+                <li class="option-item">
+                  <img src="/images/resources/lvluo2.jpg" style="max-width: 25px"/>
+                  <a class="option-desc">黑色</a>
+                </li>
+                <li class="option-item">
+                  <img src="/images/resources/lvluo2.jpg" style="max-width: 25px"/>
+                  <a class="option-desc">黑色</a>
+                </li>
+                <li class="option-item text-only">
                   <a class="option-desc">黑色</a>
                 </li>
               </ul>
