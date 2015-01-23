@@ -58,22 +58,22 @@
             <div class="col-sm-6">
               <ul class="list-inline option-list">
                 <li class="option-item">
-                  <img src="/images/resources/lvluo.jpg" style="max-width: 25px"/>
+                  <img src="/images/resources/lvluo.jpg" class="option-item-picurl"/>
                   <a class="option-desc">红色</a>
                 </li>
                 <li class="option-item text-only">
                   <a class="option-desc">黑色</a>
                 </li>
                 <li class="option-item">
-                  <img src="/images/resources/lvluo2.jpg" style="max-width: 25px"/>
+                  <img src="/images/resources/lvluo2.jpg" class="option-item-picurl"/>
                   <a class="option-desc">黑色</a>
                 </li>
                 <li class="option-item">
-                  <img src="/images/resources/lvluo2.jpg" style="max-width: 25px"/>
+                  <img src="/images/resources/lvluo2.jpg" class="option-item-picurl"/>
                   <a class="option-desc">黑色</a>
                 </li>
                 <li class="option-item">
-                  <img src="/images/resources/lvluo2.jpg" style="max-width: 25px"/>
+                  <img src="/images/resources/lvluo2.jpg" class="option-item-picurl"/>
                   <a class="option-desc">黑色</a>
                 </li>
                 <li class="option-item text-only">

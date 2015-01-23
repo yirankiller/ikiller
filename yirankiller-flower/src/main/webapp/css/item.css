@@ -205,6 +205,9 @@
 .item-info .item-options .option-list .option-item a.option-desc {
   text-decoration: none;
 }
+.item-info .item-options .option-list .option-item .option-item-picurl {
+  max-width: 25px;
+}
 .item-info .item-options .option-list .option-item.text-only {
   padding-top: 6px;
 }
